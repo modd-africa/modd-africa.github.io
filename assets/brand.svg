@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="MoDD Africa">
+  <g fill="none" stroke="#1F6F78" stroke-width="1.5" opacity="0.55">
+    <path d="M6 2V30 M16 2V30 M26 2V30 M2 8H30 M2 16H30 M2 24H30"/>
+  </g>
+  <circle cx="16" cy="16" r="7.5" fill="none" stroke="#E0743A" stroke-width="1.3" opacity="0.5"/>
+  <circle cx="16" cy="16" r="4" fill="#E0743A"/>
+</svg>

@@ -1,0 +1,67 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "MoDD Africa"
+  description: >-
+    Modelling for Decisions in a Dynamic Africa — a pan-African network
+    producing model-based evidence and forecasting for mosquito-borne
+    disease control, with a primary focus on malaria.
+  site-url: "https://modd-africa.github.io"
+  repo-url: "https://github.com/modd-africa"
+  favicon: assets/brand.svg
+  open-graph: true
+  twitter-card: true
+  navbar:
+    background: light
+    pinned: true
+    logo: assets/brand.svg
+    logo-alt: "MoDD Africa"
+    title: "MoDD Africa"
+    collapse-below: lg
+    left:
+      - text: "The Project"
+        href: project.qmd
+      - text: "Hubs & Partners"
+        href: hubs.qmd
+      - text: "Evidence Synthesis"
+        href: evidence-synthesis.qmd
+      - text: "Get Involved"
+        href: engage.qmd
+    right:
+      - text: "Contact"
+        href: contact.qmd
+      - icon: github
+        href: "https://github.com/modd-africa"
+        aria-label: "MoDD Africa on GitHub"
+  page-footer:
+    background: dark
+    left: |
+      **MoDD Africa** — Modelling for Decisions in a Dynamic Africa.
+      Coordinated by the Ifakara Health Institute, Tanzania.
+    center:
+      - text: "The Project"
+        href: project.qmd
+      - text: "Hubs & Partners"
+        href: hubs.qmd
+      - text: "Evidence Synthesis"
+        href: evidence-synthesis.qmd
+      - text: "Get Involved"
+        href: engage.qmd
+      - text: "Contact"
+        href: contact.qmd
+    right: "Funded by the Wellcome Trust · 2024–2028"
+
+format:
+  html:
+    theme: theme.scss
+    toc: false
+    page-layout: article
+    grid:
+      body-width: 920px
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">

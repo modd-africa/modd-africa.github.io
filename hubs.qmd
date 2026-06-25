@@ -1,0 +1,48 @@
+---
+title: "Hubs & Partners"
+subtitle: "MoDD Africa works as a network of three national modelling hubs, coordinated from Tanzania and connected to national malaria programmes and research partners across the continent."
+---
+
+[The network]{.eyebrow}
+
+## Three hubs, one architecture
+
+Each hub builds local modelling capacity while sharing methods, data and lessons across the network. Tanzania coordinates; the DRC and Nigeria anchor the work in different ecological and epidemiological settings.
+
+::: {.hub}
+::: {.hub__top}
+### Tanzania — Ifakara Health Institute
+[06°48′S · 39°17′E]{.coord}
+:::
+[Coordinating hub]{.tag}
+
+Hosts the project as regional coordinator and main recipient of funds, and leads efforts to establish the modelling hubs and foster regional collaboration and capacity building.
+:::
+
+::: {.hub}
+::: {.hub__top}
+### DR Congo — National Institute for Biomedical Research (INRB)
+[04°19′S · 15°19′E]{.coord}
+:::
+
+Leads the DRC hub, extending the modelling work to one of the highest-burden malaria settings on the continent.
+:::
+
+::: {.hub}
+::: {.hub__top}
+### Nigeria — Osun State University
+[07°46′N · 04°34′E]{.coord}
+:::
+
+Leads the Nigeria hub, bringing the network into West Africa's distinct transmission and health-system context.
+:::
+
+[Collaborators]{.eyebrow}
+
+## Working with the people who decide
+
+The hubs work hand in hand with **National Malaria Programmes (NMPs)** and research institutions across the three countries and beyond, so that models answer the questions decision-makers actually face. The network is reinforced by a regional **Community of Practice** in vector epidemiology and modelling, connecting modellers, researchers and decision-makers as the project grows.
+
+::: {.callout-note appearance="simple"}
+Adding a partner or hub lead? This list is a starting point — update the hub blocks and collaborators as the network formalises.
+:::

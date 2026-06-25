@@ -1,0 +1,66 @@
+---
+title: "The Project"
+subtitle: "Modelling for Decisions in a Dynamic Africa is a four-year initiative (2024–2028) led by the Ifakara Health Institute, with hubs in Tanzania, the DRC and Nigeria, funded by the Wellcome Trust."
+---
+
+[Background]{.eyebrow}
+
+## Climate and health in a changing Africa
+
+Africa's climate is changing rapidly, reshaping where disease vectors live, how abundant they are, and when they peak. That raises the stakes for vector-borne disease control and for the decisions public-health systems must make. The project frames the problem around four priorities:
+
+1. How effective are health systems at controlling disease?
+2. How adaptable are decision-makers to emerging threats?
+3. How are key vectors distributed, and how does that shift with the seasons?
+4. What optimised interventions, early-warning tools and evidence are needed to respond?
+
+Meeting those needs calls for models that are trustworthy, hold up in the real world, and keep pace with change.
+
+[Approach]{.eyebrow}
+
+## The ERA modelling architecture
+
+MoDD Africa is built around an **Effective, Robust and Adaptable (ERA)** approach to modelling:
+
+- **Effective** — methods that produce answers decision-makers can act on.
+- **Robust** — results that hold up under real-world uncertainty and incomplete data.
+- **Adaptable** — models that evolve as conditions, questions and diseases change.
+
+## Work packages
+
+::: {.wp}
+[WP1]{.wp__tag}
+::: {.wp__body}
+### Implementation
+Investigating the relationships between environmental change, vectors, disease and health systems.
+:::
+:::
+
+::: {.wp}
+[WP2 · WP3]{.wp__tag}
+::: {.wp__body}
+### Implementation systems
+Developing solutions that optimise the performance of new and existing malaria interventions.
+:::
+:::
+
+::: {.wp}
+[WP4]{.wp__tag}
+::: {.wp__body}
+### Operational
+Producing outputs with immediate utility and impact for malaria programmes.
+:::
+:::
+
+[2024–2028]{.eyebrow}
+
+## What we will deliver
+
+Over the four years of the project, MoDD Africa aims to:
+
+- Establish modelling hubs in Tanzania, the DRC and Nigeria.
+- Develop relevant, model-based advisory systems for malaria control.
+- Share knowledge through inter-hub training, hackathons and modelling competitions, and a Community of Practice in vector epidemiology and modelling.
+- Form a strong Evidence Synthesis Unit.
+
+While the initial focus is malaria, the approach is designed to extend to other mosquito-borne diseases, such as arboviruses.

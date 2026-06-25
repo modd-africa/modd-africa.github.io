@@ -1,0 +1,122 @@
+---
+pagetitle: "MoDD Africa — Modelling for Decisions in a Dynamic Africa"
+description: "A pan-African network producing model-based evidence and forecasting for mosquito-borne disease control, with a primary focus on malaria."
+page-layout: full
+toc: false
+---
+
+```{=html}
+<style>
+  /* Home only: drop the default Quarto title block and top gap. */
+  #title-block-header { display: none; }
+  main#quarto-document-content { padding-top: 0; }
+</style>
+
+<!-- ─────────────────────────────  HERO  ───────────────────────────── -->
+<section class="hero fullbleed">
+  <div class="wrap">
+    <div class="hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow eyebrow--onink">Wellcome Trust · 2024–2028 · TZ / CD / NG</p>
+        <h1>Modelling for Decisions in a Dynamic Africa</h1>
+        <p class="hero__thesis">A pan-African network turning environmental, entomological and health data into model-based evidence and forecasts — so malaria programmes can act ahead of a shifting climate.</p>
+        <div class="hero__cta">
+          <a class="btn-solid" href="project.html">Explore the project <span aria-hidden="true">→</span></a>
+          <a class="btn-ghost" href="evidence-synthesis.html">Evidence synthesis</a>
+        </div>
+      </div>
+
+      <svg class="hero__art" viewBox="0 0 460 380" role="img"
+           aria-label="A coordinate graticule with the three MoDD Africa hubs — Nigeria, the DRC and Tanzania — connected as a network coordinated from Tanzania.">
+        <g class="graticule">
+          <line x1="60"  y1="20" x2="60"  y2="360"/>
+          <line x1="130" y1="20" x2="130" y2="360"/>
+          <line x1="200" y1="20" x2="200" y2="360"/>
+          <line x1="270" y1="20" x2="270" y2="360"/>
+          <line x1="340" y1="20" x2="340" y2="360"/>
+          <line x1="410" y1="20" x2="410" y2="360"/>
+          <line x1="30" y1="60"  x2="440" y2="60"/>
+          <line x1="30" y1="130" x2="440" y2="130"/>
+          <line x1="30" y1="200" x2="440" y2="200"/>
+          <line x1="30" y1="270" x2="440" y2="270"/>
+          <line x1="30" y1="340" x2="440" y2="340"/>
+        </g>
+
+        <line class="netline"                 x1="150" y1="95"  x2="205" y2="215"/>
+        <line class="netline netline--spoke"  x1="150" y1="95"  x2="330" y2="250"/>
+        <line class="netline netline--spoke"  x1="205" y1="215" x2="330" y2="250"/>
+
+        <g class="node node--ng" transform="translate(150,95)">
+          <circle class="halo" r="11"/><circle class="dot" r="5"/>
+          <text x="14" y="-5" font-size="11" font-weight="600">NG</text>
+          <text x="14" y="9"  font-size="8.5">07°N 05°E</text>
+        </g>
+        <g class="node node--cd" transform="translate(205,215)">
+          <circle class="halo" r="11"/><circle class="dot" r="5"/>
+          <text x="14" y="-5" font-size="11" font-weight="600">CD</text>
+          <text x="14" y="9"  font-size="8.5">04°S 15°E</text>
+        </g>
+        <g class="node node--hub node--tz" transform="translate(330,250)">
+          <circle class="halo" r="14"/><circle class="dot" r="6"/>
+          <text x="16" y="-5" font-size="11" font-weight="600">TZ</text>
+          <text x="16" y="9"  font-size="8.5">07°S 39°E</text>
+          <text x="16" y="23" font-size="7.5" letter-spacing="0.12em">COORDINATING HUB</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ────────────────────────  METADATA RECORD  ─────────────────────── -->
+<section class="metabar fullbleed">
+  <div class="wrap">
+    <div><b>FUNDER</b> <span>Wellcome Trust</span></div>
+    <div><b>PERIOD</b> <span>Nov 2024 – Oct 2028</span></div>
+    <div><b>COORDINATION</b> <span>Ifakara Health Institute, TZ</span></div>
+    <div><b>FOCUS</b> <span>Mosquito-borne disease · malaria</span></div>
+  </div>
+</section>
+
+<!-- ──────────────────────────  THE CHALLENGE  ─────────────────────── -->
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">The challenge</p>
+    <h2>Seeing change before it arrives</h2>
+    <p class="section__lede">Africa's climate is shifting where vectors live, how abundant they are and when they peak — and with them the risk of malaria and other mosquito-borne disease. Control programmes need to see those changes coming, not read them after the fact. MoDD Africa builds the models, evidence and forecasting tools that let decision-makers act early and adapt as conditions change.</p>
+
+    <div class="cards">
+      <a class="card-link" href="project.html">
+        <span class="kicker">Science</span>
+        <h3>The Project</h3>
+        <p>Background, the ERA modelling architecture, and four work packages from environment to operations.</p>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="card-link" href="hubs.html">
+        <span class="kicker">Network</span>
+        <h3>Hubs &amp; Partners</h3>
+        <p>Modelling hubs in Tanzania, the DRC and Nigeria, working with national malaria programmes.</p>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="card-link" href="evidence-synthesis.html">
+        <span class="kicker">Data &amp; code</span>
+        <h3>Evidence Synthesis</h3>
+        <p>Open, reproducible tooling to collate, analyse and communicate evidence — starting with climate reanalysis.</p>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="card-link" href="engage.html">
+        <span class="kicker">People</span>
+        <h3>Get Involved</h3>
+        <p>Training, hackathons, modelling competitions and a regional community of practice.</p>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────  VISION  ─────────────────────────── -->
+<section class="section section--haze fullbleed">
+  <div class="wrap">
+    <p class="pull">Model-based evidence, advice and forecasting — built in Africa, for Africa's public-health decisions.</p>
+  </div>
+</section>
+```
