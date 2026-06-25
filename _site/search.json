@@ -1,0 +1,142 @@
+[
+  {
+    "objectID": "hubs.html",
+    "href": "hubs.html",
+    "title": "Hubs & Partners",
+    "section": "",
+    "text": "The network"
+  },
+  {
+    "objectID": "hubs.html#three-hubs-one-architecture",
+    "href": "hubs.html#three-hubs-one-architecture",
+    "title": "Hubs & Partners",
+    "section": "Three hubs, one architecture",
+    "text": "Three hubs, one architecture\nEach hub builds local modelling capacity while sharing methods, data and lessons across the network. Tanzania coordinates; the DRC and Nigeria anchor the work in different ecological and epidemiological settings.\n\n\nTanzania — Ifakara Health Institute\n06°48′S · 39°17′E\n\nCoordinating hub\nHosts the project as regional coordinator and main recipient of funds, and leads efforts to establish the modelling hubs and foster regional collaboration and capacity building.\n\n\n\nDR Congo — National Institute for Biomedical Research (INRB)\n04°19′S · 15°19′E\n\nLeads the DRC hub, extending the modelling work to one of the highest-burden malaria settings on the continent.\n\n\n\nNigeria — Osun State University\n07°46′N · 04°34′E\n\nLeads the Nigeria hub, bringing the network into West Africa’s distinct transmission and health-system context.\n\nCollaborators"
+  },
+  {
+    "objectID": "hubs.html#working-with-the-people-who-decide",
+    "href": "hubs.html#working-with-the-people-who-decide",
+    "title": "Hubs & Partners",
+    "section": "Working with the people who decide",
+    "text": "Working with the people who decide\nThe hubs work hand in hand with National Malaria Programmes (NMPs) and research institutions across the three countries and beyond, so that models answer the questions decision-makers actually face. The network is reinforced by a regional Community of Practice in vector epidemiology and modelling, connecting modellers, researchers and decision-makers as the project grows.\n\n\n\n\n\n\nAdding a partner or hub lead? This list is a starting point — update the hub blocks and collaborators as the network formalises."
+  },
+  {
+    "objectID": "evidence-synthesis.html",
+    "href": "evidence-synthesis.html",
+    "title": "Evidence Synthesis",
+    "section": "",
+    "text": "Open tooling"
+  },
+  {
+    "objectID": "evidence-synthesis.html#the-moddafricaes-package",
+    "href": "evidence-synthesis.html#the-moddafricaes-package",
+    "title": "Evidence Synthesis",
+    "section": "The moddafricaes package",
+    "text": "The moddafricaes package\nmoddafricaes — MoDD Africa Evidence Synthesis — is the unit’s R package for collating, analysing and communicating evidence. Its first end-to-end pipeline turns ERA5-Land climate reanalysis into analysis-ready data: derive a study-area bounding box from a shapefile, download hourly NetCDFs from the Copernicus Climate Data Store (CDS), and transform them into Parquet (hourly or monthly) or GeoTIFF (monthly minimum / maximum temperature).\nThe source lives on GitHub: github.com/modd-africa/moddafricaes.\n\nInstall\n# pak (recommended — resolves system dependencies too)\n# install.packages(\"pak\")\npak::pak(\"modd-africa/moddafricaes\")\n\n# or with remotes / devtools\nremotes::install_github(\"modd-africa/moddafricaes\")\nYou will also need a Copernicus CDS account and an API key exported as CDS_API_KEY (see https://cds.climate.copernicus.eu/).\n\n\nThe pipeline\n\nAll bounding boxes use Copernicus CDS order c(N, W, S, E) — not sf::st_bbox()’s (xmin, ymin, xmax, ymax).\n\n\n\n\n\n\n\nFunction\nStage\nOutput\n\n\n\n\nget_bounding_box()\nSetup\nc(N, W, S, E) numeric vector (CDS order)\n\n\nextract_era5land()\nDownload\nOne NetCDF per (year, month)\n\n\ntransform_era5land()\nTransform\nOne Parquet per year (hourly)\n\n\ntransform_era5land_monthly()\nTransform\nOne Parquet (monthly means)\n\n\ntransform_era5land_minmax()\nTransform\nGeoTIFF stacks of monthly 2 m-temperature min / max\n\n\n\n\n\nEnd to end\nlibrary(moddafricaes)\n\n# 1. Derive a bounding box from a shapefile (zipped shapefiles work via /vsizip/)\nbbox &lt;- get_bounding_box(\n  \"/vsizip/utilities/province26.zip/provinces26/Province26.shp\"\n)\n\n# 2. Download hourly ERA5-Land NetCDFs for the bbox (needs CDS_API_KEY)\nextract_era5land(\n  bbox       = bbox,\n  years      = 2020:2021,\n  output_dir = \"data/era5land/nc\"\n)\n\n# 3. Transform hourly NetCDFs into one analysis-ready Parquet per year\ntransform_era5land(\n  input_dir  = \"data/era5land/nc\",\n  output_dir = \"data/era5land/parquet\",\n  dem_tif    = \"RDC_Elevation_Complete.tif\",\n  years      = 2020:2021\n)\nThe hourly transform de-accumulates precipitation and downward shortwave radiation per day, derives wind speed, relative humidity, vapour-pressure deficit and Celsius temperature, and joins DEM-derived elevation onto the ERA5-Land 0.1° grid. Every write step is idempotent: an existing readable output short-circuits the work, while a corrupt one is deleted and regenerated, so re-runs resume cleanly.\n\n\n\n\n\n\nKnown caveat. Forcing the de-accumulated daily totals to zero at hour 0 is exact only where 00 UTC falls during the night (as in central Africa). For areas where 00 UTC is daylight, real shortwave flux would be silently zeroed at the day boundary — revisit before applying the pipeline elsewhere."
+  },
+  {
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "The Project",
+    "section": "",
+    "text": "Background"
+  },
+  {
+    "objectID": "project.html#climate-and-health-in-a-changing-africa",
+    "href": "project.html#climate-and-health-in-a-changing-africa",
+    "title": "The Project",
+    "section": "Climate and health in a changing Africa",
+    "text": "Climate and health in a changing Africa\nAfrica’s climate is changing rapidly, reshaping where disease vectors live, how abundant they are, and when they peak. That raises the stakes for vector-borne disease control and for the decisions public-health systems must make. The project frames the problem around four priorities:\n\nHow effective are health systems at controlling disease?\nHow adaptable are decision-makers to emerging threats?\nHow are key vectors distributed, and how does that shift with the seasons?\nWhat optimised interventions, early-warning tools and evidence are needed to respond?\n\nMeeting those needs calls for models that are trustworthy, hold up in the real world, and keep pace with change.\nApproach"
+  },
+  {
+    "objectID": "project.html#the-era-modelling-architecture",
+    "href": "project.html#the-era-modelling-architecture",
+    "title": "The Project",
+    "section": "The ERA modelling architecture",
+    "text": "The ERA modelling architecture\nMoDD Africa is built around an Effective, Robust and Adaptable (ERA) approach to modelling:\n\nEffective — methods that produce answers decision-makers can act on.\nRobust — results that hold up under real-world uncertainty and incomplete data.\nAdaptable — models that evolve as conditions, questions and diseases change."
+  },
+  {
+    "objectID": "project.html#work-packages",
+    "href": "project.html#work-packages",
+    "title": "The Project",
+    "section": "Work packages",
+    "text": "Work packages\n\nWP1 ::: {.wp__body} ### Implementation Investigating the relationships between environmental change, vectors, disease and health systems.\n\n:::\n\nWP2 · WP3 ::: {.wp__body} ### Implementation systems Developing solutions that optimise the performance of new and existing malaria interventions.\n\n:::\n\nWP4 ::: {.wp__body} ### Operational Producing outputs with immediate utility and impact for malaria programmes.\n\n:::\n2024–2028"
+  },
+  {
+    "objectID": "project.html#what-we-will-deliver",
+    "href": "project.html#what-we-will-deliver",
+    "title": "The Project",
+    "section": "What we will deliver",
+    "text": "What we will deliver\nOver the four years of the project, MoDD Africa aims to:\n\nEstablish modelling hubs in Tanzania, the DRC and Nigeria.\nDevelop relevant, model-based advisory systems for malaria control.\nShare knowledge through inter-hub training, hackathons and modelling competitions, and a Community of Practice in vector epidemiology and modelling.\nForm a strong Evidence Synthesis Unit.\n\nWhile the initial focus is malaria, the approach is designed to extend to other mosquito-borne diseases, such as arboviruses."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Leadership"
+  },
+  {
+    "objectID": "contact.html#who-to-reach",
+    "href": "contact.html#who-to-reach",
+    "title": "Contact",
+    "section": "Who to reach",
+    "text": "Who to reach\nPrincipal Investigator & Coordinator Dr. Susan Rumisha — Ifakara Health Institute\nProject Administrator Diana Mwanamboka — Ifakara Health Institute\n\n\n\n\n\n\nAdd the DRC (INRB) and Nigeria (Osun State University) hub leads here as they are confirmed.\n\n\n\nFind us"
+  },
+  {
+    "objectID": "contact.html#project-code-and-institution",
+    "href": "contact.html#project-code-and-institution",
+    "title": "Contact",
+    "section": "Project, code and institution",
+    "text": "Project, code and institution\n\n  \n    Project\n    Project page at IHI\n    The official MoDD Africa project record at the Ifakara Health Institute.\n    →\n  \n  \n    Code\n    GitHub organisation\n    Open repositories from the project, including the evidence-synthesis tooling.\n    →\n  \n  \n    Institute\n    Ifakara Health Institute\n    The coordinating institution and main host of the project.\n    →\n  \n\nFor general enquiries, reach the coordinating team through the Ifakara Health Institute. A dedicated project email can be added here once available."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Modelling for Decisions in a Dynamic Africa",
+    "section": "",
+    "text": "Wellcome Trust · 2024–2028 · TZ / CD / NG\n        Modelling for Decisions in a Dynamic Africa\n        A pan-African network turning environmental, entomological and health data into model-based evidence and forecasts — so malaria programmes can act ahead of a shifting climate.\n        \n          Explore the project →\n          Evidence synthesis\n        \n      \n\n      \n        \n          \n          \n          \n          \n          \n          \n          \n          \n          \n          \n          \n        \n\n        \n        \n        \n\n        \n          \n          NG\n          07°N 05°E\n        \n        \n          \n          CD\n          04°S 15°E\n        \n        \n          \n          TZ\n          07°S 39°E\n          COORDINATING HUB\n        \n      \n    \n  \n\n\n\n\n  \n    FUNDER Wellcome Trust\n    PERIOD Nov 2024 – Oct 2028\n    COORDINATION Ifakara Health Institute, TZ\n    FOCUS Mosquito-borne disease · malaria\n  \n\n\n\n\n  \n    The challenge\n    Seeing change before it arrives\n    Africa's climate is shifting where vectors live, how abundant they are and when they peak — and with them the risk of malaria and other mosquito-borne disease. Control programmes need to see those changes coming, not read them after the fact. MoDD Africa builds the models, evidence and forecasting tools that let decision-makers act early and adapt as conditions change.\n\n    \n      \n        Science\n        The Project\n        Background, the ERA modelling architecture, and four work packages from environment to operations.\n        →\n      \n      \n        Network\n        Hubs & Partners\n        Modelling hubs in Tanzania, the DRC and Nigeria, working with national malaria programmes.\n        →\n      \n      \n        Data & code\n        Evidence Synthesis\n        Open, reproducible tooling to collate, analyse and communicate evidence — starting with climate reanalysis.\n        →\n      \n      \n        People\n        Get Involved\n        Training, hackathons, modelling competitions and a regional community of practice.\n        →\n      \n    \n  \n\n\n\n\n  \n    Model-based evidence, advice and forecasting — built in Africa, for Africa's public-health decisions."
+  },
+  {
+    "objectID": "engage.html",
+    "href": "engage.html",
+    "title": "Get Involved",
+    "section": "",
+    "text": "Capacity"
+  },
+  {
+    "objectID": "engage.html#training-and-capacity-building",
+    "href": "engage.html#training-and-capacity-building",
+    "title": "Get Involved",
+    "section": "Training and capacity building",
+    "text": "Training and capacity building\nA core aim of the project is to build a lasting network of African modellers. Hands-on training runs across the hubs in Tanzania, the DRC and Nigeria, pairing early-career researchers with experienced modellers and real decision problems.\nOpen challenges"
+  },
+  {
+    "objectID": "engage.html#hackathons-and-modelling-competitions",
+    "href": "engage.html#hackathons-and-modelling-competitions",
+    "title": "Get Involved",
+    "section": "Hackathons and modelling competitions",
+    "text": "Hackathons and modelling competitions\nThe network runs hackathons and modelling competitions — open challenges that grow skills, surface new approaches, and connect modellers across countries and disciplines.\nCommunity"
+  },
+  {
+    "objectID": "engage.html#a-community-of-practice",
+    "href": "engage.html#a-community-of-practice",
+    "title": "Get Involved",
+    "section": "A Community of Practice",
+    "text": "A Community of Practice\nMoDD Africa contributes to a regional Community of Practice (CoP) in vector epidemiology and modelling, a space to share methods, data and lessons and to keep the ecosystem connected as it grows.\nProgrammes"
+  },
+  {
+    "objectID": "engage.html#for-national-malaria-programmes",
+    "href": "engage.html#for-national-malaria-programmes",
+    "title": "Get Involved",
+    "section": "For national malaria programmes",
+    "text": "For national malaria programmes\nWe work directly with National Malaria Programmes to make sure models answer the questions that matter for control and elimination — and that the outputs are usable where decisions are made.\nCareers"
+  },
+  {
+    "objectID": "engage.html#opportunities",
+    "href": "engage.html#opportunities",
+    "title": "Get Involved",
+    "section": "Opportunities",
+    "text": "Opportunities\nResearch and PhD positions open periodically through the Ifakara Health Institute. See current openings on the IHI jobs board, or get in touch via the Contact page."
+  }
+]

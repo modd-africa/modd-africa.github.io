@@ -1,0 +1,31 @@
+name: Publish site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      # This is a pure Markdown / HTML site (no executed R or Python code),
+      # so no language runtimes are needed. If you later add executable
+      # `{r}` or `{python}` cells, add the matching setup step here
+      # (e.g. r-lib/actions/setup-r or actions/setup-python) and enable freeze.
+      - name: Render and publish to GitHub Pages
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
