@@ -10,13 +10,13 @@ website:
     disease control, with a primary focus on malaria.
   site-url: "https://modd-africa.github.io"
   repo-url: "https://github.com/modd-africa"
-  favicon: assets/brand.svg
+  favicon: assets/MoDD_logo
   open-graph: true
   twitter-card: true
   navbar:
     background: light
     pinned: true
-    logo: assets/brand.svg
+    logo: assets/MoDD_logo
     logo-alt: "MoDD Africa"
     title: "MoDD Africa"
     collapse-below: lg
