@@ -12,3 +12,4 @@ The link may be out of date. Try one of these instead:
 - [Evidence Synthesis](evidence-synthesis.qmd)
 - [Get Involved](engage.qmd)
 - [Contact](contact.qmd)
+- [News](news.qmd)
