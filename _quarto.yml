@@ -29,6 +29,8 @@ website:
         href: evidence-synthesis.qmd
       - text: "Get Involved"
         href: engage.qmd
+      - text: "News"
+        href: news.qmd  
     right:
       - text: "Contact"
         href: contact.qmd
@@ -49,6 +51,8 @@ website:
         href: evidence-synthesis.qmd
       - text: "Get Involved"
         href: engage.qmd
+      - text: "News"
+        href: news.qmd
       - text: "Contact"
         href: contact.qmd
     right: "Funded by the Wellcome Trust · 2024–2028"
