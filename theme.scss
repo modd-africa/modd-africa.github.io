@@ -11,9 +11,9 @@ $line:    #D3E3D7;   // hairline borders
 $muted:   #4E625A;   // secondary text / captions
 
 // ── Typography ───────────────────────────────────────────────────────
-$font-family-sans-serif: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 $font-family-monospace:  "IBM Plex Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-$headings-font-family:   "Space Grotesk", "IBM Plex Sans", sans-serif;
+$headings-font-family:   "Sora", "Inter", sans-serif;
 $headings-font-weight:   600;
 $headings-line-height:   1.15;
 $font-size-root:         18px;
@@ -201,8 +201,15 @@ div.sourceCode { border-radius: 10px; border: 1px solid var(--line); }
 .nav-footer a:hover { color: #fff; }
 .nav-footer strong { color: #fff; }
 
-// ── Motion: hero + card reveal ───────────────────────────────────────
-@media (prefers-reduced-motion: no-preference) {
-  .fcard, .hubcard, .post { animation: mdd-rise .5s ease both; }
-  @keyframes mdd-rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+// ── Team / people ────────────────────────────────────────────────────
+.team { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.2rem; margin-top: 2rem; }
+.person { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 1.5rem 1.4rem; text-align: center; }
+.person .avatar {
+  width: 64px; height: 64px; border-radius: 50%; object-fit: cover;
+  background: var(--haze); color: var(--field-d);
+  font-family: $headings-font-family; font-weight: 600; font-size: 1.2rem;
+  display: flex; align-items: center; justify-content: center; margin: 0 auto .9rem;
 }
+.person h3 { font-size: 1.05rem; margin: 0 0 .25rem; color: var(--ink); }
+.person .role { font-size: .9rem; color: var(--field-d); font-weight: 500; margin: 0 0 .15rem; }
+.person .org { font-family: "IBM Plex Mono", monospace; font-size: .76rem; color: var(--muted); margin: 0; line-height: 1.4; }
