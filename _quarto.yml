@@ -57,7 +57,8 @@ website:
         href: news.qmd
       - text: "Contact"
         href: contact.qmd
-    right: "Funded by the Wellcome Trust · 2024–2028"
+    right: |
+      [![Wellcome Trust](assets/wellcome-trust.png){height=26px}](https://wellcome.org)
 
 format:
   html:

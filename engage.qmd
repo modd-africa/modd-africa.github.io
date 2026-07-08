@@ -7,7 +7,13 @@ subtitle: "MoDD Africa is as much about people and networks as it is about model
 
 ## Training and capacity building
 
-A core aim of the project is to build a lasting network of African modellers. Hands-on training runs across the hubs in Tanzania, the DRC and Nigeria, pairing early-career researchers with experienced modellers and real decision problems.
+A core aim of the project is to build a lasting network of African modellers, with capacity building embedded in how the project works day to day:
+
+- **At each hub** — learning by doing, on real decision problems.
+- **Across hubs** — teams working jointly and sharing methods.
+- **Across the ecosystem** — knowledge sharing and cross-learning with partners and programmes.
+
+Hands-on training runs across the hubs in Tanzania, the DRC and Nigeria, pairing early-career researchers with experienced modellers.
 
 [Open challenges]{.eyebrow}
 

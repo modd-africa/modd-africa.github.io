@@ -1,17 +1,17 @@
 ---
 title: "The Project"
-subtitle: "Modelling for Decisions in a Dynamic Africa is a four-year initiative (2024–2028) led by the Ifakara Health Institute, with hubs in Tanzania, the DRC and Nigeria, funded by the Wellcome Trust."
+subtitle: "Modelling for Decisions in a Dynamic Africa is a four-year initiative (Nov 2024 – Oct 2028) led by the Ifakara Health Institute, with hubs in Tanzania, the DRC and Nigeria, funded by the Wellcome Trust."
 ---
 
 [Background]{.eyebrow}
 
 ## Climate and health in a changing Africa
 
-Africa's climate is changing rapidly, reshaping where disease vectors live, how abundant they are, and when they peak. That raises the stakes for vector-borne disease control and for the decisions public-health systems must make. The project frames the problem around four priorities:
+Africa's climate is changing rapidly, reshaping where disease vectors live, how abundant they are, and when they peak. That raises the stakes for vector-borne disease control and for the decisions public-health systems must make. The three hub countries alone — the DRC, Nigeria and Tanzania — account for **41.8% of global malaria cases and 46.5% of deaths** (WHO World Malaria Report, 2024), which is why the network starts here. The project frames the problem around four priorities:
 
-1. How effective are health systems at controlling disease?
-2. How adaptable are decision-makers to emerging threats?
-3. How are key vectors distributed, and how does that shift with the seasons?
+1. How is the environment changing for vectors, and how are populations affected?
+2. How effective are health systems at controlling disease?
+3. How adaptable are programmes and decision-makers to emerging threats?
 4. What optimised interventions, early-warning tools and evidence are needed to respond?
 
 Meeting those needs calls for models that are trustworthy, hold up in the real world, and keep pace with change.
@@ -26,33 +26,43 @@ MoDD Africa is built around an **Effective, Robust and Adaptable (ERA)** approac
 - **Robust** — results that hold up under real-world uncertainty and incomplete data.
 - **Adaptable** — models that evolve as conditions, questions and diseases change.
 
+The way of working is **collaborative, transparent, sustainable and adaptive**: co-designing with National Malaria Programmes and partners from the start, being open about model outputs and their limitations, and strengthening the existing ecosystem rather than working around it.
+
 ## Work packages
 
 ::: {.wp}
 [WP1]{.wp__tag}
 ::: {.wp__body}
-### Implementation
-Investigating the relationships between environmental change, vectors, disease and health systems.
+### Vectors & environment
+Distribution and seasonality of vectors in the context of current environmental change.
 :::
 :::
 
 ::: {.wp}
-[WP2 · WP3]{.wp__tag}
+[WP2]{.wp__tag}
 ::: {.wp__body}
-### Implementation systems
-Developing solutions that optimise the performance of new and existing malaria interventions.
+### Interventions
+The impact of environmental change on malaria intervention strategies.
+:::
+:::
+
+::: {.wp}
+[WP3]{.wp__tag}
+::: {.wp__body}
+### Early warning
+Unifying entomological and epidemiological models to deliver early-warning systems for emerging health threats.
 :::
 :::
 
 ::: {.wp}
 [WP4]{.wp__tag}
 ::: {.wp__body}
-### Operational
-Producing outputs with immediate utility and impact for malaria programmes.
+### Skills & networks
+A unified framework for skill strengthening, networking and connectedness to maximise modelling impact.
 :::
 :::
 
-[2024–2028]{.eyebrow}
+[Nov 2024 – Oct 2028]{.eyebrow}
 
 ## What we will deliver
 
@@ -64,3 +74,9 @@ Over the four years of the project, MoDD Africa aims to:
 - Form a strong Evidence Synthesis Unit.
 
 While the initial focus is malaria, the approach is designed to extend to other mosquito-borne diseases, such as arboviruses.
+
+[Funding]{.eyebrow}
+
+## Funding
+
+This work was supported by the Wellcome Trust [grant number]. MoDD Africa runs from November 2024 to October 2028.
