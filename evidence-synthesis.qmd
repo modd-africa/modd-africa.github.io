@@ -2,6 +2,13 @@
 title: "Evidence Synthesis"
 subtitle: "The Evidence Synthesis Unit collates, analyses and communicates the evidence behind MoDD Africa's models and advice. The tooling is open and reproducible."
 ---
+[The unit]{.eyebrow}
+
+## From data to decisions
+
+The Evidence Synthesis Unit runs a repeatable pipeline from raw data to decision-ready outputs: acquiring and reviewing existing data, re-formatting it for modelling, building shared databases and visual tools (such as **MosquitoDB** and interactive **Shiny apps**), then analysing, validating and packaging results for National Malaria Programmes and partners — and updating them as new data and feedback arrive.
+
+The modelling framework spans species composition (single- and multi-species), spatial-temporal methods (e.g. GAMs and Bayesian hierarchical models) and explicit seasonality, driven by fine-resolution climate and environmental data and structured from national down to sub-national levels — so outputs can inform practical decisions such as timing IRS and LLIN campaigns to align with peak transmission.
 
 [Open tooling]{.eyebrow}
 

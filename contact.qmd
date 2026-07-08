@@ -7,15 +7,14 @@ subtitle: "MoDD Africa is coordinated by the Ifakara Health Institute in Tanzani
 
 ## Who to reach
 
-[Principal Investigator & Coordinator]{.eyebrow}
+[Principal Investigator]{.eyebrow}
 **Dr. Susan Rumisha** — Ifakara Health Institute
 
-[Project Administrator]{.eyebrow}
-**Diana Mwanamboka** — Ifakara Health Institute
+[Programme Manager]{.eyebrow}
+**Sosthenes Ketende** — Ifakara Health Institute
 
-::: {.callout-note appearance="simple"}
-Add the DRC (INRB) and Nigeria (Osun State University) hub leads here as they are confirmed.
-:::
+[Country leads]{.eyebrow}
+**Yeromin Mlacha** — Tanzania · **Emery Metelo** — DR Congo · **Adedapo Adeogun** — Nigeria
 
 [Find us]{.eyebrow}
 
