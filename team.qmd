@@ -1,0 +1,58 @@
+---
+title: "Team"
+subtitle: "MoDD Africa is delivered by researchers and coordinators across the Tanzania, DRC and Nigeria hubs, led from the Ifakara Health Institute."
+---
+
+[Coordination]{.eyebrow}
+
+## Leadership
+
+```{=html}
+<div class="team">
+  <div class="person">
+    <div class="avatar">SR</div>
+    <h3>Dr. Susan Rumisha</h3>
+    <p class="role">Principal Investigator &amp; Coordinator</p>
+    <p class="org">Ifakara Health Institute</p>
+  </div>
+  <div class="person">
+    <div class="avatar">DM</div>
+    <h3>Diana Mwanamboka</h3>
+    <p class="role">Project Administrator</p>
+    <p class="org">Ifakara Health Institute</p>
+  </div>
+</div>
+```
+
+[The hubs]{.eyebrow}
+
+## Hub leads
+
+```{=html}
+<div class="team">
+  <div class="person">
+    <div class="avatar">IHI</div>
+    <h3>Tanzania</h3>
+    <p class="role">Coordinating hub</p>
+    <p class="org">Ifakara Health Institute</p>
+  </div>
+  <div class="person">
+    <div class="avatar">INRB</div>
+    <h3>DR Congo</h3>
+    <p class="role">Hub lead · to be confirmed</p>
+    <p class="org">Institut National de Recherche Biomédicale</p>
+  </div>
+  <div class="person">
+    <div class="avatar">OSU</div>
+    <h3>Nigeria</h3>
+    <p class="role">Hub lead · to be confirmed</p>
+    <p class="org">Osun State University</p>
+  </div>
+</div>
+```
+
+[The wider network]{.eyebrow}
+
+## A growing community
+
+Beyond the core team, MoDD Africa connects modellers, researchers and decision-makers through a regional Community of Practice in vector epidemiology and modelling, and works directly with National Malaria Programmes across the three countries. New team members and hub leads will be added here as the network formalises.
