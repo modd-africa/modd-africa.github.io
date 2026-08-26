@@ -1,0 +1,17 @@
+---
+title: "Partners"
+subtitle: "MoDD Africa works hand in hand with national malaria programmes and research partners across the continent."
+---
+
+[Collaborators]{.eyebrow}
+
+## Working with the people who decide
+
+The hubs work directly with **National Malaria Programmes** — including the National Malaria Control Programme (NMCP) in Tanzania — so that models answer the questions decision-makers actually face. The network is reinforced by a regional **Community of Practice** in vector epidemiology and modelling, connecting modellers, researchers and decision-makers across the three countries as the project grows.
+
+```{=html}
+<div class="partners">
+  <img src="assets/partner-ihi.jpeg" alt="Ifakara Health Institute">
+  <img src="assets/partner-nmcp.png" alt="National Malaria Control Programme, Tanzania">
+</div>
+```

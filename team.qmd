@@ -1,6 +1,6 @@
 ---
-title: "Team"
-subtitle: "MoDD Africa is delivered by a regional office at the Ifakara Health Institute and country leads across the Tanzania, DRC and Nigeria hubs."
+title: "Team & Hubs"
+subtitle: "MoDD Africa is delivered by a regional office at the Ifakara Health Institute and modelling teams across the Tanzania, DRC and Nigeria hubs."
 ---
 
 ```{=html}
@@ -38,48 +38,69 @@ subtitle: "MoDD Africa is delivered by a regional office at the Ifakara Health I
 <div class="team-filter">
   <button data-group="all" class="is-active">All</button>
   <button data-group="regional">Regional office</button>
-  <button data-group="hubs">Hub leads</button>
+  <button data-group="tanzania">Tanzania</button>
+  <button data-group="drc">DR Congo</button>
+  <button data-group="nigeria">Nigeria</button>
 </div>
 
 <div class="team team-grid">
+
   <div class="person" data-group="regional">
     <img class="avatar" src="assets/team-amratia.jpg" alt="Punam Amratia">
-    <h3>Dr. Punam Amratia</h3>
-    <p class="role">Technical Lead</p>
+    <h3>Dr. Punam Amratia</h3><p class="role">Technical Lead</p>
   </div>
   <div class="person" data-group="regional">
     <img class="avatar" src="assets/team-ketende.jpg" alt="Sosthenes Ketende">
-    <h3>Sosthenes Ketende</h3>
-    <p class="role">Programme Manager</p>
+    <h3>Sosthenes Ketende</h3><p class="role">Programme Manager</p>
   </div>
   <div class="person" data-group="regional">
     <div class="avatar">DM</div>
-    <h3>Diana Mwanamboka</h3>
-    <p class="role">Project Administrator</p>
+    <h3>Diana Mwanamboka</h3><p class="role">Project Administrator</p>
   </div>
   <div class="person" data-group="regional">
     <img class="avatar" src="assets/team-kiware.jpg" alt="Samson Kiware">
-    <h3>Samson Kiware</h3>
-    <p class="role">Mathematical Modelling</p>
+    <h3>Samson Kiware</h3><p class="role">Mathematical Modelling</p>
   </div>
-  <div class="person" data-group="hubs">
+
+  <div class="person" data-group="tanzania">
     <img class="avatar" src="assets/team-mlacha.jpg" alt="Yeromin Mlacha">
-    <h3>Dr. Yeromin Mlacha</h3>
-    <p class="role">Tanzania Hub Lead</p>
-    <p class="org">Ifakara Health Institute</p>
+    <h3>Dr. Yeromin Mlacha</h3><p class="role">Hub Lead</p><p class="org">Tanzania</p>
   </div>
-  <div class="person" data-group="hubs">
+  <div class="person" data-group="tanzania">
+    <div class="avatar">LN</div>
+    <h3>Dr. Lembris Njoto</h3><p class="role">Senior Modeller</p><p class="org">Tanzania</p>
+  </div>
+  <div class="person" data-group="tanzania">
+    <div class="avatar">KK</div>
+    <h3>Kaiza Kunonu</h3><p class="role">Evidence Synthesis Lead</p><p class="org">Tanzania</p>
+  </div>
+
+  <div class="person" data-group="drc">
     <img class="avatar" src="assets/team-metelo.jpg" alt="Emery Metelo">
-    <h3>Prof. Emery Metelo</h3>
-    <p class="role">DR Congo Hub Lead</p>
-    <p class="org">INRB</p>
+    <h3>Prof. Emery Metelo</h3><p class="role">Hub Lead</p><p class="org">DR Congo</p>
   </div>
-  <div class="person" data-group="hubs">
+  <div class="person" data-group="drc">
+    <div class="avatar">RY</div>
+    <h3>Rodriguez Yombo</h3><p class="role">Senior Modeller</p><p class="org">DR Congo</p>
+  </div>
+  <div class="person" data-group="drc">
+    <div class="avatar">AB</div>
+    <h3>Arsene Bokulu</h3><p class="role">Evidence Synthesis Lead</p><p class="org">DR Congo</p>
+  </div>
+
+  <div class="person" data-group="nigeria">
     <img class="avatar" src="assets/team-adeogun.jpg" alt="Adedapo Adeogun">
-    <h3>Dr. Adedapo Adeogun</h3>
-    <p class="role">Nigeria Hub Lead</p>
-    <p class="org">Osun State University</p>
+    <h3>Dr. Adedapo Adeogun</h3><p class="role">Hub Lead</p><p class="org">Nigeria</p>
   </div>
+  <div class="person" data-group="nigeria">
+    <div class="avatar">TA</div>
+    <h3>Taiwo Adekunle</h3><p class="role">Senior Modeller</p><p class="org">Nigeria</p>
+  </div>
+  <div class="person" data-group="nigeria">
+    <div class="avatar">BA</div>
+    <h3>Babalola Ayodele</h3><p class="role">Senior Modeller</p><p class="org">Nigeria</p>
+  </div>
+
 </div>
 
 <script>
@@ -99,8 +120,38 @@ subtitle: "MoDD Africa is delivered by a regional office at the Ifakara Health I
 </script>
 ```
 
-[The wider network]{.eyebrow}
+[The network]{.eyebrow}
 
-## A growing community
+## The hubs
 
-Beyond the core team, MoDD Africa connects modellers, researchers and decision-makers through a regional Community of Practice in vector epidemiology and modelling, and works directly with National Malaria Programmes across the three countries.
+Each hub builds local modelling capacity while sharing methods, data and lessons across the network. Tanzania coordinates; the DRC and Nigeria anchor the work in different ecological and epidemiological settings.
+
+```{=html}
+<div class="hubcards">
+  <div class="hubcard">
+    <img src="assets/hub-tanzania.jpg" alt="Ifakara Health Institute, Tanzania.">
+    <div class="hubcard__body">
+      <span class="tag">Coordinating hub</span>
+      <div class="coord" style="margin-top:.6rem">06°48′S · 39°17′E</div>
+      <h3>Tanzania — Ifakara Health Institute</h3>
+      <p>Hosts the project as regional coordinator and main recipient of funds, leading efforts to establish the hubs and build regional capacity.</p>
+    </div>
+  </div>
+  <div class="hubcard">
+    <img src="assets/hub-drc.jpg" alt="National Institute for Biomedical Research, DR Congo.">
+    <div class="hubcard__body">
+      <div class="coord">04°19′S · 15°19′E</div>
+      <h3>DR Congo — INRB</h3>
+      <p>Extends the modelling work to one of the highest-burden malaria settings on the continent, from the National Institute for Biomedical Research.</p>
+    </div>
+  </div>
+  <div class="hubcard">
+    <img src="assets/hub-nigeria.jpg" alt="Osun State University, Nigeria.">
+    <div class="hubcard__body">
+      <div class="coord">07°46′N · 04°34′E</div>
+      <h3>Nigeria — Osun State University</h3>
+      <p>Brings the network into West Africa's distinct transmission and health-system context.</p>
+    </div>
+  </div>
+</div>
+```
