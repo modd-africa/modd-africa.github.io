@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -39,10 +42,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-f3625b252fde649a6ec2d8ccc558f420.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-c290ef4a59108b95bc75a535d63a529b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ee515594022d98f5153aee478077b0e4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-a41398747fe61f773c2dd27da28060e8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -93,11 +96,15 @@ background: #0F2E1C;
 
 
 <meta property="og:title" content="Team – MoDD Africa">
-<meta property="og:description" content="MoDD Africa is delivered by researchers and coordinators across the Tanzania, DRC and Nigeria hubs, led from the Ifakara Health Institute.">
+<meta property="og:description" content="MoDD Africa is delivered by a regional office at the Ifakara Health Institute and country leads across the Tanzania, DRC and Nigeria hubs.">
+<meta property="og:image" content="https://modd-africa.github.io/assets/team-rumisha.jpg">
 <meta property="og:site_name" content="MoDD Africa">
+<meta property="og:image:alt" content="Susan Rumisha">
 <meta name="twitter:title" content="Team – MoDD Africa">
-<meta name="twitter:description" content="MoDD Africa is delivered by researchers and coordinators across the Tanzania, DRC and Nigeria hubs, led from the Ifakara Health Institute.">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="MoDD Africa is delivered by a regional office at the Ifakara Health Institute and country leads across the Tanzania, DRC and Nigeria hubs.">
+<meta name="twitter:image" content="https://modd-africa.github.io/assets/team-rumisha.jpg">
+<meta name="twitter:image:alt" content="Susan Rumisha">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -168,7 +175,7 @@ background: #0F2E1C;
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">Team</h1>
-            <p class="subtitle lead">MoDD Africa is delivered by researchers and coordinators across the Tanzania, DRC and Nigeria hubs, led from the Ifakara Health Institute.</p>
+            <p class="subtitle lead">MoDD Africa is delivered by a regional office at the Ifakara Health Institute and country leads across the Tanzania, DRC and Nigeria hubs.</p>
                       </div>
   </div>
     
@@ -192,52 +199,97 @@ background: #0F2E1C;
 
 
 
+<style>
+  .team--lead { grid-template-columns: minmax(240px, 340px); justify-content: center; }
+  .person--lead .avatar { width: 120px; height: 120px; font-size: 2rem; }
+  .team-filter { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.6rem 0 0; }
+  .team-filter button { font-family: "IBM Plex Mono", monospace; font-size: .76rem; letter-spacing: .04em; padding: .5rem 1.05rem; border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--muted); cursor: pointer; transition: all .15s ease; }
+  .team-filter button:hover { border-color: var(--field); color: var(--field-d); }
+  .team-filter button.is-active { background: var(--field); border-color: var(--field); color: #fff; }
+  .team-grid .person[hidden] { display: none; }
+</style>
 <p><span class="eyebrow">Coordination</span></p>
 <section id="leadership" class="level2">
 <h2 class="anchored" data-anchor-id="leadership">Leadership</h2>
-<div class="team">
-  <div class="person">
-    <div class="avatar">SR</div>
+<div class="team team--lead">
+  <div class="person person--lead">
+    <img class="avatar" src="assets/team-rumisha.jpg" alt="Susan Rumisha">
     <h3 class="anchored">Dr. Susan Rumisha</h3>
-    <p class="role">Principal Investigator &amp; Coordinator</p>
+    <p class="role">Team Lead</p>
     <p class="org">Ifakara Health Institute</p>
   </div>
-  <div class="person">
+</div>
+<p><span class="eyebrow">The team</span></p>
+</section>
+<section id="our-people" class="level2">
+<h2 class="anchored" data-anchor-id="our-people">Our people</h2>
+<div class="team-filter">
+  <button data-group="all" class="is-active">All</button>
+  <button data-group="regional">Regional office</button>
+  <button data-group="hubs">Hub leads</button>
+</div>
+
+<div class="team team-grid">
+  <div class="person" data-group="regional">
+    <img class="avatar" src="assets/team-amratia.jpg" alt="Punam Amratia">
+    <h3 class="anchored">Dr. Punam Amratia</h3>
+    <p class="role">Technical Lead</p>
+  </div>
+  <div class="person" data-group="regional">
+    <img class="avatar" src="assets/team-ketende.jpg" alt="Sosthenes Ketende">
+    <h3 class="anchored">Sosthenes Ketende</h3>
+    <p class="role">Programme Manager</p>
+  </div>
+  <div class="person" data-group="regional">
     <div class="avatar">DM</div>
     <h3 class="anchored">Diana Mwanamboka</h3>
     <p class="role">Project Administrator</p>
+  </div>
+  <div class="person" data-group="regional">
+    <img class="avatar" src="assets/team-kiware.jpg" alt="Samson Kiware">
+    <h3 class="anchored">Samson Kiware</h3>
+    <p class="role">Mathematical Modelling</p>
+  </div>
+  <div class="person" data-group="hubs">
+    <img class="avatar" src="assets/team-mlacha.jpg" alt="Yeromin Mlacha">
+    <h3 class="anchored">Dr. Yeromin Mlacha</h3>
+    <p class="role">Tanzania Hub Lead</p>
     <p class="org">Ifakara Health Institute</p>
   </div>
-</div>
-<p><span class="eyebrow">The hubs</span></p>
-</section>
-<section id="hub-leads" class="level2">
-<h2 class="anchored" data-anchor-id="hub-leads">Hub leads</h2>
-<div class="team">
-  <div class="person">
-    <div class="avatar">IHI</div>
-    <h3 class="anchored">Tanzania</h3>
-    <p class="role">Coordinating hub</p>
-    <p class="org">Ifakara Health Institute</p>
+  <div class="person" data-group="hubs">
+    <img class="avatar" src="assets/team-metelo.jpg" alt="Emery Metelo">
+    <h3 class="anchored">Prof. Emery Metelo</h3>
+    <p class="role">DR Congo Hub Lead</p>
+    <p class="org">INRB</p>
   </div>
-  <div class="person">
-    <div class="avatar">INRB</div>
-    <h3 class="anchored">DR Congo</h3>
-    <p class="role">Hub lead · to be confirmed</p>
-    <p class="org">Institut National de Recherche Biomédicale</p>
-  </div>
-  <div class="person">
-    <div class="avatar">OSU</div>
-    <h3 class="anchored">Nigeria</h3>
-    <p class="role">Hub lead · to be confirmed</p>
+  <div class="person" data-group="hubs">
+    <img class="avatar" src="assets/team-adeogun.jpg" alt="Adedapo Adeogun">
+    <h3 class="anchored">Dr. Adedapo Adeogun</h3>
+    <p class="role">Nigeria Hub Lead</p>
     <p class="org">Osun State University</p>
   </div>
 </div>
+
+<script>
+(function () {
+  const bar = document.querySelector('.team-filter');
+  if (!bar) return;
+  const cards = document.querySelectorAll('.team-grid .person');
+  bar.addEventListener('click', function (e) {
+    const btn = e.target.closest('button');
+    if (!btn) return;
+    bar.querySelectorAll('button').forEach(function (b) { b.classList.remove('is-active'); });
+    btn.classList.add('is-active');
+    const g = btn.dataset.group;
+    cards.forEach(function (c) { c.hidden = (g !== 'all' && c.dataset.group !== g); });
+  });
+})();
+</script>
 <p><span class="eyebrow">The wider network</span></p>
 </section>
 <section id="a-growing-community" class="level2">
 <h2 class="anchored" data-anchor-id="a-growing-community">A growing community</h2>
-<p>Beyond the core team, MoDD Africa connects modellers, researchers and decision-makers through a regional Community of Practice in vector epidemiology and modelling, and works directly with National Malaria Programmes across the three countries. New team members and hub leads will be added here as the network formalises.</p>
+<p>Beyond the core team, MoDD Africa connects modellers, researchers and decision-makers through a regional Community of Practice in vector epidemiology and modelling, and works directly with National Malaria Programmes across the three countries.</p>
 
 
 </section>

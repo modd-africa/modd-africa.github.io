@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "evidence-synthesis.html",
-    "href": "evidence-synthesis.html",
-    "title": "Evidence Synthesis",
-    "section": "",
-    "text": "The unit"
-  },
-  {
-    "objectID": "evidence-synthesis.html#from-data-to-decisions",
-    "href": "evidence-synthesis.html#from-data-to-decisions",
-    "title": "Evidence Synthesis",
-    "section": "From data to decisions",
-    "text": "From data to decisions\nThe Evidence Synthesis Unit runs a repeatable pipeline from raw data to decision-ready outputs: acquiring and reviewing existing data, re-formatting it for modelling, building shared databases and visual tools (such as MosquitoDB and interactive Shiny apps), then analysing, validating and packaging results for National Malaria Programmes and partners — and updating them as new data and feedback arrive.\nThe modelling framework spans species composition (single- and multi-species), spatial-temporal methods (e.g. GAMs and Bayesian hierarchical models) and explicit seasonality, driven by fine-resolution climate and environmental data and structured from national down to sub-national levels — so outputs can inform practical decisions such as timing IRS and LLIN campaigns to align with peak transmission.\nOpen tooling"
-  },
-  {
-    "objectID": "evidence-synthesis.html#the-moddafricaes-package",
-    "href": "evidence-synthesis.html#the-moddafricaes-package",
-    "title": "Evidence Synthesis",
-    "section": "The moddafricaes package",
-    "text": "The moddafricaes package\nmoddafricaes — MoDD Africa Evidence Synthesis — is the unit’s R package for collating, analysing and communicating evidence. Its first end-to-end pipeline turns ERA5-Land climate reanalysis into analysis-ready data: derive a study-area bounding box from a shapefile, download hourly NetCDFs from the Copernicus Climate Data Store (CDS), and transform them into Parquet (hourly or monthly) or GeoTIFF (monthly minimum / maximum temperature).\nThe source lives on GitHub: github.com/modd-africa/moddafricaes.\n\nInstall\n# pak (recommended — resolves system dependencies too)\n# install.packages(\"pak\")\npak::pak(\"modd-africa/moddafricaes\")\n\n# or with remotes / devtools\nremotes::install_github(\"modd-africa/moddafricaes\")\nYou will also need a Copernicus CDS account and an API key exported as CDS_API_KEY (see https://cds.climate.copernicus.eu/).\n\n\nThe pipeline\n\nAll bounding boxes use Copernicus CDS order c(N, W, S, E) — not sf::st_bbox()’s (xmin, ymin, xmax, ymax).\n\n\n\n\n\n\n\nFunction\nStage\nOutput\n\n\n\n\nget_bounding_box()\nSetup\nc(N, W, S, E) numeric vector (CDS order)\n\n\nextract_era5land()\nDownload\nOne NetCDF per (year, month)\n\n\ntransform_era5land()\nTransform\nOne Parquet per year (hourly)\n\n\ntransform_era5land_monthly()\nTransform\nOne Parquet (monthly means)\n\n\ntransform_era5land_minmax()\nTransform\nGeoTIFF stacks of monthly 2 m-temperature min / max\n\n\n\n\n\nEnd to end\nlibrary(moddafricaes)\n\n# 1. Derive a bounding box from a shapefile (zipped shapefiles work via /vsizip/)\nbbox &lt;- get_bounding_box(\n  \"/vsizip/utilities/province26.zip/provinces26/Province26.shp\"\n)\n\n# 2. Download hourly ERA5-Land NetCDFs for the bbox (needs CDS_API_KEY)\nextract_era5land(\n  bbox       = bbox,\n  years      = 2020:2021,\n  output_dir = \"data/era5land/nc\"\n)\n\n# 3. Transform hourly NetCDFs into one analysis-ready Parquet per year\ntransform_era5land(\n  input_dir  = \"data/era5land/nc\",\n  output_dir = \"data/era5land/parquet\",\n  dem_tif    = \"RDC_Elevation_Complete.tif\",\n  years      = 2020:2021\n)\nThe hourly transform de-accumulates precipitation and downward shortwave radiation per day, derives wind speed, relative humidity, vapour-pressure deficit and Celsius temperature, and joins DEM-derived elevation onto the ERA5-Land 0.1° grid. Every write step is idempotent: an existing readable output short-circuits the work, while a corrupt one is deleted and regenerated, so re-runs resume cleanly.\n\n\n\n\n\n\nKnown caveat. Forcing the de-accumulated daily totals to zero at hour 0 is exact only where 00 UTC falls during the night (as in central Africa). For areas where 00 UTC is daylight, real shortwave flux would be silently zeroed at the day boundary — revisit before applying the pipeline elsewhere."
-  },
-  {
     "objectID": "news.html",
     "href": "news.html",
     "title": "News",
@@ -42,53 +21,11 @@
     "text": "The network launches at its project leads kickoff\nMoDD Africa formally got under way with a three-day kickoff meeting for project leads, hosted at the International Centre of Insect Physiology and Ecology (ICIPE) in Nairobi. Technical staff, country leads and senior researchers came together to align on the project’s four-year agenda.\nThe first day set out the full roadmap, with the Tanzania, Nigeria and DRC teams introducing the very different ecological and health-system settings each hub will work in, and the group agreeing on first-year activities and deliverables. Day two turned to the science — malaria interventions in urban settings, early-warning systems for emerging threats, and bringing entomological and epidemiological models together — alongside a working session mapping where usable data exists and where the gaps remain. The final day focused on getting operational: recruitment, budgets, logistics, and the skills and networks needed to deliver.\nThe hubs left with a clear next step: convening their own national kickoffs to bring in local stakeholders, including the National Malaria Programmes.\nRead the full write-up at IHI →"
   },
   {
-    "objectID": "hubs.html",
-    "href": "hubs.html",
-    "title": "Hubs & Partners",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Modelling for Decisions in a Dynamic Africa",
     "section": "",
-    "text": "The network"
-  },
-  {
-    "objectID": "hubs.html#three-hubs-one-architecture",
-    "href": "hubs.html#three-hubs-one-architecture",
-    "title": "Hubs & Partners",
-    "section": "Three hubs, one architecture",
-    "text": "Three hubs, one architecture\nEach hub builds local modelling capacity while sharing methods, data and lessons across the network. Tanzania coordinates; the DRC and Nigeria anchor the work in different ecological and epidemiological settings.\n\n  \n    \n    \n      Coordinating hub\n      06°48′S · 39°17′E\n      Tanzania — Ifakara Health Institute\n      Hosts the project as regional coordinator and main recipient of funds, leading efforts to establish the hubs and build regional capacity.\n      Country Lead — Yeromin Mlacha\n    \n  \n  \n    \n    \n      04°19′S · 15°19′E\n      DR Congo — INRB\n      Leads the DRC hub from the National Institute for Biomedical Research (INRB), in one of the highest-burden malaria settings on the continent.\n      Country Lead — Emery Metelo\n    \n  \n  \n    \n    \n      07°46′N · 04°34′E\n      Nigeria — Osun State University\n      Brings the network into West Africa's distinct transmission and health-system context.\n      Country Lead — Adedapo Adeogun\n    \n  \n\nCollaborators"
-  },
-  {
-    "objectID": "hubs.html#partners-across-the-network",
-    "href": "hubs.html#partners-across-the-network",
-    "title": "Hubs & Partners",
-    "section": "Partners across the network",
-    "text": "Partners across the network\nThe hubs work hand in hand with National Malaria Programmes — the PNLP in the DRC and the National Malaria Elimination Programme in Nigeria — alongside research and technical partners including the University of Oxford, PATH and the Kids Research Institute Australia. A regional Community of Practice in vector epidemiology and modelling connects modellers, researchers and decision-makers as the network grows."
-  },
-  {
-    "objectID": "team.html",
-    "href": "team.html",
-    "title": "Team",
-    "section": "",
-    "text": "Coordination"
-  },
-  {
-    "objectID": "team.html#leadership",
-    "href": "team.html#leadership",
-    "title": "Team",
-    "section": "Leadership",
-    "text": "Leadership\n\n  \n    SR\n    Dr. Susan Rumisha\n    Principal Investigator & Coordinator\n    Ifakara Health Institute\n  \n  \n    DM\n    Diana Mwanamboka\n    Project Administrator\n    Ifakara Health Institute\n  \n\nThe hubs"
-  },
-  {
-    "objectID": "team.html#hub-leads",
-    "href": "team.html#hub-leads",
-    "title": "Team",
-    "section": "Hub leads",
-    "text": "Hub leads\n\n  \n    IHI\n    Tanzania\n    Coordinating hub\n    Ifakara Health Institute\n  \n  \n    INRB\n    DR Congo\n    Hub lead · to be confirmed\n    Institut National de Recherche Biomédicale\n  \n  \n    OSU\n    Nigeria\n    Hub lead · to be confirmed\n    Osun State University\n  \n\nThe wider network"
-  },
-  {
-    "objectID": "team.html#a-growing-community",
-    "href": "team.html#a-growing-community",
-    "title": "Team",
-    "section": "A growing community",
-    "text": "A growing community\nBeyond the core team, MoDD Africa connects modellers, researchers and decision-makers through a regional Community of Practice in vector epidemiology and modelling, and works directly with National Malaria Programmes across the three countries. New team members and hub leads will be added here as the network formalises."
+    "text": "Wellcome Trust · 2024–2028 · TZ / CD / NG\n      Modelling for Decisions in a Dynamic Africa\n      A pan-African network turning environmental, entomological and health data into model-based evidence and forecasts — so malaria programmes can act ahead of a shifting climate.\n      \n        Explore the project →\n        Latest news\n      \n    \n  \n\n\n\n\n  \n    3Country hubs\n    41.8%of global malaria cases\n    46.5%of global malaria deaths\n    2024–28Funded programme\n    Malaria burden across the three hub countries · Source: WHO World Malaria Report 2024\n  \n\n\n\n\n  \n    The challenge\n    Seeing change before it arrives\n    Africa's climate is shifting where vectors live, how abundant they are and when they peak — and with them the risk of malaria and other mosquito-borne disease. Control programmes need to see those changes coming, not read them after the fact. MoDD Africa builds the models, evidence and forecasting tools that let decision-makers act early and adapt as conditions change.\n\n    \n      \n        \n        \n          Science\n          The Project\n          Background, the ERA modelling architecture, and four work packages from environment to operations.\n          →\n        \n      \n      \n        \n        \n          Network\n          Hubs & Partners\n          Modelling hubs in Tanzania, the DRC and Nigeria, working with national malaria programmes.\n          →\n        \n      \n      \n        \n        \n          Data & code\n          Evidence Synthesis\n          Open, reproducible tooling to collate, analyse and communicate evidence — starting with climate reanalysis.\n          →\n        \n      \n      \n        \n        \n          People\n          Get Involved\n          Training, hackathons, modelling competitions and a regional community of practice.\n          →\n        \n      \n    \n  \n\n\n\n\n  \n    The network\n    Three hubs, one architecture\n    Each hub builds local modelling capacity while sharing methods, data and lessons across the network. Tanzania coordinates; the DRC and Nigeria anchor the work in different ecological and epidemiological settings.\n\n    \n      \n        \n        \n          Coordinating hub\n          06°48′S · 39°17′E\n          Tanzania — Ifakara Health Institute\n          Regional coordinator and main recipient of funds, leading efforts to establish the hubs and build regional capacity.\n        \n      \n      \n        \n        \n          04°19′S · 15°19′E\n          DR Congo — INRB\n          Extends the modelling work to one of the highest-burden malaria settings on the continent.\n        \n      \n      \n        \n        \n          07°46′N · 04°34′E\n          Nigeria — Osun State University\n          Brings the network into West Africa's distinct transmission and health-system context.\n        \n      \n    \n  \n\n\n\n\n  \n    \n      \n        Latest news\n        From across the network\n      \n      All news →\n    \n\n    \n      \n        \n        \n          26–29 Jan 2026 · Dar es Salaam\n          Annual meeting: taking stock, planning the year ahead\n          The network reconvened to review year one's progress and set priorities for the next, drawing country leads, researchers and programme partners.\n        \n      \n      \n        \n        \n          28–30 Nov 2024 · Nairobi\n          The network launches at its project leads kickoff\n          A three-day kickoff at ICIPE aligned the team on the four-year roadmap, the science agenda and getting the hubs operational.\n        \n      \n    \n  \n\n\n\n\n  \n    \n      \n      \n      \n      \n      \n    \n    \n    \n    \n    \n    \n    \n  \n  \n    The vision\n    Model-based evidence, advice and forecasting — built in Africa, for Africa's public-health decisions."
   },
   {
     "objectID": "contact.html",
@@ -112,46 +49,25 @@
     "text": "Project, code and institution\n\n  \n    Project\n    Project page at IHI\n    The official MoDD Africa project record at the Ifakara Health Institute.\n    →\n  \n  \n    Code\n    GitHub organisation\n    Open repositories from the project, including the evidence-synthesis tooling.\n    →\n  \n  \n    Institute\n    Ifakara Health Institute\n    The coordinating institution and main host of the project.\n    →\n  \n\nFor general enquiries, reach the coordinating team through the Ifakara Health Institute. A dedicated project email can be added here once available."
   },
   {
-    "objectID": "project.html",
-    "href": "project.html",
-    "title": "The Project",
+    "objectID": "hubs.html",
+    "href": "hubs.html",
+    "title": "Hubs & Partners",
     "section": "",
-    "text": "Background"
+    "text": "The network"
   },
   {
-    "objectID": "project.html#climate-and-health-in-a-changing-africa",
-    "href": "project.html#climate-and-health-in-a-changing-africa",
-    "title": "The Project",
-    "section": "Climate and health in a changing Africa",
-    "text": "Climate and health in a changing Africa\nAfrica’s climate is changing rapidly, reshaping where disease vectors live, how abundant they are, and when they peak. That raises the stakes for vector-borne disease control and for the decisions public-health systems must make. The three hub countries alone — the DRC, Nigeria and Tanzania — account for 41.8% of global malaria cases and 46.5% of deaths (WHO World Malaria Report, 2024), which is why the network starts here. The project frames the problem around four priorities:\n\nHow is the environment changing for vectors, and how are populations affected?\nHow effective are health systems at controlling disease?\nHow adaptable are programmes and decision-makers to emerging threats?\nWhat optimised interventions, early-warning tools and evidence are needed to respond?\n\nMeeting those needs calls for models that are trustworthy, hold up in the real world, and keep pace with change.\nApproach"
+    "objectID": "hubs.html#three-hubs-one-architecture",
+    "href": "hubs.html#three-hubs-one-architecture",
+    "title": "Hubs & Partners",
+    "section": "Three hubs, one architecture",
+    "text": "Three hubs, one architecture\nEach hub builds local modelling capacity while sharing methods, data and lessons across the network. Tanzania coordinates; the DRC and Nigeria anchor the work in different ecological and epidemiological settings.\n\n  \n    \n    \n      Coordinating hub\n      06°48′S · 39°17′E\n      Tanzania — Ifakara Health Institute\n      Hosts the project as regional coordinator and main recipient of funds, leading efforts to establish the hubs and build regional capacity.\n      Country Lead — Yeromin Mlacha\n    \n  \n  \n    \n    \n      04°19′S · 15°19′E\n      DR Congo — INRB\n      Leads the DRC hub from the National Institute for Biomedical Research (INRB), in one of the highest-burden malaria settings on the continent.\n      Country Lead — Emery Metelo\n    \n  \n  \n    \n    \n      07°46′N · 04°34′E\n      Nigeria — Osun State University\n      Brings the network into West Africa's distinct transmission and health-system context.\n      Country Lead — Adedapo Adeogun\n    \n  \n\nCollaborators"
   },
   {
-    "objectID": "project.html#the-era-modelling-architecture",
-    "href": "project.html#the-era-modelling-architecture",
-    "title": "The Project",
-    "section": "The ERA modelling architecture",
-    "text": "The ERA modelling architecture\nMoDD Africa is built around an Effective, Robust and Adaptable (ERA) approach to modelling:\n\nEffective — methods that produce answers decision-makers can act on.\nRobust — results that hold up under real-world uncertainty and incomplete data.\nAdaptable — models that evolve as conditions, questions and diseases change.\n\nThe way of working is collaborative, transparent, sustainable and adaptive: co-designing with National Malaria Programmes and partners from the start, being open about model outputs and their limitations, and strengthening the existing ecosystem rather than working around it."
-  },
-  {
-    "objectID": "project.html#work-packages",
-    "href": "project.html#work-packages",
-    "title": "The Project",
-    "section": "Work packages",
-    "text": "Work packages\n\nWP1 ::: {.wp__body} ### Vectors & environment Distribution and seasonality of vectors in the context of current environmental change.\n\n:::\n\nWP2 ::: {.wp__body} ### Interventions The impact of environmental change on malaria intervention strategies.\n\n:::\n\nWP3 ::: {.wp__body} ### Early warning Unifying entomological and epidemiological models to deliver early-warning systems for emerging health threats.\n\n:::\n\nWP4 ::: {.wp__body} ### Skills & networks A unified framework for skill strengthening, networking and connectedness to maximise modelling impact.\n\n:::\nNov 2024 – Oct 2028"
-  },
-  {
-    "objectID": "project.html#what-we-will-deliver",
-    "href": "project.html#what-we-will-deliver",
-    "title": "The Project",
-    "section": "What we will deliver",
-    "text": "What we will deliver\nOver the four years of the project, MoDD Africa aims to:\n\nEstablish modelling hubs in Tanzania, the DRC and Nigeria.\nDevelop relevant, model-based advisory systems for malaria control.\nShare knowledge through inter-hub training, hackathons and modelling competitions, and a Community of Practice in vector epidemiology and modelling.\nForm a strong Evidence Synthesis Unit.\n\nWhile the initial focus is malaria, the approach is designed to extend to other mosquito-borne diseases, such as arboviruses.\nFunding"
-  },
-  {
-    "objectID": "project.html#funding",
-    "href": "project.html#funding",
-    "title": "The Project",
-    "section": "Funding",
-    "text": "Funding\nThis work was supported by the Wellcome Trust [grant number]. MoDD Africa runs from November 2024 to October 2028."
+    "objectID": "hubs.html#partners-across-the-network",
+    "href": "hubs.html#partners-across-the-network",
+    "title": "Hubs & Partners",
+    "section": "Partners across the network",
+    "text": "Partners across the network\nThe hubs work hand in hand with National Malaria Programmes — the PNLP in the DRC and the National Malaria Elimination Programme in Nigeria — alongside research and technical partners including the University of Oxford, PATH and the Kids Research Institute Australia. A regional Community of Practice in vector epidemiology and modelling connects modellers, researchers and decision-makers as the network grows."
   },
   {
     "objectID": "engage.html",
@@ -196,10 +112,94 @@
     "text": "Opportunities\nResearch and PhD positions open periodically through the Ifakara Health Institute. See current openings on the IHI jobs board, or get in touch via the Contact page."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Modelling for Decisions in a Dynamic Africa",
+    "objectID": "team.html",
+    "href": "team.html",
+    "title": "Team",
     "section": "",
-    "text": "Wellcome Trust · 2024–2028 · TZ / CD / NG\n      Modelling for Decisions in a Dynamic Africa\n      A pan-African network turning environmental, entomological and health data into model-based evidence and forecasts — so malaria programmes can act ahead of a shifting climate.\n      \n        Explore the project →\n        Latest news\n      \n    \n  \n\n\n\n\n  \n    3Country hubs\n    41.8%of global malaria cases\n    46.5%of global malaria deaths\n    2024–28Funded programme\n    Malaria burden across the three hub countries · Source: WHO World Malaria Report 2024\n  \n\n\n\n\n  \n    The challenge\n    Seeing change before it arrives\n    Africa's climate is shifting where vectors live, how abundant they are and when they peak — and with them the risk of malaria and other mosquito-borne disease. Control programmes need to see those changes coming, not read them after the fact. MoDD Africa builds the models, evidence and forecasting tools that let decision-makers act early and adapt as conditions change.\n\n    \n      \n        \n        \n          Science\n          The Project\n          Background, the ERA modelling architecture, and four work packages from environment to operations.\n          →\n        \n      \n      \n        \n        \n          Network\n          Hubs & Partners\n          Modelling hubs in Tanzania, the DRC and Nigeria, working with national malaria programmes.\n          →\n        \n      \n      \n        \n        \n          Data & code\n          Evidence Synthesis\n          Open, reproducible tooling to collate, analyse and communicate evidence — starting with climate reanalysis.\n          →\n        \n      \n      \n        \n        \n          People\n          Get Involved\n          Training, hackathons, modelling competitions and a regional community of practice.\n          →\n        \n      \n    \n  \n\n\n\n\n  \n    The network\n    Three hubs, one architecture\n    Each hub builds local modelling capacity while sharing methods, data and lessons across the network. Tanzania coordinates; the DRC and Nigeria anchor the work in different ecological and epidemiological settings.\n\n    \n      \n        \n        \n          Coordinating hub\n          06°48′S · 39°17′E\n          Tanzania — Ifakara Health Institute\n          Regional coordinator and main recipient of funds, leading efforts to establish the hubs and build regional capacity.\n        \n      \n      \n        \n        \n          04°19′S · 15°19′E\n          DR Congo — INRB\n          Extends the modelling work to one of the highest-burden malaria settings on the continent.\n        \n      \n      \n        \n        \n          07°46′N · 04°34′E\n          Nigeria — Osun State University\n          Brings the network into West Africa's distinct transmission and health-system context.\n        \n      \n    \n  \n\n\n\n\n  \n    \n      \n        Latest news\n        From across the network\n      \n      All news →\n    \n\n    \n      \n        \n        \n          26–29 Jan 2026 · Dar es Salaam\n          Annual meeting: taking stock, planning the year ahead\n          The network reconvened to review year one's progress and set priorities for the next, drawing country leads, researchers and programme partners.\n        \n      \n      \n        \n        \n          28–30 Nov 2024 · Nairobi\n          The network launches at its project leads kickoff\n          A three-day kickoff at ICIPE aligned the team on the four-year roadmap, the science agenda and getting the hubs operational.\n        \n      \n    \n  \n\n\n\n\n  \n    \n      \n      \n      \n      \n      \n    \n    \n    \n    \n    \n    \n    \n  \n  \n    The vision\n    Model-based evidence, advice and forecasting — built in Africa, for Africa's public-health decisions."
+    "text": "Coordination"
+  },
+  {
+    "objectID": "team.html#leadership",
+    "href": "team.html#leadership",
+    "title": "Team",
+    "section": "Leadership",
+    "text": "Leadership\n\n  \n    \n    Dr. Susan Rumisha\n    Team Lead\n    Ifakara Health Institute\n  \n\nThe team"
+  },
+  {
+    "objectID": "team.html#our-people",
+    "href": "team.html#our-people",
+    "title": "Team",
+    "section": "Our people",
+    "text": "Our people\n\n  All\n  Regional office\n  Hub leads\n\n\n\n  \n    \n    Dr. Punam Amratia\n    Technical Lead\n  \n  \n    \n    Sosthenes Ketende\n    Programme Manager\n  \n  \n    DM\n    Diana Mwanamboka\n    Project Administrator\n  \n  \n    \n    Samson Kiware\n    Mathematical Modelling\n  \n  \n    \n    Dr. Yeromin Mlacha\n    Tanzania Hub Lead\n    Ifakara Health Institute\n  \n  \n    \n    Prof. Emery Metelo\n    DR Congo Hub Lead\n    INRB\n  \n  \n    \n    Dr. Adedapo Adeogun\n    Nigeria Hub Lead\n    Osun State University\n  \n\n\n\nThe wider network"
+  },
+  {
+    "objectID": "team.html#a-growing-community",
+    "href": "team.html#a-growing-community",
+    "title": "Team",
+    "section": "A growing community",
+    "text": "A growing community\nBeyond the core team, MoDD Africa connects modellers, researchers and decision-makers through a regional Community of Practice in vector epidemiology and modelling, and works directly with National Malaria Programmes across the three countries."
+  },
+  {
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "The Project",
+    "section": "",
+    "text": "Background"
+  },
+  {
+    "objectID": "project.html#climate-and-health-in-a-changing-africa",
+    "href": "project.html#climate-and-health-in-a-changing-africa",
+    "title": "The Project",
+    "section": "Climate and health in a changing Africa",
+    "text": "Climate and health in a changing Africa\nAfrica’s climate is changing rapidly, reshaping where disease vectors live, how abundant they are, and when they peak. That raises the stakes for vector-borne disease control and for the decisions public-health systems must make. The three hub countries alone — the DRC, Nigeria and Tanzania — account for 41.8% of global malaria cases and 46.5% of deaths (WHO World Malaria Report, 2024), which is why the network starts here. The project frames the problem around four priorities:\n\nHow is the environment changing for vectors, and how are populations affected?\nHow effective are health systems at controlling disease?\nHow adaptable are programmes and decision-makers to emerging threats?\nWhat optimised interventions, early-warning tools and evidence are needed to respond?\n\nMeeting those needs calls for models that are trustworthy, hold up in the real world, and keep pace with change.\nApproach"
+  },
+  {
+    "objectID": "project.html#the-era-modelling-architecture",
+    "href": "project.html#the-era-modelling-architecture",
+    "title": "The Project",
+    "section": "The ERA modelling architecture",
+    "text": "The ERA modelling architecture\nMoDD Africa is built around an Effective, Robust and Adaptable (ERA) approach to modelling:\n\nEffective — methods that produce answers decision-makers can act on.\nRobust — results that hold up under real-world uncertainty and incomplete data.\nAdaptable — models that evolve as conditions, questions and diseases change.\n\nThe way of working is collaborative, transparent, sustainable and adaptive: co-designing with National Malaria Programmes and partners from the start, being open about model outputs and their limitations, and strengthening the existing ecosystem rather than working around it."
+  },
+  {
+    "objectID": "project.html#work-packages",
+    "href": "project.html#work-packages",
+    "title": "The Project",
+    "section": "Work packages",
+    "text": "Work packages\n\nWP1 ::: {.wp__body} ### Vectors & environment Distribution and seasonality of vectors in the context of current environmental change.\n\n:::\n\nWP2 ::: {.wp__body} ### Interventions The impact of environmental change on malaria intervention strategies.\n\n:::\n\nWP3 ::: {.wp__body} ### Early warning Unifying entomological and epidemiological models to deliver early-warning systems for emerging health threats.\n\n:::\n\nWP4 ::: {.wp__body} ### Skills & networks A unified framework for skill strengthening, networking and connectedness to maximise modelling impact.\n\n:::\nNov 2024 – Oct 2028"
+  },
+  {
+    "objectID": "project.html#what-we-will-deliver",
+    "href": "project.html#what-we-will-deliver",
+    "title": "The Project",
+    "section": "What we will deliver",
+    "text": "What we will deliver\nOver the four years of the project, MoDD Africa aims to:\n\nEstablish modelling hubs in Tanzania, the DRC and Nigeria.\nDevelop relevant, model-based advisory systems for malaria control.\nShare knowledge through inter-hub training, hackathons and modelling competitions, and a Community of Practice in vector epidemiology and modelling.\nForm a strong Evidence Synthesis Unit.\n\nWhile the initial focus is malaria, the approach is designed to extend to other mosquito-borne diseases, such as arboviruses.\nFunding"
+  },
+  {
+    "objectID": "project.html#funding",
+    "href": "project.html#funding",
+    "title": "The Project",
+    "section": "Funding",
+    "text": "Funding\nThis work was supported by the Wellcome Trust [grant number]. MoDD Africa runs from November 2024 to October 2028."
+  },
+  {
+    "objectID": "evidence-synthesis.html",
+    "href": "evidence-synthesis.html",
+    "title": "Evidence Synthesis",
+    "section": "",
+    "text": "The unit"
+  },
+  {
+    "objectID": "evidence-synthesis.html#from-data-to-decisions",
+    "href": "evidence-synthesis.html#from-data-to-decisions",
+    "title": "Evidence Synthesis",
+    "section": "From data to decisions",
+    "text": "From data to decisions\nThe Evidence Synthesis Unit runs a repeatable pipeline from raw data to decision-ready outputs: acquiring and reviewing existing data, re-formatting it for modelling, building shared databases and visual tools (such as MosquitoDB and interactive Shiny apps), then analysing, validating and packaging results for National Malaria Programmes and partners — and updating them as new data and feedback arrive.\nThe modelling framework spans species composition (single- and multi-species), spatial-temporal methods (e.g. GAMs and Bayesian hierarchical models) and explicit seasonality, driven by fine-resolution climate and environmental data and structured from national down to sub-national levels — so outputs can inform practical decisions such as timing IRS and LLIN campaigns to align with peak transmission.\nOpen tooling"
+  },
+  {
+    "objectID": "evidence-synthesis.html#the-moddafricaes-package",
+    "href": "evidence-synthesis.html#the-moddafricaes-package",
+    "title": "Evidence Synthesis",
+    "section": "The moddafricaes package",
+    "text": "The moddafricaes package\nmoddafricaes — MoDD Africa Evidence Synthesis — is the unit’s R package for collating, analysing and communicating evidence. Its first end-to-end pipeline turns ERA5-Land climate reanalysis into analysis-ready data: derive a study-area bounding box from a shapefile, download hourly NetCDFs from the Copernicus Climate Data Store (CDS), and transform them into Parquet (hourly or monthly) or GeoTIFF (monthly minimum / maximum temperature).\nThe source lives on GitHub: github.com/modd-africa/moddafricaes.\n\nInstall\n# pak (recommended — resolves system dependencies too)\n# install.packages(\"pak\")\npak::pak(\"modd-africa/moddafricaes\")\n\n# or with remotes / devtools\nremotes::install_github(\"modd-africa/moddafricaes\")\nYou will also need a Copernicus CDS account and an API key exported as CDS_API_KEY (see https://cds.climate.copernicus.eu/).\n\n\nThe pipeline\n\nAll bounding boxes use Copernicus CDS order c(N, W, S, E) — not sf::st_bbox()’s (xmin, ymin, xmax, ymax).\n\n\n\n\n\n\n\nFunction\nStage\nOutput\n\n\n\n\nget_bounding_box()\nSetup\nc(N, W, S, E) numeric vector (CDS order)\n\n\nextract_era5land()\nDownload\nOne NetCDF per (year, month)\n\n\ntransform_era5land()\nTransform\nOne Parquet per year (hourly)\n\n\ntransform_era5land_monthly()\nTransform\nOne Parquet (monthly means)\n\n\ntransform_era5land_minmax()\nTransform\nGeoTIFF stacks of monthly 2 m-temperature min / max\n\n\n\n\n\nEnd to end\nlibrary(moddafricaes)\n\n# 1. Derive a bounding box from a shapefile (zipped shapefiles work via /vsizip/)\nbbox &lt;- get_bounding_box(\n  \"/vsizip/utilities/province26.zip/provinces26/Province26.shp\"\n)\n\n# 2. Download hourly ERA5-Land NetCDFs for the bbox (needs CDS_API_KEY)\nextract_era5land(\n  bbox       = bbox,\n  years      = 2020:2021,\n  output_dir = \"data/era5land/nc\"\n)\n\n# 3. Transform hourly NetCDFs into one analysis-ready Parquet per year\ntransform_era5land(\n  input_dir  = \"data/era5land/nc\",\n  output_dir = \"data/era5land/parquet\",\n  dem_tif    = \"RDC_Elevation_Complete.tif\",\n  years      = 2020:2021\n)\nThe hourly transform de-accumulates precipitation and downward shortwave radiation per day, derives wind speed, relative humidity, vapour-pressure deficit and Celsius temperature, and joins DEM-derived elevation onto the ERA5-Land 0.1° grid. Every write step is idempotent: an existing readable output short-circuits the work, while a corrupt one is deleted and regenerated, so re-runs resume cleanly.\n\n\n\n\n\n\nKnown caveat. Forcing the de-accumulated daily totals to zero at hour 0 is exact only where 00 UTC falls during the night (as in central Africa). For areas where 00 UTC is daylight, real shortwave flux would be silently zeroed at the day boundary — revisit before applying the pipeline elsewhere."
   }
 ]
