@@ -1,58 +1,106 @@
 ---
 title: "Team"
-subtitle: "MoDD Africa is delivered by researchers and coordinators across the Tanzania, DRC and Nigeria hubs, led from the Ifakara Health Institute."
+subtitle: "MoDD Africa is delivered by a regional office at the Ifakara Health Institute and country leads across the Tanzania, DRC and Nigeria hubs."
 ---
+
+```{=html}
+<style>
+  .team--lead { grid-template-columns: minmax(240px, 340px); justify-content: center; }
+  .person--lead .avatar { width: 120px; height: 120px; font-size: 2rem; }
+  .team-filter { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.6rem 0 0; }
+  .team-filter button { font-family: "IBM Plex Mono", monospace; font-size: .76rem; letter-spacing: .04em; padding: .5rem 1.05rem; border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--muted); cursor: pointer; transition: all .15s ease; }
+  .team-filter button:hover { border-color: var(--field); color: var(--field-d); }
+  .team-filter button.is-active { background: var(--field); border-color: var(--field); color: #fff; }
+  .team-grid .person[hidden] { display: none; }
+</style>
+```
 
 [Coordination]{.eyebrow}
 
 ## Leadership
 
 ```{=html}
-<div class="team">
-  <div class="person">
-    <div class="avatar">SR</div>
+<div class="team team--lead">
+  <div class="person person--lead">
+    <img class="avatar" src="assets/team-rumisha.jpg" alt="Susan Rumisha">
     <h3>Dr. Susan Rumisha</h3>
-    <p class="role">Principal Investigator &amp; Coordinator</p>
-    <p class="org">Ifakara Health Institute</p>
-  </div>
-  <div class="person">
-    <div class="avatar">DM</div>
-    <h3>Diana Mwanamboka</h3>
-    <p class="role">Project Administrator</p>
+    <p class="role">Team Lead</p>
     <p class="org">Ifakara Health Institute</p>
   </div>
 </div>
 ```
 
-[The hubs]{.eyebrow}
+[The team]{.eyebrow}
 
-## Hub leads
+## Our people
 
 ```{=html}
-<div class="team">
-  <div class="person">
-    <div class="avatar">IHI</div>
-    <h3>Tanzania</h3>
-    <p class="role">Coordinating hub</p>
+<div class="team-filter">
+  <button data-group="all" class="is-active">All</button>
+  <button data-group="regional">Regional office</button>
+  <button data-group="hubs">Hub leads</button>
+</div>
+
+<div class="team team-grid">
+  <div class="person" data-group="regional">
+    <img class="avatar" src="assets/team-amratia.jpg" alt="Punam Amratia">
+    <h3>Dr. Punam Amratia</h3>
+    <p class="role">Technical Lead</p>
+  </div>
+  <div class="person" data-group="regional">
+    <img class="avatar" src="assets/team-ketende.jpg" alt="Sosthenes Ketende">
+    <h3>Sosthenes Ketende</h3>
+    <p class="role">Programme Manager</p>
+  </div>
+  <div class="person" data-group="regional">
+    <div class="avatar">DM</div>
+    <h3>Diana Mwanamboka</h3>
+    <p class="role">Project Administrator</p>
+  </div>
+  <div class="person" data-group="regional">
+    <img class="avatar" src="assets/team-kiware.jpg" alt="Samson Kiware">
+    <h3>Samson Kiware</h3>
+    <p class="role">Mathematical Modelling</p>
+  </div>
+  <div class="person" data-group="hubs">
+    <img class="avatar" src="assets/team-mlacha.jpg" alt="Yeromin Mlacha">
+    <h3>Dr. Yeromin Mlacha</h3>
+    <p class="role">Tanzania Hub Lead</p>
     <p class="org">Ifakara Health Institute</p>
   </div>
-  <div class="person">
-    <div class="avatar">INRB</div>
-    <h3>DR Congo</h3>
-    <p class="role">Hub lead · to be confirmed</p>
-    <p class="org">Institut National de Recherche Biomédicale</p>
+  <div class="person" data-group="hubs">
+    <img class="avatar" src="assets/team-metelo.jpg" alt="Emery Metelo">
+    <h3>Prof. Emery Metelo</h3>
+    <p class="role">DR Congo Hub Lead</p>
+    <p class="org">INRB</p>
   </div>
-  <div class="person">
-    <div class="avatar">OSU</div>
-    <h3>Nigeria</h3>
-    <p class="role">Hub lead · to be confirmed</p>
+  <div class="person" data-group="hubs">
+    <img class="avatar" src="assets/team-adeogun.jpg" alt="Adedapo Adeogun">
+    <h3>Dr. Adedapo Adeogun</h3>
+    <p class="role">Nigeria Hub Lead</p>
     <p class="org">Osun State University</p>
   </div>
 </div>
+
+<script>
+(function () {
+  const bar = document.querySelector('.team-filter');
+  if (!bar) return;
+  const cards = document.querySelectorAll('.team-grid .person');
+  bar.addEventListener('click', function (e) {
+    const btn = e.target.closest('button');
+    if (!btn) return;
+    bar.querySelectorAll('button').forEach(function (b) { b.classList.remove('is-active'); });
+    btn.classList.add('is-active');
+    const g = btn.dataset.group;
+    cards.forEach(function (c) { c.hidden = (g !== 'all' && c.dataset.group !== g); });
+  });
+})();
+</script>
 ```
 
 [The wider network]{.eyebrow}
 
 ## A growing community
 
-Beyond the core team, MoDD Africa connects modellers, researchers and decision-makers through a regional Community of Practice in vector epidemiology and modelling, and works directly with National Malaria Programmes across the three countries. New team members and hub leads will be added here as the network formalises.
+Beyond the core team, MoDD Africa connects modellers, researchers and decision-makers through a regional Community of Practice in vector epidemiology and modelling, and works directly with National Malaria Programmes across the three countries.
