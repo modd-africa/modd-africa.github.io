@@ -14,6 +14,125 @@
     "text": "Working with the people who decide\nThe hubs work directly with National Malaria Programmes — including the National Malaria Control Programme (NMCP) in Tanzania — so that models answer the questions decision-makers actually face. The network is reinforced by a regional Community of Practice in vector epidemiology and modelling, connecting modellers, researchers and decision-makers across the three countries as the project grows."
   },
   {
+    "objectID": "fr/partners.html",
+    "href": "fr/partners.html",
+    "title": "Partenaires",
+    "section": "",
+    "text": "Collaborateurs"
+  },
+  {
+    "objectID": "fr/partners.html#travailler-avec-celles-et-ceux-qui-décident",
+    "href": "fr/partners.html#travailler-avec-celles-et-ceux-qui-décident",
+    "title": "Partenaires",
+    "section": "Travailler avec celles et ceux qui décident",
+    "text": "Travailler avec celles et ceux qui décident\nLes pôles travaillent directement avec les programmes nationaux de lutte contre le paludisme — dont le programme national de lutte contre le paludisme (NMCP) en Tanzanie — afin que les modèles répondent aux questions concrètes auxquelles les décideurs sont confrontés. Le réseau est renforcé par une communauté de pratique régionale en épidémiologie vectorielle et en modélisation, qui relie modélisateurs, chercheurs et décideurs des trois pays à mesure que le projet grandit."
+  },
+  {
+    "objectID": "fr/evidence-synthesis.html",
+    "href": "fr/evidence-synthesis.html",
+    "title": "Synthèse des données probantes",
+    "section": "",
+    "text": "L’unité"
+  },
+  {
+    "objectID": "fr/evidence-synthesis.html#des-données-aux-décisions",
+    "href": "fr/evidence-synthesis.html#des-données-aux-décisions",
+    "title": "Synthèse des données probantes",
+    "section": "Des données aux décisions",
+    "text": "Des données aux décisions\nL’unité de synthèse des données probantes met en œuvre un pipeline reproductible, des données brutes aux résultats prêts pour la décision : acquisition et examen des données existantes, remise en forme pour la modélisation, construction de bases de données partagées et d’outils visuels (comme MosquitoDB et des applications Shiny interactives), puis analyse, validation et mise en forme des résultats pour les programmes nationaux de lutte contre le paludisme et les partenaires — avec des mises à jour à mesure qu’arrivent de nouvelles données et de nouveaux retours.\nLe cadre de modélisation couvre la composition en espèces (une ou plusieurs espèces), des méthodes spatio-temporelles (par ex. les GAM et les modèles hiérarchiques bayésiens) et une saisonnalité explicite, alimentés par des données climatiques et environnementales à haute résolution et structurés du niveau national au niveau infranational — afin que les résultats puissent éclairer des décisions concrètes, comme le calendrier des campagnes de PID (pulvérisation intradomiciliaire) et de MILDA (moustiquaires imprégnées) pour coïncider avec les pics de transmission.\nOutils ouverts"
+  },
+  {
+    "objectID": "fr/evidence-synthesis.html#le-package-moddafricaes",
+    "href": "fr/evidence-synthesis.html#le-package-moddafricaes",
+    "title": "Synthèse des données probantes",
+    "section": "Le package moddafricaes",
+    "text": "Le package moddafricaes\nmoddafricaes — MoDD Africa Evidence Synthesis — est le package R de l’unité pour rassembler, analyser et communiquer les données probantes. Son premier pipeline de bout en bout transforme la réanalyse climatique ERA5-Land en données prêtes à l’analyse : dériver la boîte englobante (bounding box) de la zone d’étude à partir d’un shapefile, télécharger les NetCDF horaires depuis le Copernicus Climate Data Store (CDS), puis les convertir en Parquet (horaire ou mensuel) ou en GeoTIFF (température mensuelle minimale / maximale).\nLe code source est disponible sur GitHub : github.com/modd-africa/moddafricaes.\n\nInstallation\n# pak (recommandé — installe aussi les dépendances système)\n# install.packages(\"pak\")\npak::pak(\"modd-africa/moddafricaes\")\n\n# ou avec remotes / devtools\nremotes::install_github(\"modd-africa/moddafricaes\")\nVous aurez également besoin d’un compte Copernicus CDS et d’une clé API exportée sous CDS_API_KEY (voir https://cds.climate.copernicus.eu/).\n\n\nLe pipeline\n\nToutes les boîtes englobantes utilisent l’ordre Copernicus CDS c(N, W, S, E) — et non l’ordre (xmin, ymin, xmax, ymax) de sf::st_bbox().\n\n\n\n\n\n\n\nFonction\nÉtape\nSortie\n\n\n\n\nget_bounding_box()\nConfiguration\nVecteur numérique c(N, W, S, E) (ordre CDS)\n\n\nextract_era5land()\nTéléchargement\nUn NetCDF par (année, mois)\n\n\ntransform_era5land()\nTransformation\nUn Parquet par année (horaire)\n\n\ntransform_era5land_monthly()\nTransformation\nUn Parquet (moyennes mensuelles)\n\n\ntransform_era5land_minmax()\nTransformation\nPiles GeoTIFF des min / max mensuels de température à 2 m\n\n\n\n\n\nDe bout en bout\nlibrary(moddafricaes)\n\n# 1. Dériver une boîte englobante à partir d'un shapefile (les shapefiles zippés fonctionnent via /vsizip/)\nbbox &lt;- get_bounding_box(\n  \"/vsizip/utilities/province26.zip/provinces26/Province26.shp\"\n)\n\n# 2. Télécharger les NetCDF ERA5-Land horaires pour la bbox (nécessite CDS_API_KEY)\nextract_era5land(\n  bbox       = bbox,\n  years      = 2020:2021,\n  output_dir = \"data/era5land/nc\"\n)\n\n# 3. Transformer les NetCDF horaires en un Parquet prêt à l'analyse par année\ntransform_era5land(\n  input_dir  = \"data/era5land/nc\",\n  output_dir = \"data/era5land/parquet\",\n  dem_tif    = \"RDC_Elevation_Complete.tif\",\n  years      = 2020:2021\n)\nLa transformation horaire dé-cumule les précipitations et le rayonnement solaire descendant de courtes longueurs d’onde par jour, calcule la vitesse du vent, l’humidité relative, le déficit de pression de vapeur et la température en degrés Celsius, et associe l’altitude issue du MNT (modèle numérique de terrain) à la grille ERA5-Land de 0,1°. Chaque étape d’écriture est idempotente : une sortie lisible déjà présente court-circuite le travail, tandis qu’une sortie corrompue est supprimée puis régénérée, de sorte que les ré-exécutions reprennent proprement.\n\n\n\n\n\n\nLimite connue. Forcer à zéro les totaux quotidiens dé-cumulés à l’heure 0 n’est exact que là où 00 h UTC tombe pendant la nuit (comme en Afrique centrale). Dans les régions où 00 h UTC correspond au jour, le flux réel de courtes longueurs d’onde serait silencieusement mis à zéro à la limite du jour — à revoir avant d’appliquer le pipeline ailleurs."
+  },
+  {
+    "objectID": "fr/project.html",
+    "href": "fr/project.html",
+    "title": "Le projet",
+    "section": "",
+    "text": "Contexte"
+  },
+  {
+    "objectID": "fr/project.html#climat-et-santé-dans-une-afrique-en-mutation",
+    "href": "fr/project.html#climat-et-santé-dans-une-afrique-en-mutation",
+    "title": "Le projet",
+    "section": "Climat et santé dans une Afrique en mutation",
+    "text": "Climat et santé dans une Afrique en mutation\nLe climat de l’Afrique évolue rapidement, redéfinissant l’endroit où vivent les vecteurs de maladies, leur abondance et leurs pics d’activité. Cela accroît les enjeux de la lutte contre les maladies à transmission vectorielle et des décisions que doivent prendre les systèmes de santé publique. À eux seuls, les trois pays hôtes — la RDC, le Nigéria et la Tanzanie — représentent 41,8 % des cas de paludisme dans le monde et 46,5 % des décès (Rapport mondial sur le paludisme de l’OMS, 2024), ce qui explique pourquoi le réseau démarre ici. Le projet articule le problème autour de quatre priorités :\n\nComment l’environnement change-t-il pour les vecteurs, et comment les populations sont-elles affectées ?\nQuelle est l’efficacité des systèmes de santé dans la lutte contre la maladie ?\nDans quelle mesure les programmes et les décideurs sont-ils capables de s’adapter aux menaces émergentes ?\nQuels outils d’intervention optimisés, systèmes d’alerte précoce et données probantes sont nécessaires pour y répondre ?\n\nRépondre à ces besoins exige des modèles fiables, qui résistent à l’épreuve du réel et évoluent au rythme du changement.\nApproche"
+  },
+  {
+    "objectID": "fr/project.html#larchitecture-de-modélisation-era",
+    "href": "fr/project.html#larchitecture-de-modélisation-era",
+    "title": "Le projet",
+    "section": "L’architecture de modélisation ERA",
+    "text": "L’architecture de modélisation ERA\nMoDD Africa repose sur une approche de modélisation Efficace, Robuste et Adaptable (ERA) :\n\nEfficace — des méthodes qui produisent des réponses sur lesquelles les décideurs peuvent agir.\nRobuste — des résultats qui tiennent face à l’incertitude du monde réel et à des données incomplètes.\nAdaptable — des modèles qui évoluent à mesure que changent les conditions, les questions et les maladies.\n\nLa méthode de travail est collaborative, transparente, durable et adaptative : co-conception avec les programmes nationaux de lutte contre le paludisme et les partenaires dès le départ, transparence sur les résultats des modèles et leurs limites, et renforcement de l’écosystème existant plutôt que de le contourner."
+  },
+  {
+    "objectID": "fr/project.html#lots-de-travaux",
+    "href": "fr/project.html#lots-de-travaux",
+    "title": "Le projet",
+    "section": "Lots de travaux",
+    "text": "Lots de travaux\n\nWP1 ::: {.wp__body} ### Vecteurs et environnement Répartition et saisonnalité des vecteurs dans le contexte des changements environnementaux actuels.\n\n:::\n\nWP2 ::: {.wp__body} ### Interventions L’impact des changements environnementaux sur les stratégies de lutte antipaludique.\n\n:::\n\nWP3 ::: {.wp__body} ### Alerte précoce Unifier les modèles entomologiques et épidémiologiques pour fournir des systèmes d’alerte précoce face aux menaces sanitaires émergentes.\n\n:::\n\nWP4 ::: {.wp__body} ### Compétences et réseaux Un cadre unifié pour le renforcement des compétences, la mise en réseau et la connectivité afin de maximiser l’impact de la modélisation.\n\n:::\nnov. 2024 – oct. 2028"
+  },
+  {
+    "objectID": "fr/project.html#ce-que-nous-allons-produire",
+    "href": "fr/project.html#ce-que-nous-allons-produire",
+    "title": "Le projet",
+    "section": "Ce que nous allons produire",
+    "text": "Ce que nous allons produire\nSur les quatre années du projet, MoDD Africa vise à :\n\nÉtablir des pôles de modélisation en Tanzanie, en RDC et au Nigéria.\nDévelopper des systèmes de conseil pertinents, fondés sur la modélisation, pour la lutte antipaludique.\nPartager les connaissances par la formation inter-pôles, des hackathons et concours de modélisation, et une communauté de pratique en épidémiologie vectorielle et en modélisation.\nConstituer une solide unité de synthèse des données probantes.\n\nBien que l’accent initial porte sur le paludisme, l’approche est conçue pour s’étendre à d’autres maladies à transmission vectorielle, comme les arboviroses.\nFinancement"
+  },
+  {
+    "objectID": "fr/project.html#financement",
+    "href": "fr/project.html#financement",
+    "title": "Le projet",
+    "section": "Financement",
+    "text": "Financement\nCes travaux ont été soutenus par le Wellcome Trust [numéro de subvention]. MoDD Africa se déroule de novembre 2024 à octobre 2028."
+  },
+  {
+    "objectID": "fr/team.html",
+    "href": "fr/team.html",
+    "title": "Le projet",
+    "section": "",
+    "text": "Contexte"
+  },
+  {
+    "objectID": "fr/team.html#climat-et-santé-dans-une-afrique-en-mutation",
+    "href": "fr/team.html#climat-et-santé-dans-une-afrique-en-mutation",
+    "title": "Le projet",
+    "section": "Climat et santé dans une Afrique en mutation",
+    "text": "Climat et santé dans une Afrique en mutation\nLe climat de l’Afrique évolue rapidement, redéfinissant l’endroit où vivent les vecteurs de maladies, leur abondance et leurs pics d’activité. Cela accroît les enjeux de la lutte contre les maladies à transmission vectorielle et des décisions que doivent prendre les systèmes de santé publique. À eux seuls, les trois pays hôtes — la RDC, le Nigéria et la Tanzanie — représentent 41,8 % des cas de paludisme dans le monde et 46,5 % des décès (Rapport mondial sur le paludisme de l’OMS, 2024), ce qui explique pourquoi le réseau démarre ici. Le projet articule le problème autour de quatre priorités :\n\nComment l’environnement change-t-il pour les vecteurs, et comment les populations sont-elles affectées ?\nQuelle est l’efficacité des systèmes de santé dans la lutte contre la maladie ?\nDans quelle mesure les programmes et les décideurs sont-ils capables de s’adapter aux menaces émergentes ?\nQuels outils d’intervention optimisés, systèmes d’alerte précoce et données probantes sont nécessaires pour y répondre ?\n\nRépondre à ces besoins exige des modèles fiables, qui résistent à l’épreuve du réel et évoluent au rythme du changement.\nApproche"
+  },
+  {
+    "objectID": "fr/team.html#larchitecture-de-modélisation-era",
+    "href": "fr/team.html#larchitecture-de-modélisation-era",
+    "title": "Le projet",
+    "section": "L’architecture de modélisation ERA",
+    "text": "L’architecture de modélisation ERA\nMoDD Africa repose sur une approche de modélisation Efficace, Robuste et Adaptable (ERA) :\n\nEfficace — des méthodes qui produisent des réponses sur lesquelles les décideurs peuvent agir.\nRobuste — des résultats qui tiennent face à l’incertitude du monde réel et à des données incomplètes.\nAdaptable — des modèles qui évoluent à mesure que changent les conditions, les questions et les maladies.\n\nLa méthode de travail est collaborative, transparente, durable et adaptative : co-conception avec les programmes nationaux de lutte contre le paludisme et les partenaires dès le départ, transparence sur les résultats des modèles et leurs limites, et renforcement de l’écosystème existant plutôt que de le contourner."
+  },
+  {
+    "objectID": "fr/team.html#lots-de-travaux",
+    "href": "fr/team.html#lots-de-travaux",
+    "title": "Le projet",
+    "section": "Lots de travaux",
+    "text": "Lots de travaux\n\nWP1 ::: {.wp__body} ### Vecteurs et environnement Répartition et saisonnalité des vecteurs dans le contexte des changements environnementaux actuels.\n\n:::\n\nWP2 ::: {.wp__body} ### Interventions L’impact des changements environnementaux sur les stratégies de lutte antipaludique.\n\n:::\n\nWP3 ::: {.wp__body} ### Alerte précoce Unifier les modèles entomologiques et épidémiologiques pour fournir des systèmes d’alerte précoce face aux menaces sanitaires émergentes.\n\n:::\n\nWP4 ::: {.wp__body} ### Compétences et réseaux Un cadre unifié pour le renforcement des compétences, la mise en réseau et la connectivité afin de maximiser l’impact de la modélisation.\n\n:::\nnov. 2024 – oct. 2028"
+  },
+  {
+    "objectID": "fr/team.html#ce-que-nous-allons-produire",
+    "href": "fr/team.html#ce-que-nous-allons-produire",
+    "title": "Le projet",
+    "section": "Ce que nous allons produire",
+    "text": "Ce que nous allons produire\nSur les quatre années du projet, MoDD Africa vise à :\n\nÉtablir des pôles de modélisation en Tanzanie, en RDC et au Nigéria.\nDévelopper des systèmes de conseil pertinents, fondés sur la modélisation, pour la lutte antipaludique.\nPartager les connaissances par la formation inter-pôles, des hackathons et concours de modélisation, et une communauté de pratique en épidémiologie vectorielle et en modélisation.\nConstituer une solide unité de synthèse des données probantes.\n\nBien que l’accent initial porte sur le paludisme, l’approche est conçue pour s’étendre à d’autres maladies à transmission vectorielle, comme les arboviroses.\nFinancement"
+  },
+  {
+    "objectID": "fr/team.html#financement",
+    "href": "fr/team.html#financement",
+    "title": "Le projet",
+    "section": "Financement",
+    "text": "Financement\nCes travaux ont été soutenus par le Wellcome Trust [numéro de subvention]. MoDD Africa se déroule de novembre 2024 à octobre 2028."
+  },
+  {
     "objectID": "evidence-synthesis.html",
     "href": "evidence-synthesis.html",
     "title": "Evidence Synthesis",
@@ -194,6 +313,97 @@
     "title": "Modelling for decisions in a dynamic Africa",
     "section": "",
     "text": "Wellcome Trust · Nov 2024 – Oct 2028 · TZ / CD / NG\n      Modelling for decisions in a dynamic Africa\n      Turning environmental, entomological and health data into model-based evidence and forecasts — so malaria programmes can act ahead of a shifting climate.\n      \n        Explore our work →\n        Latest news\n      \n    \n  \n\n\n\n\n  \n    3Country hubs\n    41.8%of global malaria cases\n    46.5%of global malaria deaths\n    2024–28Funded programme\n    Malaria burden across the three hub countries · Source: WHO World Malaria Report 2024\n  \n\n\n\n\n  \n    \n      Supported by\n      MoDD Africa is funded by the Wellcome Trust (Nov 2024 – Oct 2028) as part of its support for research on climate change and health."
+  },
+  {
+    "objectID": "fr/engage.html",
+    "href": "fr/engage.html",
+    "title": "S’impliquer",
+    "section": "",
+    "text": "Renforcement des capacités"
+  },
+  {
+    "objectID": "fr/engage.html#formation-et-renforcement-des-capacités",
+    "href": "fr/engage.html#formation-et-renforcement-des-capacités",
+    "title": "S’impliquer",
+    "section": "Formation et renforcement des capacités",
+    "text": "Formation et renforcement des capacités\nL’un des objectifs centraux du projet est de bâtir un réseau durable de modélisateurs africains, en intégrant le renforcement des capacités au fonctionnement quotidien du projet :\n\nAu sein de chaque pôle — apprendre en faisant, sur de véritables problèmes de décision.\nEntre les pôles — des équipes qui travaillent ensemble et partagent leurs méthodes.\nÀ l’échelle de l’écosystème — partage des connaissances et apprentissage croisé avec les partenaires et les programmes.\n\nDes formations pratiques sont menées dans les pôles de Tanzanie, de RDC et du Nigéria, associant de jeunes chercheurs à des modélisateurs expérimentés.\nDéfis ouverts"
+  },
+  {
+    "objectID": "fr/engage.html#hackathons-et-concours-de-modélisation",
+    "href": "fr/engage.html#hackathons-et-concours-de-modélisation",
+    "title": "S’impliquer",
+    "section": "Hackathons et concours de modélisation",
+    "text": "Hackathons et concours de modélisation\nLe réseau organise des hackathons et des concours de modélisation — des défis ouverts qui développent les compétences, font émerger de nouvelles approches et relient les modélisateurs par-delà les pays et les disciplines.\nCommunauté"
+  },
+  {
+    "objectID": "fr/engage.html#une-communauté-de-pratique",
+    "href": "fr/engage.html#une-communauté-de-pratique",
+    "title": "S’impliquer",
+    "section": "Une communauté de pratique",
+    "text": "Une communauté de pratique\nMoDD Africa contribue à une communauté de pratique (CdP) régionale en épidémiologie vectorielle et en modélisation : un espace pour partager méthodes, données et enseignements, et garder l’écosystème connecté à mesure qu’il grandit.\nProgrammes"
+  },
+  {
+    "objectID": "fr/engage.html#pour-les-programmes-nationaux-de-lutte-contre-le-paludisme",
+    "href": "fr/engage.html#pour-les-programmes-nationaux-de-lutte-contre-le-paludisme",
+    "title": "S’impliquer",
+    "section": "Pour les programmes nationaux de lutte contre le paludisme",
+    "text": "Pour les programmes nationaux de lutte contre le paludisme\nNous travaillons directement avec les programmes nationaux de lutte contre le paludisme afin que les modèles répondent aux questions qui comptent pour la lutte et l’élimination — et que les résultats soient exploitables là où les décisions se prennent.\nCarrières"
+  },
+  {
+    "objectID": "fr/engage.html#opportunités",
+    "href": "fr/engage.html#opportunités",
+    "title": "S’impliquer",
+    "section": "Opportunités",
+    "text": "Opportunités\nDes postes de recherche et de doctorat s’ouvrent régulièrement par l’intermédiaire de l’Ifakara Health Institute. Consultez les offres en cours sur le portail des offres d’emploi de l’IHI, ou écrivez-nous via la page Contact."
+  },
+  {
+    "objectID": "fr/contact.html",
+    "href": "fr/contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Direction"
+  },
+  {
+    "objectID": "fr/contact.html#qui-contacter",
+    "href": "fr/contact.html#qui-contacter",
+    "title": "Contact",
+    "section": "Qui contacter",
+    "text": "Qui contacter\nChercheuse principale Dre Susan Rumisha — Ifakara Health Institute\nResponsable de programme Sosthenes Ketende — Ifakara Health Institute\nResponsables pays Yeromin Mlacha — Tanzanie · Emery Metelo — RD Congo · Adedapo Adeogun — Nigéria\nNous trouver"
+  },
+  {
+    "objectID": "fr/contact.html#projet-code-et-institution",
+    "href": "fr/contact.html#projet-code-et-institution",
+    "title": "Contact",
+    "section": "Projet, code et institution",
+    "text": "Projet, code et institution\n\n  \n    Projet\n    Page du projet à l'IHI\n    La fiche officielle du projet MoDD Africa à l'Ifakara Health Institute.\n    →\n  \n  \n    Code\n    Organisation GitHub\n    Les dépôts ouverts du projet, y compris les outils de synthèse des données probantes.\n    →\n  \n  \n    Institution\n    Ifakara Health Institute\n    L'institution coordinatrice et principal hôte du projet.\n    →\n  \n\nPour toute demande générale, contactez l’équipe de coordination via l’Ifakara Health Institute. Une adresse électronique dédiée au projet pourra être ajoutée ici lorsqu’elle sera disponible."
+  },
+  {
+    "objectID": "fr/index.html",
+    "href": "fr/index.html",
+    "title": "Modélisation pour la décision dans une Afrique dynamique",
+    "section": "",
+    "text": "Wellcome Trust · nov. 2024 – oct. 2028 · TZ / CD / NG\n      Modélisation pour la décision dans une Afrique dynamique\n      Transformer les données environnementales, entomologiques et sanitaires en éléments probants fondés sur la modélisation et en prévisions — afin que les programmes de lutte contre le paludisme puissent anticiper un climat en évolution.\n      \n        Découvrir nos travaux →\n        Actualités\n      \n    \n  \n\n\n\n\n  \n    3Pôles nationaux\n    41,8 %des cas de paludisme dans le monde\n    46,5 %des décès dus au paludisme dans le monde\n    2024–28Programme financé\n    Charge du paludisme dans les trois pays hôtes · Source : Rapport mondial sur le paludisme de l'OMS, 2024\n  \n\n\n\n\n  \n    \n      Avec le soutien de\n      MoDD Africa est financé par le Wellcome Trust (nov. 2024 – oct. 2028) dans le cadre de son soutien à la recherche sur le changement climatique et la santé."
+  },
+  {
+    "objectID": "fr/news.html",
+    "href": "fr/news.html",
+    "title": "Actualités",
+    "section": "",
+    "text": "26–29 janvier 2026 · Dar es Salaam, Tanzanie"
+  },
+  {
+    "objectID": "fr/news.html#réunion-annuelle-faire-le-point-et-préparer-lannée-à-venir",
+    "href": "fr/news.html#réunion-annuelle-faire-le-point-et-préparer-lannée-à-venir",
+    "title": "Actualités",
+    "section": "Réunion annuelle : faire le point et préparer l’année à venir",
+    "text": "Réunion annuelle : faire le point et préparer l’année à venir\nUn an après son lancement, le réseau s’est de nouveau réuni à Dar es Salaam pour sa réunion annuelle — l’occasion de faire le bilan des progrès de la première année et de fixer les priorités de la suivante. Elle a rassemblé l’équipe du bureau régional, les responsables pays, les chercheurs postdoctoraux et les comptables de chaque pôle, ainsi que le représentant du programme national de lutte contre le paludisme et le représentant chargé des données climatiques et environnementales.\nLes travaux se sont ouverts par une minute de silence en hommage au Dr Prosper Chaki, directeur de la mobilisation des ressources à l’Ifakara Health Institute, décédé le 24 janvier 2026. En clôture, le Dr Samson Kiware a remercié les participants pour leurs contributions et souligné l’importance de bien mener le projet, au bénéfice des communautés que chaque équipe sert.\nLire le compte rendu complet sur le site de l’IHI →\n\n28–30 novembre 2024 · Nairobi, Kenya"
+  },
+  {
+    "objectID": "fr/news.html#le-réseau-est-lancé-lors-de-sa-réunion-de-lancement-des-responsables-de-projet",
+    "href": "fr/news.html#le-réseau-est-lancé-lors-de-sa-réunion-de-lancement-des-responsables-de-projet",
+    "title": "Actualités",
+    "section": "Le réseau est lancé lors de sa réunion de lancement des responsables de projet",
+    "text": "Le réseau est lancé lors de sa réunion de lancement des responsables de projet\nMoDD Africa a officiellement démarré par une réunion de lancement de trois jours réunissant les responsables de projet, accueillie au Centre international de physiologie et d’écologie des insectes (ICIPE) à Nairobi. Le personnel technique, les responsables pays et les chercheurs principaux se sont réunis pour s’accorder sur le programme quadriennal du projet.\nLa première journée a présenté la feuille de route complète : les équipes de Tanzanie, du Nigéria et de RDC ont exposé les contextes écologiques et de systèmes de santé très différents dans lesquels chaque pôle travaillera, et le groupe s’est mis d’accord sur les activités et les livrables de la première année. La deuxième journée a été consacrée à la science — interventions antipaludiques en milieu urbain, systèmes d’alerte précoce face aux menaces émergentes, et rapprochement des modèles entomologiques et épidémiologiques — ainsi qu’à une séance de travail cartographiant les données disponibles et les lacunes qui subsistent. La dernière journée a porté sur la mise en œuvre opérationnelle : recrutement, budgets, logistique, et les compétences et réseaux nécessaires à la réussite.\nLes pôles sont repartis avec une prochaine étape claire : organiser leurs propres réunions de lancement nationales pour associer les parties prenantes locales, dont les programmes nationaux de lutte contre le paludisme.\nLire le compte rendu complet sur le site de l’IHI →"
   },
   {
     "objectID": "news.html",

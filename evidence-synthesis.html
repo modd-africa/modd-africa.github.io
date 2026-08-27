@@ -80,7 +80,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-c290ef4a59108b95bc75a535d63a529b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-603e44ef8ad0f7c35bd382e3aeaf3ee0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-07c2e8bac11da2f46b56be1800716461.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -796,6 +796,27 @@ background: #0F2E1C;
   const up = el => { const m = el.textContent.trim().match(/^(\d+(?:\.\d+)?)(%?)$/); if(!m) return; const end=parseFloat(m[1]),suf=m[2],dec=m[1].includes('.')?1:0; if(reduce){el.textContent=end.toFixed(dec)+suf;return;} const t0=performance.now(); const tick=t=>{const p=Math.min((t-t0)/1100,1),e=1-Math.pow(1-p,3); el.textContent=(end*e).toFixed(dec)+suf; if(p<1)requestAnimationFrame(tick);}; requestAnimationFrame(tick); };
   const n=document.querySelectorAll('.stat .num');
   if('IntersectionObserver' in window && !reduce){const io2=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){up(e.target);io2.unobserve(e.target);}}),{threshold:.5}); n.forEach(x=>io2.observe(x));} else n.forEach(up);
+
+            // ── Language switcher: EN | FR, both shown, dropped into the navbar ──
+  var lp = location.pathname;
+  var lIsFr = /\/fr\//.test(lp);
+  var enHref = lIsFr ? lp.replace(/\/fr\//, '/') : lp;
+  var frHref = lIsFr ? lp : lp.replace(/\/([^\/]*)$/, '/fr/$1');
+  var sw = document.createElement('div');
+  sw.className = 'lang-switch';
+  sw.innerHTML =
+    '<a href="' + enHref + '"' + (lIsFr ? '' : ' class="is-active"') + '>EN</a>' +
+    '<a href="' + frHref + '"' + (lIsFr ? ' class="is-active"' : '') + '>FR</a>';
+  var navs = document.querySelectorAll('.navbar-nav');
+  if (navs.length) {
+    var li = document.createElement('li');
+    li.className = 'nav-item lang-switch-item';
+    li.appendChild(sw);
+    navs[navs.length - 1].appendChild(li);
+  } else {
+    sw.classList.add('lang-switch--float');
+    document.body.appendChild(sw);
+  }
 })();
 </script>
 
