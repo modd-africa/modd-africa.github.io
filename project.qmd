@@ -30,37 +30,36 @@ The way of working is **collaborative, transparent, sustainable and adaptive**: 
 
 ## Work packages
 
-::: {.wp}
-[WP1]{.wp__tag}
-::: {.wp__body}
-### Vectors & environment
-Distribution and seasonality of vectors in the context of current environmental change.
-:::
-:::
-
-::: {.wp}
-[WP2]{.wp__tag}
-::: {.wp__body}
-### Interventions
-The impact of environmental change on malaria intervention strategies.
-:::
-:::
-
-::: {.wp}
-[WP3]{.wp__tag}
-::: {.wp__body}
-### Early warning
-Unifying entomological and epidemiological models to deliver early-warning systems for emerging health threats.
-:::
-:::
-
-::: {.wp}
-[WP4]{.wp__tag}
-::: {.wp__body}
-### Skills & networks
-A unified framework for skill strengthening, networking and connectedness to maximise modelling impact.
-:::
-:::
+```{=html}
+<div class="wp">
+  <span class="wp__tag">WP1</span>
+  <div class="wp__body">
+    <h3>Vectors &amp; environment</h3>
+    <p>Quantifies how climate, urbanisation and land-use reshape where vectors live, their abundance and their seasonality — combining correlative and mechanistic methods to map seasonal transmission at national, sub-national and local scales. Model-based adaptive sampling then targets where new field data will most improve the maps.</p>
+  </div>
+</div>
+<div class="wp">
+  <span class="wp__tag">WP2</span>
+  <div class="wp__body">
+    <h3>Interventions in urban settings</h3>
+    <p>Blends mathematical, statistical and health-system models to assess how climate change affects malaria control in urban settings, including how rural-to-urban migration shifts transmission. Simulations weigh the implications for intervention delivery — from bednet use and access to care to medical supplies, logistics and service quality.</p>
+  </div>
+</div>
+<div class="wp">
+  <span class="wp__tag">WP3</span>
+  <div class="wp__body">
+    <h3>Early warning</h3>
+    <p>Unifies entomological and epidemiological models into tailored early-warning systems — forecasting district-level case trends from weather, vector and satellite data, and flagging threats such as the invasive <em>An. stephensi</em> or spreading insecticide and drug resistance. A Bayesian framework enables probabilistic outbreak detection through a dashboard built to plug into existing surveillance.</p>
+  </div>
+</div>
+<div class="wp">
+  <span class="wp__tag">WP4</span>
+  <div class="wp__body">
+    <h3>Skills &amp; networks</h3>
+    <p>Turns the network's diverse skills into lasting impact — building researchers' capabilities, embedding "systems thinking" into modelling, and growing collaborations beyond the core hubs. Delivered through in-country research with the National Malaria Programmes, plus hackathons, modelling competitions, inter-hub exchanges and annual meetings.</p>
+  </div>
+</div>
+```
 
 [Nov 2024 – Oct 2028]{.eyebrow}
 
