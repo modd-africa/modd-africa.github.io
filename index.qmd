@@ -49,7 +49,7 @@ toc: false
       <p>MoDD Africa is funded by the Wellcome Trust (Nov 2024 – Oct 2028) as part of its support for research on climate change and health.</p>
     </div>
     <a class="funder__logo" href="https://wellcome.org" target="_blank" rel="noopener">
-      <img src="assets/wellcome-trust.png" alt="Wellcome Trust">
+      <img src="assets/wellcome_logo.png" alt="Wellcome Trust">
     </a>
   </div>
 </section>
