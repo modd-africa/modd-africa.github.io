@@ -60,7 +60,7 @@ website:
       - text: "Contact"
         href: contact.qmd
     right: |
-      [![Wellcome Trust](assets/wellcome-trust.png){height=26px}](https://wellcome.org)
+      [![Wellcome Trust](assets/wellcome-trust.png){height=100px}](https://wellcome.org)
 
 format:
   html:
