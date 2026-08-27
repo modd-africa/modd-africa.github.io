@@ -1,15 +1,29 @@
 ---
-title: "Page not found"
-subtitle: "That page doesn't exist — or has moved."
+title: "Page not found · Page introuvable"
+subtitle: "That page doesn't exist — or has moved. · Cette page n'existe pas ou a été déplacée."
 toc: false
 ---
 
-The link may be out of date. Try one of these instead:
+**English** — the link may be out of date. Try one of these instead:
 
-- [Home](index.qmd)
-- [The Project](project.qmd)
-- [Hubs & Partners](hubs.qmd)
-- [Evidence Synthesis](evidence-synthesis.qmd)
-- [Get Involved](engage.qmd)
-- [Contact](contact.qmd)
-- [News](news.qmd)
+- [Home](/index.html)
+- [The Project](/project.html)
+- [Team & Hubs](/team.html)
+- [Evidence Synthesis](/evidence-synthesis.html)
+- [Get Involved](/engage.html)
+- [Partners](/partners.html)
+- [News](/news.html)
+- [Contact](/contact.html)
+
+---
+
+**Français** — le lien est peut-être obsolète. Essayez plutôt l'une de ces pages :
+
+- [Accueil](/fr/index.html)
+- [Le projet](/fr/project.html)
+- [Équipe et pôles](/fr/team.html)
+- [Synthèse des données probantes](/fr/evidence-synthesis.html)
+- [S'impliquer](/fr/engage.html)
+- [Partenaires](/fr/partners.html)
+- [Actualités](/fr/news.html)
+- [Contact](/fr/contact.html)

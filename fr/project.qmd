@@ -1,0 +1,83 @@
+---
+lang: fr
+title: "Le projet"
+subtitle: "MoDD Africa — « Modélisation pour la décision dans une Afrique dynamique » — est une initiative de quatre ans (nov. 2024 – oct. 2028) menée par l'Ifakara Health Institute, avec des pôles en Tanzanie, en RDC et au Nigéria, financée par le Wellcome Trust."
+---
+
+[Contexte]{.eyebrow}
+
+## Climat et santé dans une Afrique en mutation
+
+Le climat de l'Afrique évolue rapidement, redéfinissant l'endroit où vivent les vecteurs de maladies, leur abondance et leurs pics d'activité. Cela accroît les enjeux de la lutte contre les maladies à transmission vectorielle et des décisions que doivent prendre les systèmes de santé publique. À eux seuls, les trois pays hôtes — la RDC, le Nigéria et la Tanzanie — représentent **41,8 % des cas de paludisme dans le monde et 46,5 % des décès** (Rapport mondial sur le paludisme de l'OMS, 2024), ce qui explique pourquoi le réseau démarre ici. Le projet articule le problème autour de quatre priorités :
+
+1. Comment l'environnement change-t-il pour les vecteurs, et comment les populations sont-elles affectées ?
+2. Quelle est l'efficacité des systèmes de santé dans la lutte contre la maladie ?
+3. Dans quelle mesure les programmes et les décideurs sont-ils capables de s'adapter aux menaces émergentes ?
+4. Quels outils d'intervention optimisés, systèmes d'alerte précoce et données probantes sont nécessaires pour y répondre ?
+
+Répondre à ces besoins exige des modèles fiables, qui résistent à l'épreuve du réel et évoluent au rythme du changement.
+
+[Approche]{.eyebrow}
+
+## L'architecture de modélisation ERA
+
+MoDD Africa repose sur une approche de modélisation **Efficace, Robuste et Adaptable (ERA)** :
+
+- **Efficace** — des méthodes qui produisent des réponses sur lesquelles les décideurs peuvent agir.
+- **Robuste** — des résultats qui tiennent face à l'incertitude du monde réel et à des données incomplètes.
+- **Adaptable** — des modèles qui évoluent à mesure que changent les conditions, les questions et les maladies.
+
+La méthode de travail est **collaborative, transparente, durable et adaptative** : co-conception avec les programmes nationaux de lutte contre le paludisme et les partenaires dès le départ, transparence sur les résultats des modèles et leurs limites, et renforcement de l'écosystème existant plutôt que de le contourner.
+
+## Lots de travaux
+
+::: {.wp}
+[WP1]{.wp__tag}
+::: {.wp__body}
+### Vecteurs et environnement
+Répartition et saisonnalité des vecteurs dans le contexte des changements environnementaux actuels.
+:::
+:::
+
+::: {.wp}
+[WP2]{.wp__tag}
+::: {.wp__body}
+### Interventions
+L'impact des changements environnementaux sur les stratégies de lutte antipaludique.
+:::
+:::
+
+::: {.wp}
+[WP3]{.wp__tag}
+::: {.wp__body}
+### Alerte précoce
+Unifier les modèles entomologiques et épidémiologiques pour fournir des systèmes d'alerte précoce face aux menaces sanitaires émergentes.
+:::
+:::
+
+::: {.wp}
+[WP4]{.wp__tag}
+::: {.wp__body}
+### Compétences et réseaux
+Un cadre unifié pour le renforcement des compétences, la mise en réseau et la connectivité afin de maximiser l'impact de la modélisation.
+:::
+:::
+
+[nov. 2024 – oct. 2028]{.eyebrow}
+
+## Ce que nous allons produire
+
+Sur les quatre années du projet, MoDD Africa vise à :
+
+- Établir des pôles de modélisation en Tanzanie, en RDC et au Nigéria.
+- Développer des systèmes de conseil pertinents, fondés sur la modélisation, pour la lutte antipaludique.
+- Partager les connaissances par la formation inter-pôles, des hackathons et concours de modélisation, et une communauté de pratique en épidémiologie vectorielle et en modélisation.
+- Constituer une solide unité de synthèse des données probantes.
+
+Bien que l'accent initial porte sur le paludisme, l'approche est conçue pour s'étendre à d'autres maladies à transmission vectorielle, comme les arboviroses.
+
+[Financement]{.eyebrow}
+
+## Financement
+
+Ces travaux ont été soutenus par le Wellcome Trust [numéro de subvention]. MoDD Africa se déroule de novembre 2024 à octobre 2028.

@@ -1,0 +1,41 @@
+---
+lang: fr
+title: "S'impliquer"
+subtitle: "MoDD Africa, c'est autant une affaire de personnes et de réseaux que de modèles. Voici comment y prendre part."
+---
+
+[Renforcement des capacités]{.eyebrow}
+
+## Formation et renforcement des capacités
+
+L'un des objectifs centraux du projet est de bâtir un réseau durable de modélisateurs africains, en intégrant le renforcement des capacités au fonctionnement quotidien du projet :
+
+- **Au sein de chaque pôle** — apprendre en faisant, sur de véritables problèmes de décision.
+- **Entre les pôles** — des équipes qui travaillent ensemble et partagent leurs méthodes.
+- **À l'échelle de l'écosystème** — partage des connaissances et apprentissage croisé avec les partenaires et les programmes.
+
+Des formations pratiques sont menées dans les pôles de Tanzanie, de RDC et du Nigéria, associant de jeunes chercheurs à des modélisateurs expérimentés.
+
+[Défis ouverts]{.eyebrow}
+
+## Hackathons et concours de modélisation
+
+Le réseau organise des hackathons et des concours de modélisation — des défis ouverts qui développent les compétences, font émerger de nouvelles approches et relient les modélisateurs par-delà les pays et les disciplines.
+
+[Communauté]{.eyebrow}
+
+## Une communauté de pratique
+
+MoDD Africa contribue à une **communauté de pratique (CdP)** régionale en épidémiologie vectorielle et en modélisation : un espace pour partager méthodes, données et enseignements, et garder l'écosystème connecté à mesure qu'il grandit.
+
+[Programmes]{.eyebrow}
+
+## Pour les programmes nationaux de lutte contre le paludisme
+
+Nous travaillons directement avec les programmes nationaux de lutte contre le paludisme afin que les modèles répondent aux questions qui comptent pour la lutte et l'élimination — et que les résultats soient exploitables là où les décisions se prennent.
+
+[Carrières]{.eyebrow}
+
+## Opportunités
+
+Des postes de recherche et de doctorat s'ouvrent régulièrement par l'intermédiaire de l'Ifakara Health Institute. Consultez les offres en cours sur le [portail des offres d'emploi de l'IHI](https://www.ihi.or.tz/our-job-posts/), ou écrivez-nous via la page [Contact](contact.html).
