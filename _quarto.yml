@@ -16,7 +16,7 @@ website:
   open-graph: true
   twitter-card: true
   navbar:
-    background: light
+    background: "#0F2E1C"
     pinned: true
     logo: assets/MoDD_logo.png
     logo-alt: "MoDD Africa"

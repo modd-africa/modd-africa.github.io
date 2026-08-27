@@ -15,16 +15,16 @@ toc: false
 <!-- ─────────────────────────────  HERO  ───────────────────────────── -->
 <section class="hero fullbleed">
   <div class="hero__media">
-    <img src="assets/hero.jpg" alt="A MoDD Africa hub team at work in the field.">
+    <img src="assets/hero.jpg" alt="A MoDD Africa hub team." class="is-active">
   </div>
   <div class="hero__scrim"></div>
   <div class="wrap">
     <div class="hero__copy">
-      <p class="eyebrow eyebrow--light">Wellcome Trust · 2024–2028 · TZ / CD / NG</p>
-      <h1>Modelling for Decisions in a Dynamic Africa</h1>
-      <p class="hero__thesis">A pan-African network turning environmental, entomological and health data into model-based evidence and forecasts — so malaria programmes can act ahead of a shifting climate.</p>
+      <p class="eyebrow eyebrow--light">Wellcome Trust · Nov 2024 – Oct 2028 · TZ / CD / NG</p>
+      <h1>Modelling for decisions in a <em>dynamic Africa</em></h1>
+      <p class="hero__thesis">Turning environmental, entomological and health data into model-based evidence and forecasts — so malaria programmes can act ahead of a shifting climate.</p>
       <div class="hero__cta">
-        <a class="btn-solid" href="project.html">Explore the project <span aria-hidden="true">→</span></a>
+        <a class="btn-solid" href="project.html">Explore our work <span aria-hidden="true">→</span></a>
         <a class="btn-ghost" href="news.html">Latest news</a>
       </div>
     </div>
