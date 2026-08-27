@@ -49,6 +49,14 @@ h2 { font-size: clamp(1.5rem, 1.1rem + 1.3vw, 2.05rem); margin-top: 2.4rem; }
 h3 { font-size: 1.2rem; margin-top: 1.7rem; }
 a { transition: color .15s ease; }
 
+// Language switcher (EN | FR) — both shown, sits in the top navbar
+.lang-switch { display: inline-flex; gap: 4px; align-items: center; }
+.lang-switch a { font-family: "IBM Plex Mono", monospace; font-size: .72rem; font-weight: 600; letter-spacing: .06em; padding: .28rem .55rem; border-radius: 6px; line-height: 1; text-decoration: none; color: #fff; border: 1px solid rgba(255,255,255,.35); }
+.lang-switch a:hover { border-color: var(--green-lt); color: var(--green-lt); }
+.lang-switch a.is-active { background: var(--field); border-color: var(--field); color: #fff; }
+.lang-switch-item { display: flex; align-items: center; margin-left: .75rem; }
+.lang-switch--float { position: fixed; top: 12px; right: 16px; z-index: 1001; background: rgba(15,46,28,.92); padding: 4px; border-radius: 8px; }
+
 // ── Layout helpers ───────────────────────────────────────────────────
 .fullbleed { position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; width: 100vw; }
 .wrap { max-width: 1160px; margin-inline: auto; padding-inline: clamp(1.25rem, 4vw, 3rem); }

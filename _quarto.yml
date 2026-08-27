@@ -86,5 +86,26 @@ format:
           const up = el => { const m = el.textContent.trim().match(/^(\d+(?:\.\d+)?)(%?)$/); if(!m) return; const end=parseFloat(m[1]),suf=m[2],dec=m[1].includes('.')?1:0; if(reduce){el.textContent=end.toFixed(dec)+suf;return;} const t0=performance.now(); const tick=t=>{const p=Math.min((t-t0)/1100,1),e=1-Math.pow(1-p,3); el.textContent=(end*e).toFixed(dec)+suf; if(p<1)requestAnimationFrame(tick);}; requestAnimationFrame(tick); };
           const n=document.querySelectorAll('.stat .num');
           if('IntersectionObserver' in window && !reduce){const io2=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){up(e.target);io2.unobserve(e.target);}}),{threshold:.5}); n.forEach(x=>io2.observe(x));} else n.forEach(up);
+
+                    // ── Language switcher: EN | FR, both shown, dropped into the navbar ──
+          var lp = location.pathname;
+          var lIsFr = /\/fr\//.test(lp);
+          var enHref = lIsFr ? lp.replace(/\/fr\//, '/') : lp;
+          var frHref = lIsFr ? lp : lp.replace(/\/([^\/]*)$/, '/fr/$1');
+          var sw = document.createElement('div');
+          sw.className = 'lang-switch';
+          sw.innerHTML =
+            '<a href="' + enHref + '"' + (lIsFr ? '' : ' class="is-active"') + '>EN</a>' +
+            '<a href="' + frHref + '"' + (lIsFr ? ' class="is-active"' : '') + '>FR</a>';
+          var navs = document.querySelectorAll('.navbar-nav');
+          if (navs.length) {
+            var li = document.createElement('li');
+            li.className = 'nav-item lang-switch-item';
+            li.appendChild(sw);
+            navs[navs.length - 1].appendChild(li);
+          } else {
+            sw.classList.add('lang-switch--float');
+            document.body.appendChild(sw);
+          }
         })();
         </script>

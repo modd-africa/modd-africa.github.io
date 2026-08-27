@@ -1,0 +1,57 @@
+---
+lang: fr
+pagetitle: "MoDD Africa — Modélisation pour la décision dans une Afrique dynamique"
+description: "Un réseau panafricain produisant des données probantes fondées sur la modélisation et des prévisions pour la lutte contre les maladies à transmission vectorielle, avec un accent initial sur le paludisme."
+page-layout: full
+toc: false
+---
+
+```{=html}
+<style>
+  #title-block-header { display: none; }
+  main#quarto-document-content { padding-top: 0; }
+</style>
+
+<!-- ─────────────────────────────  HERO  ───────────────────────────── -->
+<section class="hero fullbleed">
+  <div class="hero__media">
+    <img src="../assets/hero.jpg" alt="Une équipe d'un pôle MoDD Africa." class="is-active">
+  </div>
+  <div class="hero__scrim"></div>
+  <div class="wrap">
+    <div class="hero__copy">
+      <p class="eyebrow eyebrow--light">Wellcome Trust · nov. 2024 – oct. 2028 · TZ / CD / NG</p>
+      <h1>Modélisation pour la décision dans une <em>Afrique dynamique</em></h1>
+      <p class="hero__thesis">Transformer les données environnementales, entomologiques et sanitaires en éléments probants fondés sur la modélisation et en prévisions — afin que les programmes de lutte contre le paludisme puissent anticiper un climat en évolution.</p>
+      <div class="hero__cta">
+        <a class="btn-solid" href="project.html">Découvrir nos travaux <span aria-hidden="true">→</span></a>
+        <a class="btn-ghost" href="news.html">Actualités</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────────────────────  STAT COUNTERS  ─────────────────────── -->
+<section class="stats fullbleed">
+  <div class="wrap">
+    <div class="stat"><div class="num">3</div><div class="lab">Pôles nationaux</div></div>
+    <div class="stat"><div class="num">41,8&nbsp;%</div><div class="lab">des cas de paludisme dans le monde</div></div>
+    <div class="stat"><div class="num">46,5&nbsp;%</div><div class="lab">des décès dus au paludisme dans le monde</div></div>
+    <div class="stat"><div class="num">2024–28</div><div class="lab">Programme financé</div></div>
+    <p class="stats__note">Charge du paludisme dans les trois pays hôtes · Source : Rapport mondial sur le paludisme de l'OMS, 2024</p>
+  </div>
+</section>
+
+<!-- ─────────────────────────────  FUNDER  ─────────────────────────── -->
+<section class="funder fullbleed">
+  <div class="wrap">
+    <div class="funder__text">
+      <p class="funder__label">Avec le soutien de</p>
+      <p>MoDD Africa est financé par le Wellcome Trust (nov. 2024 – oct. 2028) dans le cadre de son soutien à la recherche sur le changement climatique et la santé.</p>
+    </div>
+    <a class="funder__logo" href="https://wellcome.org" target="_blank" rel="noopener">
+      <img src="../assets/wellcome-trust.png" alt="Wellcome Trust">
+    </a>
+  </div>
+</section>
+```

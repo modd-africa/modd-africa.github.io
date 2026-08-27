@@ -1,0 +1,77 @@
+---
+lang: fr
+title: "Synthèse des données probantes"
+subtitle: "L'unité de synthèse des données probantes rassemble, analyse et communique les données qui sous-tendent les modèles et les conseils de MoDD Africa. Les outils sont ouverts et reproductibles."
+---
+[L'unité]{.eyebrow}
+
+## Des données aux décisions
+
+L'unité de synthèse des données probantes met en œuvre un pipeline reproductible, des données brutes aux résultats prêts pour la décision : acquisition et examen des données existantes, remise en forme pour la modélisation, construction de bases de données partagées et d'outils visuels (comme **MosquitoDB** et des applications **Shiny** interactives), puis analyse, validation et mise en forme des résultats pour les programmes nationaux de lutte contre le paludisme et les partenaires — avec des mises à jour à mesure qu'arrivent de nouvelles données et de nouveaux retours.
+
+Le cadre de modélisation couvre la composition en espèces (une ou plusieurs espèces), des méthodes spatio-temporelles (par ex. les GAM et les modèles hiérarchiques bayésiens) et une saisonnalité explicite, alimentés par des données climatiques et environnementales à haute résolution et structurés du niveau national au niveau infranational — afin que les résultats puissent éclairer des décisions concrètes, comme le calendrier des campagnes de PID (pulvérisation intradomiciliaire) et de MILDA (moustiquaires imprégnées) pour coïncider avec les pics de transmission.
+
+[Outils ouverts]{.eyebrow}
+
+## Le package `moddafricaes`
+
+`moddafricaes` — *MoDD Africa Evidence Synthesis* — est le package R de l'unité pour rassembler, analyser et communiquer les données probantes. Son premier pipeline de bout en bout transforme la réanalyse climatique **ERA5-Land** en données prêtes à l'analyse : dériver la boîte englobante (*bounding box*) de la zone d'étude à partir d'un shapefile, télécharger les NetCDF horaires depuis le Copernicus Climate Data Store (CDS), puis les convertir en Parquet (horaire ou mensuel) ou en GeoTIFF (température mensuelle minimale / maximale).
+
+Le code source est disponible sur GitHub : [github.com/modd-africa/moddafricaes](https://github.com/modd-africa/moddafricaes).
+
+### Installation
+
+```r
+# pak (recommandé — installe aussi les dépendances système)
+# install.packages("pak")
+pak::pak("modd-africa/moddafricaes")
+
+# ou avec remotes / devtools
+remotes::install_github("modd-africa/moddafricaes")
+```
+
+Vous aurez également besoin d'un compte Copernicus CDS et d'une clé API exportée sous `CDS_API_KEY` (voir <https://cds.climate.copernicus.eu/>).
+
+### Le pipeline
+
+| Fonction | Étape | Sortie |
+|---|---|---|
+| `get_bounding_box()` | Configuration | Vecteur numérique `c(N, W, S, E)` (ordre CDS) |
+| `extract_era5land()` | Téléchargement | Un NetCDF par (année, mois) |
+| `transform_era5land()` | Transformation | Un Parquet par année (horaire) |
+| `transform_era5land_monthly()` | Transformation | Un Parquet (moyennes mensuelles) |
+| `transform_era5land_minmax()` | Transformation | Piles GeoTIFF des min / max mensuels de température à 2 m |
+
+: Toutes les boîtes englobantes utilisent l'ordre Copernicus CDS `c(N, W, S, E)` — et non l'ordre `(xmin, ymin, xmax, ymax)` de `sf::st_bbox()`. {tbl-colwidths="[34,20,46]"}
+
+### De bout en bout
+
+```r
+library(moddafricaes)
+
+# 1. Dériver une boîte englobante à partir d'un shapefile (les shapefiles zippés fonctionnent via /vsizip/)
+bbox <- get_bounding_box(
+  "/vsizip/utilities/province26.zip/provinces26/Province26.shp"
+)
+
+# 2. Télécharger les NetCDF ERA5-Land horaires pour la bbox (nécessite CDS_API_KEY)
+extract_era5land(
+  bbox       = bbox,
+  years      = 2020:2021,
+  output_dir = "data/era5land/nc"
+)
+
+# 3. Transformer les NetCDF horaires en un Parquet prêt à l'analyse par année
+transform_era5land(
+  input_dir  = "data/era5land/nc",
+  output_dir = "data/era5land/parquet",
+  dem_tif    = "RDC_Elevation_Complete.tif",
+  years      = 2020:2021
+)
+```
+
+La transformation horaire dé-cumule les précipitations et le rayonnement solaire descendant de courtes longueurs d'onde par jour, calcule la vitesse du vent, l'humidité relative, le déficit de pression de vapeur et la température en degrés Celsius, et associe l'altitude issue du MNT (modèle numérique de terrain) à la grille ERA5-Land de 0,1°. Chaque étape d'écriture est idempotente : une sortie lisible déjà présente court-circuite le travail, tandis qu'une sortie corrompue est supprimée puis régénérée, de sorte que les ré-exécutions reprennent proprement.
+
+::: {.callout-warning appearance="simple"}
+**Limite connue.** Forcer à zéro les totaux quotidiens dé-cumulés à l'heure 0 n'est exact que là où 00 h UTC tombe pendant la nuit (comme en Afrique centrale). Dans les régions où 00 h UTC correspond au jour, le flux réel de courtes longueurs d'onde serait silencieusement mis à zéro à la limite du jour — à revoir avant d'appliquer le pipeline ailleurs.
+:::
