@@ -12,6 +12,6 @@ The hubs work directly with **National Malaria Programmes** — including the Na
 ```{=html}
 <div class="partners">
   <img src="assets/partner-ihi.jpeg" alt="Ifakara Health Institute">
-  <img src="assets/partner-nmcp.png" alt="National Malaria Control Programme, Tanzania">
+  <img src="assets/nmcplogo.webp" alt="National Malaria Control Programme, Tanzania">
 </div>
 ```

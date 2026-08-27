@@ -25,13 +25,13 @@ website:
     left:
       - text: "The Project"
         href: project.qmd
-      - text: "Hubs & Partners"
-        href: hubs.qmd
+      - text: "Partners"
+        href: partners.qmd
       - text: "Evidence Synthesis"
         href: evidence-synthesis.qmd
       - text: "Get Involved"
         href: engage.qmd
-      - text: "Team"
+      - text: "Team & Hubs"
         href: team.qmd  
       - text: "News"
         href: news.qmd  
@@ -49,8 +49,8 @@ website:
     center:
       - text: "The Project"
         href: project.qmd
-      - text: "Hubs & Partners"
-        href: hubs.qmd
+      - text: "Partners"
+        href: partners.qmd
       - text: "Evidence Synthesis"
         href: evidence-synthesis.qmd
       - text: "Get Involved"
