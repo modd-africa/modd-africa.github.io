@@ -51,15 +51,15 @@ subtitle: "MoDD Africa is delivered by a regional office at the Ifakara Health I
   </div>
   <div class="person" data-group="regional">
     <img class="avatar" src="assets/team-ketende.jpg" alt="Sosthenes Ketende">
-    <h3>Sosthenes Ketende</h3><p class="role">Programme Manager</p>
+    <h3>Sosthenes Ketende</h3><p class="role">Program Manager</p>
   </div>
   <div class="person" data-group="regional">
-    <div class="avatar">DM</div>
+    <img class="avatar" src="assets/team-diana.jpg" alt="Diana Mwanamboka">
     <h3>Diana Mwanamboka</h3><p class="role">Project Administrator</p>
   </div>
   <div class="person" data-group="regional">
     <img class="avatar" src="assets/team-kiware.jpg" alt="Samson Kiware">
-    <h3>Samson Kiware</h3><p class="role">Mathematical Modelling Lead</p>
+    <h3>Dr. Samson Kiware</h3><p class="role">Mathematical Modelling Lead</p>
   </div>
 
   <div class="person" data-group="tanzania">
@@ -67,11 +67,11 @@ subtitle: "MoDD Africa is delivered by a regional office at the Ifakara Health I
     <h3>Dr. Yeromin Mlacha</h3><p class="role">Hub Lead</p><p class="org">Tanzania</p>
   </div>
   <div class="person" data-group="tanzania">
-    <div class="avatar">LN</div>
+    <img class="avatar" src="assets/team-lembris.jpeg" alt="Lembris Njoto">
     <h3>Dr. Lembris Njoto</h3><p class="role">Senior Modeller</p><p class="org">Tanzania</p>
   </div>
   <div class="person" data-group="tanzania">
-    <div class="avatar">KI</div>
+    <img class="avatar" src="assets/team-ilomo.jpg" alt="Kaiza Ilomo">
     <h3>Kaiza Ilomo</h3><p class="role">Evidence Synthesis Lead</p><p class="org">Tanzania</p>
   </div>
 
