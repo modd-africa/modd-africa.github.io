@@ -97,10 +97,14 @@ background: #0F2E1C;
 
 <meta property="og:title" content="News – MoDD Africa">
 <meta property="og:description" content="Milestones, meetings and updates from across the MoDD Africa network.">
+<meta property="og:image" content="https://modd-africa.github.io/assets/news-hackathon-1.jpg">
 <meta property="og:site_name" content="MoDD Africa">
+<meta property="og:image:alt" content="">
 <meta name="twitter:title" content="News – MoDD Africa">
 <meta name="twitter:description" content="Milestones, meetings and updates from across the MoDD Africa network.">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://modd-africa.github.io/assets/news-hackathon-1.jpg">
+<meta name="twitter:image:alt" content="">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -195,24 +199,157 @@ background: #0F2E1C;
 
 
 
-<p><span class="eyebrow">26–29 January 2026 · Dar es Salaam, Tanzania</span></p>
-<section id="annual-meeting-taking-stock-planning-the-year-ahead" class="level2">
-<h2 class="anchored" data-anchor-id="annual-meeting-taking-stock-planning-the-year-ahead">Annual meeting: taking stock, planning the year ahead</h2>
-<p>A year on from launch, the network reconvened in Dar es Salaam for its annual meeting — a chance to review the first year’s progress and set priorities for the next. It drew the regional office team, country leads, postdoctoral researchers and accountants from each hub, together with the National Malaria Programme representative and the climate and environmental data representative.</p>
-<p>Proceedings opened with a moment of silence for Dr.&nbsp;Prosper Chaki, Director of Resource Mobilisation at the Ifakara Health Institute, who had passed away on the 24 January 2026. In closing, Dr.&nbsp;Samson Kiware thanked participants for their contributions and underscored the importance of delivering the project well, for the benefit of the communities each team serves.</p>
-<p><a href="https://ihi.or.tz/our-events/1041/details/">Read the full write-up at IHI →</a></p>
-<hr>
-<p><span class="eyebrow">28–30 November 2024 · Nairobi, Kenya</span></p>
-</section>
-<section id="the-network-launches-at-its-project-leads-kickoff" class="level2">
-<h2 class="anchored" data-anchor-id="the-network-launches-at-its-project-leads-kickoff">The network launches at its project leads kickoff</h2>
-<p>MoDD Africa formally got under way with a three-day kickoff meeting for project leads, hosted at the International Centre of Insect Physiology and Ecology (ICIPE) in Nairobi. Technical staff, country leads and senior researchers came together to align on the project’s four-year agenda.</p>
-<p>The first day set out the full roadmap, with the Tanzania, Nigeria and DRC teams introducing the very different ecological and health-system settings each hub will work in, and the group agreeing on first-year activities and deliverables. Day two turned to the science — malaria interventions in urban settings, early-warning systems for emerging threats, and bringing entomological and epidemiological models together — alongside a working session mapping where usable data exists and where the gaps remain. The final day focused on getting operational: recruitment, budgets, logistics, and the skills and networks needed to deliver.</p>
-<p>The hubs left with a clear next step: convening their own national kickoffs to bring in local stakeholders, including the National Malaria Programmes.</p>
-<p><a href="https://www.ihi.or.tz/our-events/610/details/">Read the full write-up at IHI →</a></p>
+<style>
+  .news-slider { position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: 16px; background: #fff; box-shadow: var(--shadow-1); margin-top: 2rem; }
+  .news-track { display: flex; transition: transform .5s cubic-bezier(.4,.0,.2,1); }
+  .news-slide { flex: 0 0 100%; display: grid; grid-template-columns: 45% 1fr; }
+  .news-slide__media { position: relative; min-height: 340px; background: var(--haze); }
+  .news-slide__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1.6s ease; display: block; }
+  .news-slide__media img.is-active { opacity: 1; }
+  .news-slide__body { padding: 2rem 2.3rem; align-self: center; }
+  .news-slide__body .date { font-family: "IBM Plex Mono", monospace; font-size: .74rem; letter-spacing: .06em; color: var(--field); }
+  .news-slide__body h3 { margin: .5rem 0 .7rem; font-size: 1.35rem; line-height: 1.2; color: var(--ink); }
+  .news-slide__body p { color: var(--muted); margin: 0 0 1.1rem; }
+  .news-slide__body a.more { font-family: "IBM Plex Mono", monospace; font-size: .82rem; color: var(--field-d); text-decoration: none; }
+  .news-slide__body a.more:hover { color: var(--signal); }
+  .news-nav { position: absolute; top: 50%; transform: translateY(-50%); z-index: 4; width: 40px; height: 40px; border: 0; border-radius: 50%; background: rgba(15,46,28,.75); color: #fff; font-size: 1.4rem; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+  .news-nav:hover { background: var(--field); }
+  .news-prev { left: 12px; } .news-next { right: 12px; }
+  .news-dots { position: absolute; bottom: 12px; left: 0; right: 0; display: flex; justify-content: center; gap: 8px; z-index: 4; }
+  .news-dot { width: 9px; height: 9px; border-radius: 50%; border: 0; padding: 0; background: rgba(15,46,28,.28); cursor: pointer; }
+  .news-dot.is-active { background: var(--field); }
+  @media (max-width: 760px) {
+    .news-slide { grid-template-columns: 1fr; }
+    .news-slide__media { min-height: 220px; }
+    .news-slide__body { padding: 1.4rem 1.4rem 2.2rem; }
+  }
+</style>
+
+<div class="news-slider" data-autoplay="7000">
+  <div class="news-track">
+
+    <article class="news-slide">
+      <div class="news-slide__media" data-photo-interval="5000">
+        <img src="assets/news-hackathon-1.jpg" class="is-active" alt="">
+        <img src="assets/news-hackathon-2.jpg" alt="">
+      </div>
+      <div class="news-slide__body">
+        <div class="date">April 2026 · Zanzibar, Tanzania</div>
+        <h3 class="anchored">Modelling hackathon brings the hubs together</h3>
+        <p>Cross-hub working groups spent the week tackling shared technical challenges hands-on — from building an ERA5-and-elevation climate pipeline for Kinshasa to modelling vector biting behaviour, microclimate and vectorial capacity — turning the network's collaboration and skill-building aims into working code.</p>
+      </div>
+    </article>
+
+    <article class="news-slide">
+      <div class="news-slide__media" data-photo-interval="5000">
+        <img src="assets/news-annual-1.jpg" class="is-active" alt="">
+        <img src="assets/news-annual-2.jpg" alt="">
+      </div>
+      <div class="news-slide__body">
+        <div class="date">26–29 January 2026 · Dar es Salaam, Tanzania</div>
+        <h3 class="anchored">Annual meeting: taking stock, planning the year ahead</h3>
+        <p>A year on from launch, the network reconvened in Dar es Salaam to review the first year's progress and set priorities for the next — drawing country leads, researchers and programme partners from across the hubs.</p>
+        <a class="more" href="https://ihi.or.tz/our-events/1041/details/">Read the full write-up at IHI →</a>
+      </div>
+    </article>
+
+    <article class="news-slide">
+      <div class="news-slide__media" data-photo-interval="5000">
+        <img src="assets/news-climate-1.jpg" class="is-active" alt="">
+        <img src="assets/news-climate-2.jpg" alt="">
+      </div>
+      <div class="news-slide__body">
+        <div class="date">14 July 2025 · Dar es Salaam, Tanzania</div>
+        <h3 class="anchored">Coordinating climate and health modelling in Tanzania</h3>
+        <p>MoDD Africa joined partner projects — the Malaria Atlas Project, the University of Dar es Salaam and HISP (DHIS2) — for a one-day meeting to align Tanzania's climate-and-health modelling: mapping each project's activities, shaping an integrated workplan, and advancing plans for a national Climate and Health Technical Working Group with the NMCP and Ministry of Health.</p>
+      </div>
+    </article>
+
+    <article class="news-slide">
+      <div class="news-slide__media" data-photo-interval="5000">
+        <img src="assets/news-morogoro-1.jpg" class="is-active" alt="">
+        <img src="assets/news-morogoro-2.jpg" alt="">
+        <img src="assets/news-morogoro-3.jpg" alt="">
+      </div>
+      <div class="news-slide__body">
+        <div class="date">13–14 February 2025 · Morogoro, Tanzania</div>
+        <h3 class="anchored">Bringing climate modelling to Tanzania's malaria stakeholders</h3>
+        <p>MoDD Africa and the <em>Modelling Climate on Malaria in Tanzania</em> project introduced their work to the Ministry of Health, the National Malaria Control Programme and partners including the Tanzania Meteorological Agency, UDSM and NM-AIST. Over two days the group built a shared picture of Tanzania's malaria and climate challenges, explored new climate–health data tools, and agreed next steps on data sharing and a joint steering committee.</p>
+      </div>
+    </article>
+
+    <article class="news-slide">
+      <div class="news-slide__media">
+        <img src="assets/news-kickoff.jpg" class="is-active" alt="">
+      </div>
+      <div class="news-slide__body">
+        <div class="date">28–30 November 2024 · Nairobi, Kenya</div>
+        <h3 class="anchored">The network launches at its project leads kickoff</h3>
+        <p>MoDD Africa formally got under way with a three-day kickoff at ICIPE in Nairobi, aligning the team on the four-year roadmap, the science agenda, and getting the hubs operational.</p>
+        <a class="more" href="https://www.ihi.or.tz/our-events/610/details/">Read the full write-up at IHI →</a>
+      </div>
+    </article>
+
+  </div>
+  <button class="news-nav news-prev" aria-label="Previous">‹</button>
+  <button class="news-nav news-next" aria-label="Next">›</button>
+  <div class="news-dots"></div>
+</div>
+
+<script>
+(function () {
+  var slider = document.querySelector('.news-slider');
+  if (!slider) return;
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ── Inner photo cross-fade (per story) ──
+  slider.querySelectorAll('.news-slide__media').forEach(function (m) {
+    var ph = m.querySelectorAll('img');
+    if (ph.length < 2 || reduce) return;
+    var iv = parseInt(m.getAttribute('data-photo-interval'), 10) || 3500;
+    var k = 0;
+    setInterval(function () {
+      ph[k].classList.remove('is-active');
+      k = (k + 1) % ph.length;
+      ph[k].classList.add('is-active');
+    }, iv);
+  });
+
+  // ── Outer story carousel ──
+  var track  = slider.querySelector('.news-track');
+  var slides = Array.prototype.slice.call(slider.querySelectorAll('.news-slide'));
+  var dotsWrap = slider.querySelector('.news-dots');
+  var n = slides.length, i = 0, timer = null;
+  if (n <= 1) {
+    var pv = slider.querySelector('.news-prev'), nx = slider.querySelector('.news-next');
+    if (pv) pv.style.display = 'none'; if (nx) nx.style.display = 'none'; return;
+  }
+  slides.forEach(function (_, k) {
+    var d = document.createElement('button');
+    d.className = 'news-dot' + (k === 0 ? ' is-active' : '');
+    d.setAttribute('aria-label', 'Go to story ' + (k + 1));
+    d.addEventListener('click', function () { go(k); reset(); });
+    dotsWrap.appendChild(d);
+  });
+  var dots = dotsWrap.querySelectorAll('.news-dot');
+  function go(k) {
+    i = (k + n) % n;
+    track.style.transform = 'translateX(-' + (i * 100) + '%)';
+    dots.forEach(function (d, j) { d.classList.toggle('is-active', j === i); });
+  }
+  function next() { go(i + 1); } function prev() { go(i - 1); }
+  slider.querySelector('.news-next').addEventListener('click', function () { next(); reset(); });
+  slider.querySelector('.news-prev').addEventListener('click', function () { prev(); reset(); });
+  var delay = parseInt(slider.getAttribute('data-autoplay'), 10) || 0;
+  function start() { if (delay && !reduce) timer = setInterval(next, delay); }
+  function reset() { clearInterval(timer); start(); }
+  slider.addEventListener('mouseenter', function () { clearInterval(timer); });
+  slider.addEventListener('mouseleave', start);
+  start();
+})();
+</script>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

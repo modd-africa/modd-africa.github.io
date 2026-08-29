@@ -93,44 +93,30 @@
   {
     "objectID": "fr/team.html",
     "href": "fr/team.html",
-    "title": "Le projet",
+    "title": "Équipe et pôles",
     "section": "",
-    "text": "Contexte"
+    "text": "Coordination"
   },
   {
-    "objectID": "fr/team.html#climat-et-santé-dans-une-afrique-en-mutation",
-    "href": "fr/team.html#climat-et-santé-dans-une-afrique-en-mutation",
-    "title": "Le projet",
-    "section": "Climat et santé dans une Afrique en mutation",
-    "text": "Climat et santé dans une Afrique en mutation\nLe climat de l’Afrique évolue rapidement, redéfinissant l’endroit où vivent les vecteurs de maladies, leur abondance et leurs pics d’activité. Cela accroît les enjeux de la lutte contre les maladies à transmission vectorielle et des décisions que doivent prendre les systèmes de santé publique. À eux seuls, les trois pays hôtes — la RDC, le Nigéria et la Tanzanie — représentent 41,8 % des cas de paludisme dans le monde et 46,5 % des décès (Rapport mondial sur le paludisme de l’OMS, 2024), ce qui explique pourquoi le réseau démarre ici. Le projet articule le problème autour de quatre priorités :\n\nComment l’environnement change-t-il pour les vecteurs, et comment les populations sont-elles affectées ?\nQuelle est l’efficacité des systèmes de santé dans la lutte contre la maladie ?\nDans quelle mesure les programmes et les décideurs sont-ils capables de s’adapter aux menaces émergentes ?\nQuels outils d’intervention optimisés, systèmes d’alerte précoce et données probantes sont nécessaires pour y répondre ?\n\nRépondre à ces besoins exige des modèles fiables, qui résistent à l’épreuve du réel et évoluent au rythme du changement.\nApproche"
+    "objectID": "fr/team.html#direction",
+    "href": "fr/team.html#direction",
+    "title": "Équipe et pôles",
+    "section": "Direction",
+    "text": "Direction\n\n  \n    \n    Dre Susan Rumisha\n    Responsable d'équipe\n    Ifakara Health Institute\n  \n\nL’équipe"
   },
   {
-    "objectID": "fr/team.html#larchitecture-de-modélisation-era",
-    "href": "fr/team.html#larchitecture-de-modélisation-era",
-    "title": "Le projet",
-    "section": "L’architecture de modélisation ERA",
-    "text": "L’architecture de modélisation ERA\nMoDD Africa repose sur une approche de modélisation Efficace, Robuste et Adaptable (ERA) :\n\nEfficace — des méthodes qui produisent des réponses sur lesquelles les décideurs peuvent agir.\nRobuste — des résultats qui tiennent face à l’incertitude du monde réel et à des données incomplètes.\nAdaptable — des modèles qui évoluent à mesure que changent les conditions, les questions et les maladies.\n\nLa méthode de travail est collaborative, transparente, durable et adaptative : co-conception avec les programmes nationaux de lutte contre le paludisme et les partenaires dès le départ, transparence sur les résultats des modèles et leurs limites, et renforcement de l’écosystème existant plutôt que de le contourner."
+    "objectID": "fr/team.html#nos-membres",
+    "href": "fr/team.html#nos-membres",
+    "title": "Équipe et pôles",
+    "section": "Nos membres",
+    "text": "Nos membres\n\n  Tous\n  Bureau régional\n  Tanzanie\n  RD Congo\n  Nigéria\n\n\n\n\n  \n    \n    Dre Punam AmratiaResponsable technique\n  \n  \n    \n    Sosthenes KetendeResponsable de programme\n  \n  \n    \n    Diana MwanambokaAdministratrice du projet\n  \n  \n    \n    Dr Samson KiwareResponsable de la modélisation mathématique\n  \n\n  \n    \n    Dr Yeromin MlachaResponsable de pôleTanzanie\n  \n  \n    \n    Dr Lembris NjotoModélisateur principalTanzanie\n  \n  \n    \n    Kaiza IlomoResponsable de la synthèse des données probantesTanzanie\n  \n\n  \n    \n    Pr Emery MeteloResponsable de pôleRD Congo\n  \n  \n    RY\n    Rodriguez YomboModélisateur principalRD Congo\n  \n  \n    AB\n    Arsene BokuluResponsable de la synthèse des données probantesRD Congo\n  \n\n  \n    \n    Dr Adedapo AdeogunResponsable de pôleNigéria\n  \n  \n    TA\n    Taiwo AdekunleModélisateur principalNigéria\n  \n  \n    AB\n    Ayodele BabalolaModélisateur principalNigéria\n  \n\n\n\n\nLe réseau"
   },
   {
-    "objectID": "fr/team.html#lots-de-travaux",
-    "href": "fr/team.html#lots-de-travaux",
-    "title": "Le projet",
-    "section": "Lots de travaux",
-    "text": "Lots de travaux\n\nWP1 ::: {.wp__body} ### Vecteurs et environnement Répartition et saisonnalité des vecteurs dans le contexte des changements environnementaux actuels.\n\n:::\n\nWP2 ::: {.wp__body} ### Interventions L’impact des changements environnementaux sur les stratégies de lutte antipaludique.\n\n:::\n\nWP3 ::: {.wp__body} ### Alerte précoce Unifier les modèles entomologiques et épidémiologiques pour fournir des systèmes d’alerte précoce face aux menaces sanitaires émergentes.\n\n:::\n\nWP4 ::: {.wp__body} ### Compétences et réseaux Un cadre unifié pour le renforcement des compétences, la mise en réseau et la connectivité afin de maximiser l’impact de la modélisation.\n\n:::\nnov. 2024 – oct. 2028"
-  },
-  {
-    "objectID": "fr/team.html#ce-que-nous-allons-produire",
-    "href": "fr/team.html#ce-que-nous-allons-produire",
-    "title": "Le projet",
-    "section": "Ce que nous allons produire",
-    "text": "Ce que nous allons produire\nSur les quatre années du projet, MoDD Africa vise à :\n\nÉtablir des pôles de modélisation en Tanzanie, en RDC et au Nigéria.\nDévelopper des systèmes de conseil pertinents, fondés sur la modélisation, pour la lutte antipaludique.\nPartager les connaissances par la formation inter-pôles, des hackathons et concours de modélisation, et une communauté de pratique en épidémiologie vectorielle et en modélisation.\nConstituer une solide unité de synthèse des données probantes.\n\nBien que l’accent initial porte sur le paludisme, l’approche est conçue pour s’étendre à d’autres maladies à transmission vectorielle, comme les arboviroses.\nFinancement"
-  },
-  {
-    "objectID": "fr/team.html#financement",
-    "href": "fr/team.html#financement",
-    "title": "Le projet",
-    "section": "Financement",
-    "text": "Financement\nCes travaux ont été soutenus par le Wellcome Trust [numéro de subvention]. MoDD Africa se déroule de novembre 2024 à octobre 2028."
+    "objectID": "fr/team.html#les-pôles",
+    "href": "fr/team.html#les-pôles",
+    "title": "Équipe et pôles",
+    "section": "Les pôles",
+    "text": "Les pôles\nChaque pôle développe des capacités locales de modélisation tout en partageant méthodes, données et enseignements à l’échelle du réseau. La Tanzanie assure la coordination ; la RDC et le Nigéria ancrent les travaux dans des contextes écologiques et épidémiologiques différents.\n\n  \n    \n    \n      Pôle coordinateur\n      Tanzanie — Ifakara Health Institute\n      Accueille le projet en tant que coordinateur régional et principal bénéficiaire des fonds, et pilote les efforts pour établir les pôles et renforcer les capacités régionales.\n    \n  \n  \n    \n    \n      RD Congo — INRB\n      Anime le pôle de RDC depuis l'Institut national de recherche biomédicale (INRB), dans l'un des contextes de plus forte charge palustre du continent.\n    \n  \n  \n    \n    \n      Nigéria — NIMR\n      Anime le pôle du Nigéria depuis le Nigerian Institute of Medical Research (NIMR), et étend le réseau au contexte de transmission et de système de santé propre à l'Afrique de l'Ouest."
   },
   {
     "objectID": "evidence-synthesis.html",
@@ -214,7 +200,7 @@
     "href": "team.html#our-people",
     "title": "Team & Hubs",
     "section": "Our people",
-    "text": "Our people\n\n  All\n  Regional office\n  Tanzania\n  DR Congo\n  Nigeria\n\n\n\n\n  \n    \n    Dr. Punam AmratiaTechnical Lead\n  \n  \n    \n    Sosthenes KetendeProgramme Manager\n  \n  \n    DM\n    Diana MwanambokaProject Administrator\n  \n  \n    \n    Samson KiwareMathematical Modelling Lead\n  \n\n  \n    \n    Dr. Yeromin MlachaHub LeadTanzania\n  \n  \n    LN\n    Dr. Lembris NjotoSenior ModellerTanzania\n  \n  \n    KI\n    Kaiza IlomoEvidence Synthesis LeadTanzania\n  \n\n  \n    \n    Prof. Emery MeteloHub LeadDR Congo\n  \n  \n    RY\n    Rodriguez YomboSenior ModellerDR Congo\n  \n  \n    AB\n    Arsene BokuluEvidence Synthesis LeadDR Congo\n  \n\n  \n    \n    Dr. Adedapo AdeogunHub LeadNigeria\n  \n  \n    TA\n    Taiwo AdekunleSenior ModellerNigeria\n  \n  \n    AB\n    Ayodele BabalolaSenior ModellerNigeria\n  \n\n\n\n\nThe network"
+    "text": "Our people\n\n  All\n  Regional office\n  Tanzania\n  DR Congo\n  Nigeria\n\n\n\n\n  \n    \n    Dr. Punam AmratiaTechnical Lead\n  \n  \n    \n    Sosthenes KetendeProgram Manager\n  \n  \n    \n    Diana MwanambokaProject Administrator\n  \n  \n    \n    Dr. Samson KiwareMathematical Modelling Lead\n  \n\n  \n    \n    Dr. Yeromin MlachaHub LeadTanzania\n  \n  \n    \n    Dr. Lembris NjotoSenior ModellerTanzania\n  \n  \n    \n    Kaiza IlomoEvidence Synthesis LeadTanzania\n  \n\n  \n    \n    Prof. Emery MeteloHub LeadDR Congo\n  \n  \n    RY\n    Rodriguez YomboSenior ModellerDR Congo\n  \n  \n    AB\n    Arsene BokuluEvidence Synthesis LeadDR Congo\n  \n\n  \n    \n    Dr. Adedapo AdeogunHub LeadNigeria\n  \n  \n    TA\n    Taiwo AdekunleSenior ModellerNigeria\n  \n  \n    AB\n    Ayodele BabalolaSenior ModellerNigeria\n  \n\n\n\n\nThe network"
   },
   {
     "objectID": "team.html#the-hubs",
@@ -410,20 +396,6 @@
     "href": "news.html",
     "title": "News",
     "section": "",
-    "text": "26–29 January 2026 · Dar es Salaam, Tanzania"
-  },
-  {
-    "objectID": "news.html#annual-meeting-taking-stock-planning-the-year-ahead",
-    "href": "news.html#annual-meeting-taking-stock-planning-the-year-ahead",
-    "title": "News",
-    "section": "Annual meeting: taking stock, planning the year ahead",
-    "text": "Annual meeting: taking stock, planning the year ahead\nA year on from launch, the network reconvened in Dar es Salaam for its annual meeting — a chance to review the first year’s progress and set priorities for the next. It drew the regional office team, country leads, postdoctoral researchers and accountants from each hub, together with the National Malaria Programme representative and the climate and environmental data representative.\nProceedings opened with a moment of silence for Dr. Prosper Chaki, Director of Resource Mobilisation at the Ifakara Health Institute, who had passed away on the 24 January 2026. In closing, Dr. Samson Kiware thanked participants for their contributions and underscored the importance of delivering the project well, for the benefit of the communities each team serves.\nRead the full write-up at IHI →\n\n28–30 November 2024 · Nairobi, Kenya"
-  },
-  {
-    "objectID": "news.html#the-network-launches-at-its-project-leads-kickoff",
-    "href": "news.html#the-network-launches-at-its-project-leads-kickoff",
-    "title": "News",
-    "section": "The network launches at its project leads kickoff",
-    "text": "The network launches at its project leads kickoff\nMoDD Africa formally got under way with a three-day kickoff meeting for project leads, hosted at the International Centre of Insect Physiology and Ecology (ICIPE) in Nairobi. Technical staff, country leads and senior researchers came together to align on the project’s four-year agenda.\nThe first day set out the full roadmap, with the Tanzania, Nigeria and DRC teams introducing the very different ecological and health-system settings each hub will work in, and the group agreeing on first-year activities and deliverables. Day two turned to the science — malaria interventions in urban settings, early-warning systems for emerging threats, and bringing entomological and epidemiological models together — alongside a working session mapping where usable data exists and where the gaps remain. The final day focused on getting operational: recruitment, budgets, logistics, and the skills and networks needed to deliver.\nThe hubs left with a clear next step: convening their own national kickoffs to bring in local stakeholders, including the National Malaria Programmes.\nRead the full write-up at IHI →"
+    "text": "April 2026 · Zanzibar, Tanzania\n        Modelling hackathon brings the hubs together\n        Cross-hub working groups spent the week tackling shared technical challenges hands-on — from building an ERA5-and-elevation climate pipeline for Kinshasa to modelling vector biting behaviour, microclimate and vectorial capacity — turning the network's collaboration and skill-building aims into working code.\n      \n    \n\n    \n      \n        \n        \n      \n      \n        26–29 January 2026 · Dar es Salaam, Tanzania\n        Annual meeting: taking stock, planning the year ahead\n        A year on from launch, the network reconvened in Dar es Salaam to review the first year's progress and set priorities for the next — drawing country leads, researchers and programme partners from across the hubs.\n        Read the full write-up at IHI →\n      \n    \n\n    \n      \n        \n        \n      \n      \n        14 July 2025 · Dar es Salaam, Tanzania\n        Coordinating climate and health modelling in Tanzania\n        MoDD Africa joined partner projects — the Malaria Atlas Project, the University of Dar es Salaam and HISP (DHIS2) — for a one-day meeting to align Tanzania's climate-and-health modelling: mapping each project's activities, shaping an integrated workplan, and advancing plans for a national Climate and Health Technical Working Group with the NMCP and Ministry of Health.\n      \n    \n\n    \n      \n        \n        \n        \n      \n      \n        13–14 February 2025 · Morogoro, Tanzania\n        Bringing climate modelling to Tanzania's malaria stakeholders\n        MoDD Africa and the Modelling Climate on Malaria in Tanzania project introduced their work to the Ministry of Health, the National Malaria Control Programme and partners including the Tanzania Meteorological Agency, UDSM and NM-AIST. Over two days the group built a shared picture of Tanzania's malaria and climate challenges, explored new climate–health data tools, and agreed next steps on data sharing and a joint steering committee.\n      \n    \n\n    \n      \n        \n      \n      \n        28–30 November 2024 · Nairobi, Kenya\n        The network launches at its project leads kickoff\n        MoDD Africa formally got under way with a three-day kickoff at ICIPE in Nairobi, aligning the team on the four-year roadmap, the science agenda, and getting the hubs operational.\n        Read the full write-up at IHI →\n      \n    \n\n  \n  ‹\n  ›"
   }
 ]
