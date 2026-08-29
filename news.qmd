@@ -30,7 +30,7 @@ subtitle: "Milestones, meetings and updates from across the MoDD Africa network.
   }
 </style>
 
-<div class="news-slider" data-autoplay="7000">
+<div class="news-slider" data-autoplay="12000">
   <div class="news-track">
 
     <article class="news-slide">
