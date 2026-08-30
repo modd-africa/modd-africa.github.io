@@ -44,17 +44,6 @@ website:
     left: |
       **MoDD Africa** — Modelling for Decisions in a Dynamic Africa.
       Coordinated by the Ifakara Health Institute, Tanzania.
-    center:
-      - text: "The Project"
-        href: project.qmd
-      - text: "Evidence Synthesis"
-        href: evidence-synthesis.qmd
-      - text: "Team & Hubs"
-        href: team.qmd
-      - text: "Partners"
-        href: partners.qmd  
-      - text: "News"
-        href: news.qmd 
     right: |
       [![Wellcome Trust](assets/wellcome-trust.png){height=100px}](https://wellcome.org)
 

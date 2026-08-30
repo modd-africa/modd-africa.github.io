@@ -78,4 +78,4 @@ While the initial focus is malaria, the approach is designed to extend to other 
 
 ## Funding
 
-This work was supported by the Wellcome Trust [grant number]. MoDD Africa runs from November 2024 to October 2028.
+This work was supported by the Wellcome Trust. MoDD Africa runs from November 2024 to October 2028.
