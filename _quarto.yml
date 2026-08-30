@@ -27,8 +27,6 @@ website:
         href: index.qmd
       - text: "The Project"
         href: project.qmd
-      - text: "Evidence Synthesis"
-        href: evidence-synthesis.qmd
       - text: "Team & Hubs"
         href: team.qmd
       - text: "Partners"
