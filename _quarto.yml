@@ -18,26 +18,24 @@ website:
   navbar:
     background: "#0F2E1C"
     pinned: true
-    logo: assets/MoDD_logo.png
+    logo: assets/MoDD_logo_1.png
     logo-alt: "MoDD Africa"
     title: "MoDD Africa"
     collapse-below: lg
     left:
+      - text: "Home"
+        href: index.qmd
       - text: "The Project"
         href: project.qmd
-      - text: "Partners"
-        href: partners.qmd
       - text: "Evidence Synthesis"
         href: evidence-synthesis.qmd
-      - text: "Get Involved"
-        href: engage.qmd
       - text: "Team & Hubs"
-        href: team.qmd  
+        href: team.qmd
+      - text: "Partners"
+        href: partners.qmd  
       - text: "News"
         href: news.qmd  
     right:
-      - text: "Contact"
-        href: contact.qmd
       - icon: github
         href: "https://github.com/modd-africa"
         aria-label: "MoDD Africa on GitHub"
@@ -49,16 +47,14 @@ website:
     center:
       - text: "The Project"
         href: project.qmd
-      - text: "Partners"
-        href: partners.qmd
       - text: "Evidence Synthesis"
         href: evidence-synthesis.qmd
-      - text: "Get Involved"
-        href: engage.qmd
+      - text: "Team & Hubs"
+        href: team.qmd
+      - text: "Partners"
+        href: partners.qmd  
       - text: "News"
-        href: news.qmd
-      - text: "Contact"
-        href: contact.qmd
+        href: news.qmd 
     right: |
       [![Wellcome Trust](assets/wellcome-trust.png){height=100px}](https://wellcome.org)
 
