@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,13 +12,10 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
+code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: 1.5em;}
-div.column{flex: auto;}
-@media screen {
-div.columns{gap: min(4vw, 1.5em);}
-div.column{overflow-x: auto;}
-}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -70,17 +67,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./assets/MoDD_logo.png" rel="icon" type="image/png">
+<link href="./assets/brand.svg" rel="icon" type="image/svg+xml">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c290ef4a59108b95bc75a535d63a529b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-f3625b252fde649a6ec2d8ccc558f420.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4001330ceab9a3cb5c12f90b11f8cb41.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-19d5d9525b6f8d5356490bf9530568f2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -108,26 +105,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<style>
-
-      .quarto-title-block .quarto-title-banner h1,
-      .quarto-title-block .quarto-title-banner h2,
-      .quarto-title-block .quarto-title-banner h3,
-      .quarto-title-block .quarto-title-banner h4,
-      .quarto-title-block .quarto-title-banner h5,
-      .quarto-title-block .quarto-title-banner h6
-      {
-        color: #EAF3EE;
-      }
-
-      .quarto-title-block .quarto-title-banner {
-        color: #EAF3EE;
-background: #0F2E1C;
-      }
-</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Inter:wght@400;500;600;700&amp;family=Sora:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 
 
 <meta property="og:title" content="Evidence Synthesis – MoDD Africa">
@@ -141,13 +121,13 @@ background: #0F2E1C;
 <body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/MoDD_logo_1.png" alt="MoDD Africa" class="navbar-logo light-content">
-    <img src="./assets/MoDD_logo_1.png" alt="MoDD Africa" class="navbar-logo dark-content">
+    <img src="./assets/brand.svg" alt="MoDD Africa" class="navbar-logo light-content">
+    <img src="./assets/brand.svg" alt="MoDD Africa" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">MoDD Africa</span>
@@ -160,31 +140,27 @@ background: #0F2E1C;
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./project.html"> 
 <span class="menu-text">The Project</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./hubs.html"> 
+<span class="menu-text">Hubs &amp; Partners</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./evidence-synthesis.html" aria-current="page"> 
 <span class="menu-text">Evidence Synthesis</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./team.html"> 
-<span class="menu-text">Team &amp; Hubs</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./partners.html"> 
-<span class="menu-text">Partners</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./news.html"> 
-<span class="menu-text">News</span></a>
+    <a class="nav-link" href="./engage.html"> 
+<span class="menu-text">Get Involved</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/modd-africa"> <i class="bi bi-github" role="img" aria-label="MoDD Africa on GitHub">
 </i> 
@@ -198,41 +174,34 @@ background: #0F2E1C;
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Evidence Synthesis</h1>
-            <p class="subtitle lead">The Evidence Synthesis Unit collates, analyses and communicates the evidence behind MoDD Africa’s models and advice. The tooling is open and reproducible.</p>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Evidence Synthesis</h1>
+<p class="subtitle lead">The Evidence Synthesis Unit collates, analyses and communicates the evidence behind MoDD Africa’s models and advice. The tooling is open and reproducible.</p>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
-<p><span class="eyebrow">The unit</span></p>
-<section id="from-data-to-decisions" class="level2">
-<h2 class="anchored" data-anchor-id="from-data-to-decisions">From data to decisions</h2>
-<p>The Evidence Synthesis Unit runs a repeatable pipeline from raw data to decision-ready outputs: acquiring and reviewing existing data, re-formatting it for modelling, building shared databases and visual tools (such as <strong>MosquitoDB</strong> and interactive <strong>Shiny apps</strong>), then analysing, validating and packaging results for National Malaria Programmes and partners — and updating them as new data and feedback arrive.</p>
-<p>The modelling framework spans species composition (single- and multi-species), spatial-temporal methods (e.g.&nbsp;GAMs and Bayesian hierarchical models) and explicit seasonality, driven by fine-resolution climate and environmental data and structured from national down to sub-national levels — so outputs can inform practical decisions such as timing IRS and LLIN campaigns to align with peak transmission.</p>
+</header>
+
+
 <p><span class="eyebrow">Open tooling</span></p>
-</section>
 <section id="the-moddafricaes-package" class="level2">
 <h2 class="anchored" data-anchor-id="the-moddafricaes-package">The <code>moddafricaes</code> package</h2>
 <p><code>moddafricaes</code> — <em>MoDD Africa Evidence Synthesis</em> — is the unit’s R package for collating, analysing and communicating evidence. Its first end-to-end pipeline turns <strong>ERA5-Land</strong> climate reanalysis into analysis-ready data: derive a study-area bounding box from a shapefile, download hourly NetCDFs from the Copernicus Climate Data Store (CDS), and transform them into Parquet (hourly or monthly) or GeoTIFF (monthly minimum / maximum temperature).</p>
@@ -746,70 +715,32 @@ background: #0F2E1C;
 </a>
   </li>  
     <li class="nav-item">
+    <a class="nav-link" href="./hubs.html">
+<p>Hubs &amp; Partners</p>
+</a>
+  </li>  
+    <li class="nav-item">
     <a class="nav-link" href="./evidence-synthesis.html">
 <p>Evidence Synthesis</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="./team.html">
-<p>Team &amp; Hubs</p>
+    <a class="nav-link" href="./engage.html">
+<p>Get Involved</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="./partners.html">
-<p>Partners</p>
-</a>
-  </li>  
-    <li class="nav-item">
-    <a class="nav-link" href="./news.html">
-<p>News</p>
+    <a class="nav-link" href="./contact.html">
+<p>Contact</p>
 </a>
   </li>  
 </ul>
     </div>
     <div class="nav-footer-right">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="https://wellcome.org"><img src="assets/wellcome-trust.png" height="100" class="figure-img"></a></p>
-<figcaption>Wellcome Trust</figcaption>
-</figure>
-</div>
+<p>Funded by the Wellcome Trust · 2024–2028</p>
 </div>
   </div>
 </footer>
-<script>
-(function () {
-  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const t = document.querySelectorAll('.fcard,.hubcard,.post,.person,.wp,.card-link,.partners img,.funder,.vision .wrap,.section__lede,section.section h2');
-  t.forEach(el => el.classList.add('reveal'));
-  if (reduce || !('IntersectionObserver' in window)) { t.forEach(el => el.classList.add('is-visible')); }
-  else { const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } }), {threshold:.12, rootMargin:'0px 0px -8% 0px'}); t.forEach(el => io.observe(el)); }
-  const up = el => { const m = el.textContent.trim().match(/^(\d+(?:\.\d+)?)(%?)$/); if(!m) return; const end=parseFloat(m[1]),suf=m[2],dec=m[1].includes('.')?1:0; if(reduce){el.textContent=end.toFixed(dec)+suf;return;} const t0=performance.now(); const tick=t=>{const p=Math.min((t-t0)/1100,1),e=1-Math.pow(1-p,3); el.textContent=(end*e).toFixed(dec)+suf; if(p<1)requestAnimationFrame(tick);}; requestAnimationFrame(tick); };
-  const n=document.querySelectorAll('.stat .num');
-  if('IntersectionObserver' in window && !reduce){const io2=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){up(e.target);io2.unobserve(e.target);}}),{threshold:.5}); n.forEach(x=>io2.observe(x));} else n.forEach(up);
-
-            // ── Language switcher: EN | FR, both shown, dropped into the navbar ──
-  var lp = location.pathname;
-  var lIsFr = /\/fr\//.test(lp);
-  var enHref = lIsFr ? lp.replace(/\/fr\//, '/') : lp;
-  var frHref = lIsFr ? lp : lp.replace(/\/([^\/]*)$/, '/fr/$1');
-  var sw = document.createElement('div');
-  sw.className = 'lang-switch';
-  sw.innerHTML =
-    '<a href="' + enHref + '"' + (lIsFr ? '' : ' class="is-active"') + '>EN</a>' +
-    '<a href="' + frHref + '"' + (lIsFr ? ' class="is-active"' : '') + '>FR</a>';
-  var navs = document.querySelectorAll('.navbar-nav');
-  if (navs.length) {
-    var li = document.createElement('li');
-    li.className = 'nav-item lang-switch-item';
-    li.appendChild(sw);
-    navs[navs.length - 1].appendChild(li);
-  } else {
-    sw.classList.add('lang-switch--float');
-    document.body.appendChild(sw);
-  }
-})();
-</script>
 
 
 
