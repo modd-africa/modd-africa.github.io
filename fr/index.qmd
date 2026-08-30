@@ -20,7 +20,6 @@ toc: false
   <div class="hero__scrim"></div>
   <div class="wrap">
     <div class="hero__copy">
-      <p class="eyebrow eyebrow--light">Wellcome Trust · nov. 2024 – oct. 2028 · TZ / CD / NG</p>
       <h1>Modélisation pour la décision dans une <em>Afrique dynamique</em></h1>
       <p class="hero__thesis">Transformer les données environnementales, entomologiques et sanitaires en éléments probants fondés sur la modélisation et en prévisions — afin que les programmes de lutte contre le paludisme puissent anticiper un climat en évolution.</p>
       <div class="hero__cta">

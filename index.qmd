@@ -19,7 +19,6 @@ toc: false
   <div class="hero__scrim"></div>
   <div class="wrap">
     <div class="hero__copy">
-      <p class="eyebrow eyebrow--light">Wellcome Trust · Nov 2024 – Oct 2028 · TZ / CD / NG</p>
       <h1>Modelling for decisions in a <em>dynamic Africa</em></h1>
       <p class="hero__thesis">Turning environmental, entomological and health data into model-based evidence and forecasts — so malaria programmes can act ahead of a shifting climate.</p>
       <div class="hero__cta">
