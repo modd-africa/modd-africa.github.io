@@ -42,7 +42,7 @@ subtitle: "Étapes clés, rencontres et nouvelles de l'ensemble du réseau MoDD 
       <div class="news-slide__body">
         <div class="date">Avril 2026 · Zanzibar, Tanzanie</div>
         <h3>Un hackathon de modélisation réunit les pôles</h3>
-        <p>Des groupes de travail réunissant plusieurs pôles ont passé la semaine à relever ensemble des défis techniques communs — de la construction d'un pipeline climatique ERA5-et-altitude pour Kinshasa à la modélisation du comportement de piqûre des vecteurs, du microclimat et de la capacité vectorielle — transformant les objectifs de collaboration et de renforcement des compétences du réseau en code opérationnel.</p>
+        <p>Des groupes de travail réunissant plusieurs pôles ont passé la semaine à relever ensemble des défis techniques communs de la construction d'un pipeline climatique ERA5-et-altitude pour Kinshasa à la modélisation du comportement de piqûre des vecteurs, du microclimat et de la capacité vectorielle transformant les objectifs de collaboration et de renforcement des compétences du réseau en code opérationnel.</p>
       </div>
     </article>
 
@@ -67,7 +67,7 @@ subtitle: "Étapes clés, rencontres et nouvelles de l'ensemble du réseau MoDD 
       <div class="news-slide__body">
         <div class="date">14 juillet 2025 · Dar es Salaam, Tanzanie</div>
         <h3>Coordonner la modélisation climat-santé en Tanzanie</h3>
-        <p>MoDD Africa a rejoint des projets partenaires — le Malaria Atlas Project, l'Université de Dar es Salaam et HISP (DHIS2) — pour une journée de travail visant à harmoniser la modélisation climat-santé en Tanzanie : cartographier les activités de chaque projet, élaborer un plan de travail intégré et faire avancer la création d'un groupe de travail technique national sur le climat et la santé avec le NMCP et le ministère de la Santé.</p>
+        <p>MoDD Africa a rejoint des projets partenaires — le Malaria Atlas Project, l'Université de Dar es Salaam et HISP (DHIS2) pour une journée de travail visant à harmoniser la modélisation climat-santé en Tanzanie : cartographier les activités de chaque projet, élaborer un plan de travail intégré et faire avancer la création d'un groupe de travail technique national sur le climat et la santé avec le NMCP et le ministère de la Santé.</p>
       </div>
     </article>
 

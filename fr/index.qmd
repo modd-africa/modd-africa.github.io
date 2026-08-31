@@ -21,7 +21,7 @@ toc: false
   <div class="wrap">
     <div class="hero__copy">
       <h1>Modélisation pour la décision dans une <em>Afrique dynamique</em></h1>
-      <p class="hero__thesis">Transformer les données environnementales, entomologiques et sanitaires en éléments probants fondés sur la modélisation et en prévisions — afin que les programmes de lutte contre le paludisme puissent anticiper un climat en évolution.</p>
+      <p class="hero__thesis">Transformer les données environnementales, entomologiques et sanitaires en éléments probants fondés sur la modélisation et en prévisions afin que les programmes de lutte contre le paludisme puissent anticiper un climat en évolution.</p>
       <div class="hero__cta">
         <a class="btn-solid" href="project.html">Découvrir nos travaux <span aria-hidden="true">→</span></a>
         <a class="btn-ghost" href="news.html">Actualités</a>

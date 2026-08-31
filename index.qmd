@@ -20,7 +20,7 @@ toc: false
   <div class="wrap">
     <div class="hero__copy">
       <h1>Modelling for decisions in a <em>dynamic Africa</em></h1>
-      <p class="hero__thesis">Turning environmental, entomological and health data into model-based evidence and forecasts — so malaria programmes can act ahead of a shifting climate.</p>
+      <p class="hero__thesis">Turning environmental, entomological and health data into model-based evidence and forecasts so malaria programs can act ahead of a shifting climate.</p>
       <div class="hero__cta">
         <a class="btn-solid" href="project.html">Explore our work <span aria-hidden="true">→</span></a>
         <a class="btn-ghost" href="news.html">Latest news</a>

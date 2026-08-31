@@ -7,7 +7,7 @@ subtitle: "Modelling for Decisions in a Dynamic Africa is a four-year initiative
 
 ## Climate and health in a changing Africa
 
-Africa's climate is changing rapidly, reshaping where disease vectors live, how abundant they are, and when they peak. That raises the stakes for vector-borne disease control and for the decisions public-health systems must make. The three hub countries alone — the DRC, Nigeria and Tanzania — account for **41.8% of global malaria cases and 46.5% of deaths** (WHO World Malaria Report, 2024), which is why the network starts here. The project frames the problem around four priorities:
+Africa's climate is changing rapidly, reshaping where disease vectors live, how abundant they are, and when they peak. That raises the stakes for vector-borne disease control and for the decisions public-health systems must make. The three hub countries alone — the DRC, Nigeria and Tanzania account for **41.8% of global malaria cases and 46.5% of deaths** (WHO World Malaria Report, 2024), which is why the network starts here. The project frames the problem around four priorities:
 
 1. How is the environment changing for vectors, and how are populations affected?
 2. How effective are health systems at controlling disease?
@@ -35,21 +35,21 @@ The way of working is **collaborative, transparent, sustainable and adaptive**: 
   <span class="wp__tag">WP1</span>
   <div class="wp__body">
     <h3>Vectors &amp; environment</h3>
-    <p>Quantifies how climate, urbanisation and land-use reshape where vectors live, their abundance and their seasonality — combining correlative and mechanistic methods to map seasonal transmission at national, sub-national and local scales. Model-based adaptive sampling then targets where new field data will most improve the maps.</p>
+    <p>Quantifies how climate, urbanisation and land-use reshape where vectors live, their abundance and their seasonality combining correlative and mechanistic methods to map seasonal transmission at national, sub-national and local scales. Model-based adaptive sampling then targets where new field data will most improve the maps.</p>
   </div>
 </div>
 <div class="wp">
   <span class="wp__tag">WP2</span>
   <div class="wp__body">
     <h3>Interventions in urban settings</h3>
-    <p>Blends mathematical, statistical and health-system models to assess how climate change affects malaria control in urban settings, including how rural-to-urban migration shifts transmission. Simulations weigh the implications for intervention delivery — from bednet use and access to care to medical supplies, logistics and service quality.</p>
+    <p>Blends mathematical, statistical and health-system models to assess how climate change affects malaria control in urban settings, including how rural-to-urban migration shifts transmission. Simulations weigh the implications for intervention delivery from bednet use and access to care to medical supplies, logistics and service quality.</p>
   </div>
 </div>
 <div class="wp">
   <span class="wp__tag">WP3</span>
   <div class="wp__body">
     <h3>Early warning</h3>
-    <p>Unifies entomological and epidemiological models into tailored early-warning systems — forecasting district-level case trends from weather, vector and satellite data, and flagging threats such as the invasive <em>An. stephensi</em> or spreading insecticide and drug resistance. A Bayesian framework enables probabilistic outbreak detection through a dashboard built to plug into existing surveillance.</p>
+    <p>Unifies entomological and epidemiological models into tailored early-warning systems forecasting district-level case trends from weather, vector and satellite data, and flagging threats such as the invasive <em>An. stephensi</em> or spreading insecticide and drug resistance. A Bayesian framework enables probabilistic outbreak detection through a dashboard built to plug into existing surveillance.</p>
   </div>
 </div>
 <div class="wp">

@@ -1,17 +1,29 @@
 ---
 title: "Partners"
-subtitle: "MoDD Africa works hand in hand with national malaria programmes and research partners across the continent."
+subtitle: "MoDD Africa works hand in hand with national malaria programmes and research institutions so that models answer the questions decision-makers actually face."
 ---
 
 [Collaborators]{.eyebrow}
 
 ## Working with the people who decide
 
-The hubs work directly with **National Malaria Programmes** — including the National Malaria Control Programme (NMCP) in Tanzania — so that models answer the questions decision-makers actually face. The network is reinforced by a regional **Community of Practice** in vector epidemiology and modelling, connecting modellers, researchers and decision-makers across the three countries as the project grows.
+Models only matter if they change decisions. That is why MoDD Africa is built around close, working relationships with the institutions responsible for malaria control — the national research institutes that host the hubs, and the **National Malaria Programmes** that set policy and run interventions on the ground.
+
+In Tanzania, the project is coordinated by the **Ifakara Health Institute (IHI)**, which hosts the regional office and the Tanzania hub, and works directly with the country's **National Malaria Control Programme (NMCP)**. This partnership keeps the modelling grounded in real programme priorities — from where and when to target vector control, to how interventions hold up under a changing climate — and ensures results are usable where decisions are made.
+
+Across the network, the hubs maintain similar ties with national programmes and research partners in the DRC and Nigeria, reinforced by a regional **Community of Practice** in vector epidemiology and modelling that connects modellers, researchers and decision-makers as the project grows.
+
+[Partners]{.eyebrow}
+
+## Institutions
 
 ```{=html}
 <div class="partners">
-  <img src="assets/partner-ihi.jpeg" alt="Ifakara Health Institute">
-  <img src="assets/nmcplogo.webp" alt="National Malaria Control Programme, Tanzania">
+  <a href="https://www.ihi.or.tz/" target="_blank" rel="noopener" aria-label="Ifakara Health Institute">
+    <img src="assets/partner-ihi.jpeg" alt="Ifakara Health Institute">
+  </a>
+  <a href="https://www.nmcp.go.tz/" target="_blank" rel="noopener" aria-label="National Malaria Control Programme, Tanzania">
+    <img src="assets/nmcplogo.webp" alt="National Malaria Control Programme, Tanzania">
+  </a>
 </div>
 ```
