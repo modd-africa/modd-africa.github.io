@@ -8,7 +8,7 @@ subtitle: "MoDD Africa — « Modélisation pour la décision dans une Afrique d
 
 ## Climat et santé dans une Afrique en mutation
 
-Le climat de l'Afrique évolue rapidement, redéfinissant l'endroit où vivent les vecteurs de maladies, leur abondance et leurs pics d'activité. Cela accroît les enjeux de la lutte contre les maladies à transmission vectorielle et des décisions que doivent prendre les systèmes de santé publique. À eux seuls, les trois pays hôtes — la RDC, le Nigéria et la Tanzanie — représentent **41,8 % des cas de paludisme dans le monde et 46,5 % des décès** (Rapport mondial sur le paludisme de l'OMS, 2024), ce qui explique pourquoi le réseau démarre ici. Le projet articule le problème autour de quatre priorités :
+Le climat de l'Afrique évolue rapidement, redéfinissant l'endroit où vivent les vecteurs de maladies, leur abondance et leurs pics d'activité. Cela accroît les enjeux de la lutte contre les maladies à transmission vectorielle et des décisions que doivent prendre les systèmes de santé publique. À eux seuls, les trois pays hôtes la RDC, le Nigéria et la Tanzanie — représentent **41,8 % des cas de paludisme dans le monde et 46,5 % des décès** (Rapport mondial sur le paludisme de l'OMS, 2024), ce qui explique pourquoi le réseau démarre ici. Le projet articule le problème autour de quatre priorités :
 
 1. Comment l'environnement change-t-il pour les vecteurs, et comment les populations sont-elles affectées ?
 2. Quelle est l'efficacité des systèmes de santé dans la lutte contre la maladie ?
@@ -36,14 +36,14 @@ La méthode de travail est **collaborative, transparente, durable et adaptative*
   <span class="wp__tag">WP1</span>
   <div class="wp__body">
     <h3>Vecteurs et environnement</h3>
-    <p>Quantifie comment le climat, l'urbanisation et l'usage des sols redéfinissent la répartition des vecteurs, leur abondance et leur saisonnalité — en combinant des méthodes corrélatives et mécanistes pour cartographier la transmission saisonnière aux échelles nationale, infranationale et locale. Un échantillonnage adaptatif fondé sur les modèles cible ensuite les endroits où de nouvelles données de terrain amélioreront le plus les cartes.</p>
+    <p>Quantifie comment le climat, l'urbanisation et l'usage des sols redéfinissent la répartition des vecteurs, leur abondance et leur saisonnalité en combinant des méthodes corrélatives et mécanistes pour cartographier la transmission saisonnière aux échelles nationale, infranationale et locale. Un échantillonnage adaptatif fondé sur les modèles cible ensuite les endroits où de nouvelles données de terrain amélioreront le plus les cartes.</p>
   </div>
 </div>
 <div class="wp">
   <span class="wp__tag">WP2</span>
   <div class="wp__body">
     <h3>Interventions en milieu urbain</h3>
-    <p>Combine des modèles mathématiques, statistiques et de dynamique des systèmes de santé pour évaluer l'effet des changements climatiques sur la lutte antipaludique en milieu urbain, notamment la façon dont la migration rurale-urbaine modifie la transmission. Les simulations pèsent les conséquences pour la mise en œuvre des interventions — de l'usage des moustiquaires et de l'accès aux soins jusqu'aux approvisionnements, à la logistique et à la qualité des services.</p>
+    <p>Combine des modèles mathématiques, statistiques et de dynamique des systèmes de santé pour évaluer l'effet des changements climatiques sur la lutte antipaludique en milieu urbain, notamment la façon dont la migration rurale-urbaine modifie la transmission. Les simulations pèsent les conséquences pour la mise en œuvre des interventions de l'usage des moustiquaires et de l'accès aux soins jusqu'aux approvisionnements, à la logistique et à la qualité des services.</p>
   </div>
 </div>
 <div class="wp">
@@ -57,7 +57,7 @@ La méthode de travail est **collaborative, transparente, durable et adaptative*
   <span class="wp__tag">WP4</span>
   <div class="wp__body">
     <h3>Compétences et réseaux</h3>
-    <p>Transforme la diversité des compétences du réseau en impact durable — en renforçant les capacités des chercheurs, en intégrant la « pensée systémique » à la modélisation et en développant les collaborations au-delà des pôles principaux. Mis en œuvre par une recherche menée dans les pays avec les programmes nationaux de lutte contre le paludisme, ainsi que par des hackathons, des concours de modélisation, des échanges entre pôles et des réunions annuelles.</p>
+    <p>Transforme la diversité des compétences du réseau en impact durable en renforçant les capacités des chercheurs, en intégrant la « pensée systémique » à la modélisation et en développant les collaborations au-delà des pôles principaux. Mis en œuvre par une recherche menée dans les pays avec les programmes nationaux de lutte contre le paludisme, ainsi que par des hackathons, des concours de modélisation, des échanges entre pôles et des réunions annuelles.</p>
   </div>
 </div>
 ```
