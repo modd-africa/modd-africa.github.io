@@ -135,7 +135,7 @@ title-block-banner: ../assets/feature-evidence.jpg
 </div>
 <div class="hubcards">
   <div class="hubcard">
-    <img src="../assets/hub-tanzania.jpg" alt="Ifakara Health Institute, Tanzanie.">
+    <img src="../assets/feature-project.jpg" alt="Ifakara Health Institute, Tanzanie.">
     <div class="hubcard__body">
       <span class="tag">Pôle coordinateur</span>
       <h3>Tanzanie — Ifakara Health Institute</h3>

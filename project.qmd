@@ -54,7 +54,7 @@ The way of working is **collaborative, transparent, sustainable and adaptive**: 
     <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><line x1="9.8" y1="11.4" x2="14.4" y2="20.4"/><line x1="22.2" y1="10.6" x2="17.6" y2="20.4"/><line x1="9.3" y1="21.4" x2="13.6" y2="22.4"/><line x1="10.2" y1="10.6" x2="21.8" y2="9.2"/><circle cx="8" cy="10" r="2.4"/><circle cx="24" cy="9" r="2.4"/><circle cx="16" cy="22" r="2.4"/><circle cx="7" cy="23" r="2.4"/></svg>
     <span class="wpcard__tag">WP4</span>
     <h3>Skills &amp; networks</h3>
-    <p>Turns the network's diverse skills into lasting impact — building capabilities, embedding "systems thinking" into modelling, and growing collaborations beyond the hubs through in-country research, hackathons, modelling competitions and exchanges.</p>
+    <p>Turns the network's diverse skills into lasting impact building capabilities, embedding "systems thinking" into modelling, and growing collaborations beyond the hubs through in-country research, hackathons, modelling competitions and exchanges.</p>
   </div>
 </div>
 ```
