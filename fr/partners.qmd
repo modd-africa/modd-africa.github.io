@@ -2,6 +2,7 @@
 lang: fr
 title: "Partenaires"
 subtitle: "MoDD Africa travaille main dans la main avec les programmes nationaux de lutte contre le paludisme et des institutions de recherche, afin que les modèles répondent aux questions concrètes des décideurs."
+title-block-banner: ../assets/news-morogoro-1.jpg
 ---
 
 [Collaborateurs]{.eyebrow}

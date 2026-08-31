@@ -2,6 +2,7 @@
 lang: fr
 title: "Équipe et pôles"
 subtitle: "MoDD Africa s'appuie sur un bureau régional à l'Ifakara Health Institute et sur des équipes de modélisation réparties dans les pôles de Tanzanie, de RDC et du Nigéria."
+title-block-banner: ../assets/feature-evidence.jpg
 ---
 
 ```{=html}
@@ -125,9 +126,13 @@ subtitle: "MoDD Africa s'appuie sur un bureau régional à l'Ifakara Health Inst
 
 ## Les pôles
 
-Chaque pôle développe des capacités locales de modélisation tout en partageant méthodes, données et enseignements à l'échelle du réseau. La Tanzanie assure la coordination ; la RDC et le Nigéria ancrent les travaux dans des contextes écologiques et épidémiologiques différents.
-
 ```{=html}
+<div class="hubs-intro">
+  <div>
+    <p>Chaque pôle développe des capacités locales de modélisation tout en partageant méthodes, données et enseignements à l'échelle du réseau. La Tanzanie assure la coordination ; la RDC et le Nigéria ancrent les travaux dans des contextes écologiques et épidémiologiques différents.</p>
+  </div>
+  <img class="hubs-map" src="../assets/africa-hubs-map-green.png" alt="Les pôles de MoDD Africa : le Nigéria, la RDC et la Tanzanie mis en évidence sur la carte de l'Afrique.">
+</div>
 <div class="hubcards">
   <div class="hubcard">
     <img src="../assets/hub-tanzania.jpg" alt="Ifakara Health Institute, Tanzanie.">
