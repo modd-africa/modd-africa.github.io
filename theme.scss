@@ -177,11 +177,14 @@ h2.big { font-size: clamp(1.7rem, 1.1rem + 1.8vw, 2.5rem); margin-top: 0; }
 .partners a { display: inline-flex; align-items: center; transition: opacity .2s ease, transform .2s ease; }
 .partners a:hover { opacity: .75; transform: translateY(-2px); }
 
-// ── Work packages ────────────────────────────────────────────────────
-.wp { display: flex; gap: 1rem; padding: 1.05rem 0; border-top: 1px solid var(--line); }
-.wp:first-of-type { border-top: 0; }
-.wp__tag { flex: 0 0 auto; font-family: "IBM Plex Mono", monospace; font-size: .8rem; font-weight: 600; color: var(--field); background: var(--haze); border-radius: 6px; padding: .35rem .55rem; height: max-content; letter-spacing: .04em; }
-.wp__body h3 { margin: .05rem 0 .3rem; font-size: 1.06rem; } .wp__body p { margin: 0; color: var(--muted); }
+// ── Work package cards (project page) ────────────────────────────────
+.wpcards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.2rem; margin-top: 2rem; }
+.wpcard { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 1.6rem 1.4rem; box-shadow: var(--shadow-1); transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+.wpcard:hover { transform: translateY(-6px); box-shadow: var(--shadow-2); border-color: var(--field); }
+.wpcard svg { width: 36px; height: 36px; color: var(--field); margin-bottom: .9rem; }
+.wpcard__tag { font-family: "IBM Plex Mono", monospace; font-size: .68rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--field); }
+.wpcard h3 { font-family: $headings-font-family; font-size: 1.08rem; color: var(--ink); margin: .3rem 0 .5rem; }
+.wpcard p { color: var(--muted); font-size: .93rem; margin: 0; }
 
 // ── Card-links + text hub blocks ─────────────────────────────────────
 .card-link { display: flex; flex-direction: column; text-decoration: none; color: inherit; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 1.4rem 1.3rem; box-shadow: var(--shadow-1); transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease; }
