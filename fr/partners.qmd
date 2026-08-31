@@ -9,9 +9,9 @@ title-block-banner: ../assets/news-morogoro-1.jpg
 
 ## Travailler avec celles et ceux qui décident
 
-Les modèles n'ont d'utilité que s'ils font évoluer les décisions. C'est pourquoi MoDD Africa repose sur des relations de travail étroites avec les institutions responsables de la lutte antipaludique — les instituts nationaux de recherche qui accueillent les pôles, et les **programmes nationaux de lutte contre le paludisme** qui définissent les politiques et mettent en œuvre les interventions sur le terrain.
+Les modèles n'ont d'utilité que s'ils font évoluer les décisions. C'est pourquoi MoDD Africa repose sur des relations de travail étroites avec les institutions responsables de la lutte antipaludique les instituts nationaux de recherche qui accueillent les pôles, et les **programmes nationaux de lutte contre le paludisme** qui définissent les politiques et mettent en œuvre les interventions sur le terrain.
 
-En Tanzanie, le projet est coordonné par l'**Ifakara Health Institute (IHI)**, qui héberge le bureau régional et le pôle tanzanien, et travaille directement avec le **programme national de lutte contre le paludisme (NMCP)** du pays. Ce partenariat ancre la modélisation dans les priorités réelles des programmes — d'où et quand cibler la lutte antivectorielle, à la façon dont les interventions résistent à un climat en évolution — et garantit que les résultats soient exploitables là où les décisions se prennent.
+En Tanzanie, le projet est coordonné par l'**Ifakara Health Institute (IHI)**, qui héberge le bureau régional et le pôle tanzanien, et travaille directement avec le **programme national de lutte contre le paludisme (NMCP)** du pays. Ce partenariat ancre la modélisation dans les priorités réelles des programmes d'où et quand cibler la lutte antivectorielle, à la façon dont les interventions résistent à un climat en évolution et garantit que les résultats soient exploitables là où les décisions se prennent.
 
 À l'échelle du réseau, les pôles entretiennent des liens comparables avec les programmes nationaux et les partenaires de recherche en RDC et au Nigéria, renforcés par une **communauté de pratique** régionale en épidémiologie vectorielle et en modélisation, qui relie modélisateurs, chercheurs et décideurs à mesure que le projet grandit.
 
