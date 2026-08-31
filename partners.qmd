@@ -1,6 +1,7 @@
 ---
 title: "Partners"
 subtitle: "MoDD Africa works hand in hand with national malaria programmes and research institutions so that models answer the questions decision-makers actually face."
+title-block-banner: assets/news-morogoro-1.jpg
 ---
 
 [Collaborators]{.eyebrow}

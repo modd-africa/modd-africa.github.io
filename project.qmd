@@ -1,13 +1,13 @@
 ---
 title: "The Project"
 subtitle: "Modelling for Decisions in a Dynamic Africa is a four-year initiative (Nov 2024 – Oct 2028) led by the Ifakara Health Institute, with hubs in Tanzania, the DRC and Nigeria, funded by the Wellcome Trust."
+title-block-banner: assets/vector-mosquito.jpg
 ---
 
-[Background]{.eyebrow}
 
 ## Climate and health in a changing Africa
 
-Africa's climate is changing rapidly, reshaping where disease vectors live, how abundant they are, and when they peak. That raises the stakes for vector-borne disease control and for the decisions public-health systems must make. The three hub countries alone — the DRC, Nigeria and Tanzania account for **41.8% of global malaria cases and 46.5% of deaths** (WHO World Malaria Report, 2024), which is why the network starts here. The project frames the problem around four priorities:
+Africa's climate is changing rapidly, reshaping where disease vectors live, how abundant they are, and when they peak. That raises the stakes for vector-borne disease control and for the decisions public-health systems must make. The three hub countries alone the DRC, Nigeria and Tanzania account for **41.8% of global malaria cases and 46.5% of deaths** (WHO World Malaria Report, 2024), which is why the network starts here. The project frames the problem around four priorities:
 
 1. How is the environment changing for vectors, and how are populations affected?
 2. How effective are health systems at controlling disease?
@@ -28,7 +28,6 @@ MoDD Africa is built around an **Effective, Robust and Adaptable (ERA)** approac
 
 The way of working is **collaborative, transparent, sustainable and adaptive**: co-designing with National Malaria Programmes and partners from the start, being open about model outputs and their limitations, and strengthening the existing ecosystem rather than working around it.
 
-
 ## Work packages
 
 ```{=html}
@@ -37,19 +36,19 @@ The way of working is **collaborative, transparent, sustainable and adaptive**: 
     <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="16" cy="17.5" rx="2.3" ry="4"/><circle cx="16" cy="11.4" r="1.5"/><line x1="16" y1="9.9" x2="16" y2="5"/><line x1="15.1" y1="10.4" x2="12.4" y2="7.8"/><line x1="16.9" y1="10.4" x2="19.6" y2="7.8"/><path d="M14.8 15 C 8 12.5, 6.5 18, 13 18.4"/><path d="M17.2 15 C 24 12.5, 25.5 18, 19 18.4"/><path d="M14.6 17 C 10.5 18, 8.5 22, 7 26.5"/><path d="M14.6 18.5 C 11.5 20.5, 10.5 24, 10 27"/><path d="M17.4 17 C 21.5 18, 23.5 22, 25 26.5"/><path d="M17.4 18.5 C 20.5 20.5, 21.5 24, 22 27"/></svg>
     <span class="wpcard__tag">WP1</span>
     <h3>Vectors &amp; environment</h3>
-    <p>Quantifies how climate, urbanisation and land-use reshape where vectors live, their abundance and their seasonality — mapping seasonal transmission at national, sub-national and local scales, with model-based adaptive sampling targeting where new field data will help most.</p>
+    <p>Quantifies how climate, urbanisation and land-use reshape where vectors live, their abundance and their seasonality mapping seasonal transmission at national, sub-national and local scales, with model-based adaptive sampling targeting where new field data will help most.</p>
   </div>
   <div class="wpcard">
     <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 27 V13 h7 V27"/><path d="M14 27 V7 h7 V27"/><line x1="7" y1="16.5" x2="10" y2="16.5"/><line x1="7" y1="20.5" x2="10" y2="20.5"/><line x1="16" y1="11" x2="19" y2="11"/><line x1="16" y1="15" x2="19" y2="15"/><line x1="16" y1="19" x2="19" y2="19"/><path d="M25 13.5 l4 1.5 v4 c0 3 -2 4.6 -4 5.6 c-2 -1 -4 -2.6 -4 -5.6 v-4 z"/><path d="M23.2 19.6 l1.3 1.3 l2.3 -2.6"/></svg>
     <span class="wpcard__tag">WP2</span>
     <h3>Interventions in urban settings</h3>
-    <p>Blends mathematical, statistical and health-system models to assess how climate change affects malaria control in urban settings — including how rural-to-urban migration shifts transmission, and what it means for bednets, access to care, supplies and services.</p>
+    <p>Blends mathematical, statistical and health-system models to assess how climate change affects malaria control in urban settings including how rural-to-urban migration shifts transmission, and what it means for bednets, access to care, supplies and services.</p>
   </div>
   <div class="wpcard">
     <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="22" r="2.2"/><path d="M10.3 16.7 a8 8 0 0 1 11.4 0"/><path d="M6.8 13.2 a13 13 0 0 1 18.4 0"/></svg>
     <span class="wpcard__tag">WP3</span>
     <h3>Early warning</h3>
-    <p>Unifies entomological and epidemiological models into tailored early-warning systems — forecasting district-level case trends and flagging threats such as the invasive <em>An. stephensi</em> or spreading resistance, with probabilistic outbreak detection built to plug into existing surveillance.</p>
+    <p>Unifies entomological and epidemiological models into tailored early-warning systems forecasting district-level case trends and flagging threats such as the invasive <em>An. stephensi</em> or spreading resistance, with probabilistic outbreak detection built to plug into existing surveillance.</p>
   </div>
   <div class="wpcard">
     <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><line x1="9.8" y1="11.4" x2="14.4" y2="20.4"/><line x1="22.2" y1="10.6" x2="17.6" y2="20.4"/><line x1="9.3" y1="21.4" x2="13.6" y2="22.4"/><line x1="10.2" y1="10.6" x2="21.8" y2="9.2"/><circle cx="8" cy="10" r="2.4"/><circle cx="24" cy="9" r="2.4"/><circle cx="16" cy="22" r="2.4"/><circle cx="7" cy="23" r="2.4"/></svg>

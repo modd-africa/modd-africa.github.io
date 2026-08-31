@@ -1,6 +1,7 @@
 ---
 title: "Team & Hubs"
 subtitle: "MoDD Africa is delivered by a regional office at the Ifakara Health Institute and modelling teams across the Tanzania, DRC and Nigeria hubs."
+title-block-banner: assets/feature-evidence.jpg
 ---
 
 ```{=html}
@@ -124,9 +125,13 @@ subtitle: "MoDD Africa is delivered by a regional office at the Ifakara Health I
 
 ## The hubs
 
-Each hub builds local modelling capacity while sharing methods, data and lessons across the network. Tanzania coordinates; the DRC and Nigeria anchor the work in different ecological and epidemiological settings.
-
 ```{=html}
+<div class="hubs-intro">
+  <div>
+    <p>Each hub builds local modelling capacity while sharing methods, data and lessons across the network. Tanzania coordinates; the DRC and Nigeria anchor the work in different ecological and epidemiological settings.</p>
+  </div>
+  <img class="hubs-map" src="assets/africa-hubs-map-green.png" alt="MoDD Africa hubs: Nigeria, DR Congo and Tanzania highlighted on the map of Africa.">
+</div>
 <div class="hubcards">
   <div class="hubcard">
     <img src="assets/hub-tanzania.jpg" alt="Ifakara Health Institute, Tanzania.">
