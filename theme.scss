@@ -232,3 +232,14 @@ div.sourceCode { border-radius: 10px; border: 1px solid var(--line); }
 .nav-footer a { color: #CFE2D6; text-decoration: none; }
 .nav-footer a:hover { color: #fff; }
 .nav-footer strong { color: #fff; }
+
+// ── Mobile polish ────────────────────────────────────────────────────
+@media (max-width: 720px) {
+  .navbar { min-height: 64px; }
+  .navbar .navbar-brand img { height: 40px !important; }     /* smaller logo on phones */
+  .navbar .navbar-brand { padding-inline: .9rem; margin-right: .5rem; }
+  .quarto-title-banner { min-height: 180px; }
+  .quarto-title-banner .quarto-title .title { font-size: clamp(1.8rem, 7vw, 2.6rem); }
+  .hero .wrap { padding-block: 3rem; }
+  .funder .wrap { flex-direction: column; align-items: flex-start; }
+}
