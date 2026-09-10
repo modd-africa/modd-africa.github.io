@@ -51,8 +51,8 @@ a { transition: color .15s ease; }
 
 // Language switcher (EN | FR) — both shown, sits in the top navbar
 .lang-switch { display: inline-flex; gap: 4px; align-items: center; }
-.lang-switch a { font-family: "IBM Plex Mono", monospace; font-size: .72rem; font-weight: 600; letter-spacing: .06em; padding: .28rem .55rem; border-radius: 6px; line-height: 1; text-decoration: none; color: #fff; border: 1px solid rgba(255,255,255,.35); }
-.lang-switch a:hover { border-color: var(--green-lt); color: var(--green-lt); }
+.lang-switch a { color: var(--field); border: 1px solid var(--line); }
+.lang-switch a:hover { border-color: var(--field); color: var(--field-d); }
 .lang-switch a.is-active { background: var(--field); border-color: var(--field); color: #fff; }
 .lang-switch-item { display: flex; align-items: center; margin-left: .75rem; }
 .lang-switch--float { position: fixed; top: 12px; right: 16px; z-index: 1001; background: rgba(15,46,28,.92); padding: 4px; border-radius: 8px; }
@@ -75,15 +75,15 @@ h2.big { font-size: clamp(1.7rem, 1.1rem + 1.8vw, 2.5rem); margin-top: 0; }
 .eyebrow--onink, .eyebrow--light { color: var(--green-lt); }
 
 // ── NAVBAR — dark forest bar + caps links ─────────────────────────────
-.navbar { background: var(--ink) !important; border-bottom: 0; padding-top: 0; padding-bottom: 0; min-height: 110px !important; }
+.navbar { background: #fff !important; border-bottom: 0; padding-top: 0; padding-bottom: 0; min-height: 110px !important; }
 // Static, non-clickable logo mark — no white box
 .navbar .navbar-brand { align-self: stretch; display: flex; align-items: center; padding-inline: 1.4rem; margin-right: 1.2rem; pointer-events: none; }
 .navbar .navbar-brand img { height: 84px !important; max-height: none !important; width: auto !important; }
 .navbar .navbar-title { display: none; }
-.navbar-nav .nav-link { color: #fff !important; text-transform: uppercase; letter-spacing: .09em; font-family: $headings-font-family; font-weight: 600; font-size: .95rem; opacity: .9; }
-.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus { color: var(--green-lt) !important; opacity: 1; }
-.navbar-nav .nav-link.active { color: var(--green-lt) !important; opacity: 1; }
-.navbar .quarto-navbar-tools a, .navbar .navbar-toggler { color: #fff !important; border-color: rgba(255,255,255,.4); }
+.navbar-nav .nav-link { color: var(--field) !important; text-transform: uppercase; letter-spacing: .09em; font-family: $headings-font-family; font-weight: 600; font-size: .95rem; }
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active { color: var(--field-d) !important; }
+.navbar .quarto-navbar-tools a, .navbar .navbar-toggler { color: var(--field) !important; border-color: var(--line); }
 
 // ── SPLIT-PANEL BANNER (green by default; shows a photo when a page sets one) ──
 .quarto-title-banner { position: relative; background-color: var(--ink); background-size: cover; background-position: center; min-height: clamp(220px, 26vw, 340px); display: flex; align-items: center; padding-block: 2.2rem; overflow: hidden; }
