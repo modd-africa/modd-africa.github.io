@@ -18,7 +18,7 @@ website:
   navbar:
     background: "#0F2E1C"
     pinned: true
-    logo: assets/MoDD_logo_1.png
+    logo: assets/MoDD_logo.png
     logo-alt: "MoDD Africa"
     title: "MoDD Africa"
     collapse-below: lg
@@ -41,7 +41,7 @@ website:
     background: dark
     left: |
       **MoDD Africa** — Modelling for Decisions in a Dynamic Africa.
-      Coordinated by the Ifakara Health Institute, Tanzania.
+      Coordinated from Ifakara Health Institute, Dar es Salaam, Tanzania.
     right: |
       [![Wellcome Trust](assets/wellcome-trust.png){height=100px}](https://wellcome.org)
 
@@ -73,6 +73,33 @@ format:
                     // ── Language switcher: EN | FR, both shown, dropped into the navbar ──
           var lp = location.pathname;
           var lIsFr = /\/fr\//.test(lp);
+
+          // ── Translate the nav-bar labels themselves on French pages ──
+          if (lIsFr) {
+            var NAV_FR = {
+              'index.html': 'Accueil',
+              'project.html': 'Le projet',
+              'team.html': 'Équipe et pôles',
+              'partners.html': 'Partenaires',
+              'news.html': 'Actualités'
+            };
+            document.querySelectorAll('.navbar-nav .nav-link[href]').forEach(function (a) {
+              var key = a.getAttribute('href').split('/').pop();
+              if (NAV_FR[key]) {
+                var span = a.querySelector('.menu-text');
+                (span || a).textContent = NAV_FR[key];
+              }
+            });
+
+            var footerLeft = document.querySelector('.nav-footer-left');
+            if (footerLeft) {
+              footerLeft.innerHTML = '<p><strong>MoDD Africa</strong> — Modélisation pour la décision dans une Afrique dynamique. Coordonné depuis Ifakara Health Institute, Dar es Salaam, Tanzania.</p>';
+            }
+
+            var footerImg = document.querySelector('.nav-footer-right img[src="assets/wellcome-trust.png"]');
+            if (footerImg) { footerImg.setAttribute('src', '../assets/wellcome-trust.png'); }
+          }
+
           var enHref = lIsFr ? lp.replace(/\/fr\//, '/') : lp;
           var frHref = lIsFr ? lp : lp.replace(/\/([^\/]*)$/, '/fr/$1');
           var sw = document.createElement('div');
