@@ -49,13 +49,15 @@ h2 { font-size: clamp(1.5rem, 1.1rem + 1.3vw, 2.05rem); margin-top: 2.4rem; }
 h3 { font-size: 1.2rem; margin-top: 1.7rem; }
 a { transition: color .15s ease; }
 
-// Language switcher (EN | FR) — both shown, sits in the top navbar
-.lang-switch { display: inline-flex; gap: 4px; align-items: center; }
-.lang-switch a { color: var(--field); border: 1px solid var(--line); }
-.lang-switch a:hover { border-color: var(--field); color: var(--field-d); }
-.lang-switch a.is-active { background: var(--field); border-color: var(--field); color: #fff; }
-.lang-switch-item { display: flex; align-items: center; margin-left: .75rem; }
-.lang-switch--float { position: fixed; top: 12px; right: 16px; z-index: 1001; background: rgba(15,46,28,.92); padding: 4px; border-radius: 8px; }
+// Language switcher (EN | FR) — segmented pill control, sits in the top navbar
+.lang-switch { display: inline-flex; align-items: center; gap: 2px; padding: 3px; border: 1px solid var(--line); border-radius: 999px; background: #fff; }
+.lang-switch a { font-family: "IBM Plex Mono", monospace; font-size: .72rem; font-weight: 600; letter-spacing: .06em; padding: .3rem .65rem; border-radius: 999px; line-height: 1; text-decoration: none; color: var(--muted); transition: background .15s ease, color .15s ease; }
+.lang-switch a:hover { color: var(--field-d); }
+.lang-switch a.is-active { background: var(--field); color: #fff; }
+.lang-switch-item { display: flex; align-items: center; margin-left: .85rem; }
+.lang-switch--float { position: fixed; top: 12px; right: 16px; z-index: 1001; background: rgba(15,46,28,.9); border-color: rgba(255,255,255,.25); }
+.lang-switch--float a { color: rgba(255,255,255,.75); }
+.lang-switch--float a:hover { color: #fff; }
 
 // ── Layout helpers ───────────────────────────────────────────────────
 .fullbleed { position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; width: 100vw; }
