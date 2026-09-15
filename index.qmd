@@ -66,15 +66,6 @@ toc: false
           <span class="arrow" aria-hidden="true">→</span>
         </div>
       </a>
-      <a class="fcard" href="engage.html">
-        <img src="assets/feature-engage.jpg" alt="">
-        <div class="fcard__body">
-          <span class="kicker">Get Involved</span>
-          <h3>Training, hackathons &amp; the CoP</h3>
-          <p>Hands-on capacity building and a regional Community of Practice in vector epidemiology and modelling.</p>
-          <span class="arrow" aria-hidden="true">→</span>
-        </div>
-      </a>
       <a class="fcard" href="news.html">
         <img src="assets/news-annual-1.jpg" alt="">
         <div class="fcard__body">

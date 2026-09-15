@@ -1,6 +1,7 @@
 ---
 title: "News"
 subtitle: "Milestones, meetings and updates from across the MoDD Africa network."
+title-block-banner: assets/news-hackathon-1.jpg
 ---
 
 ```{=html}

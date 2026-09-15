@@ -2,6 +2,7 @@
 lang: fr
 title: "Actualités"
 subtitle: "Étapes clés, rencontres et nouvelles de l'ensemble du réseau MoDD Africa."
+title-block-banner: ../assets/news-hackathon-1.jpg
 ---
 
 ```{=html}
