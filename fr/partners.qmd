@@ -15,8 +15,6 @@ En Tanzanie, le projet est coordonné par l'**Ifakara Health Institute (IHI)**, 
 
 À l'échelle du réseau, les pôles entretiennent des liens comparables avec les programmes nationaux et les partenaires de recherche en RDC et au Nigéria, renforcés par une **communauté de pratique** régionale en épidémiologie vectorielle et en modélisation, qui relie modélisateurs, chercheurs et décideurs à mesure que le projet grandit.
 
-[Partenaires]{.eyebrow}
-
 ## Institutions
 
 ```{=html}
