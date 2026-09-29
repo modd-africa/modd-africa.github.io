@@ -71,9 +71,3 @@ Over the four years of the project, MoDD Africa aims to:
 - Form a strong Evidence Synthesis Unit.
 
 While the initial focus is malaria, the approach is designed to extend to other mosquito-borne diseases, such as arboviruses.
-
-[Funding]{.eyebrow}
-
-## Funding
-
-This work was supported by the Wellcome Trust. MoDD Africa runs from November 2024 to October 2028.

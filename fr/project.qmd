@@ -73,9 +73,3 @@ Sur les quatre années du projet, MoDD Africa vise à :
 - Constituer une solide unité de synthèse des données probantes.
 
 Bien que l'accent initial porte sur le paludisme, l'approche est conçue pour s'étendre à d'autres maladies à transmission vectorielle, comme les arboviroses.
-
-[Financement]{.eyebrow}
-
-## Financement
-
-Ces travaux ont été soutenus par le Wellcome Trust. MoDD Africa se déroule de novembre 2024 à octobre 2028.
