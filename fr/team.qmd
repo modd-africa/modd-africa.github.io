@@ -150,7 +150,7 @@ title-block-banner: ../assets/feature-evidence.jpg
     </div>
   </div>
   <div class="hubcard">
-    <img src="../assets/hub-nigeria.jpg" alt="Nigerian Institute of Medical Research, Nigéria.">
+    <img src="../assets/nimr-adedapo.jpeg" alt="Dr Adedapo Adeogun à l'Institut nigérian de recherche médicale (NIMR).">
     <div class="hubcard__body">
       <h3>Nigéria — NIMR</h3>
       <p>Anime le pôle du Nigéria depuis le Nigerian Institute of Medical Research (NIMR), et étend le réseau au contexte de transmission et de système de santé propre à l'Afrique de l'Ouest.</p>
