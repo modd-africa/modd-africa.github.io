@@ -14,8 +14,6 @@ In Tanzania, the project is coordinated by the **Ifakara Health Institute (IHI)*
 
 Across the network, the hubs maintain similar ties with national programmes and research partners in the DRC and Nigeria, reinforced by a regional **Community of Practice** in vector epidemiology and modelling that connects modellers, researchers and decision-makers as the project grows.
 
-[Partners]{.eyebrow}
-
 ## Institutions
 
 ```{=html}
