@@ -86,7 +86,7 @@ title-block-banner: ../assets/feature-evidence.jpg
     <h3>Rodriguez Yombo</h3><p class="role">Modélisateur principal</p><p class="org">RD Congo</p>
   </div>
   <div class="person" data-group="drc">
-    <div class="avatar">AB</div>
+    <img class="avatar" src="../assets/team-bokulu.png" alt="Arsene Bokulu">
     <h3>Arsene Bokulu</h3><p class="role">Responsable de la synthèse des données probantes</p><p class="org">RD Congo</p>
   </div>
 
@@ -99,7 +99,7 @@ title-block-banner: ../assets/feature-evidence.jpg
     <h3>Taiwo Adekunle</h3><p class="role">Modélisateur principal</p><p class="org">Nigéria</p>
   </div>
   <div class="person" data-group="nigeria">
-    <div class="avatar">AB</div>
+    <img class="avatar" src="../assets/team-babalola.jpeg" alt="Ayodele Babalola">
     <h3>Ayodele Babalola</h3><p class="role">Modélisateur principal</p><p class="org">Nigéria</p>
   </div>
 
