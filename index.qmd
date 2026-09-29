@@ -97,16 +97,4 @@ toc: false
   </div>
 </section>
 
-<!-- ─────────────────────────────  FUNDER  ─────────────────────────── -->
-<section class="funder fullbleed">
-  <div class="wrap">
-    <div class="funder__text">
-      <p class="funder__label">Supported by</p>
-      <p>MoDD Africa is funded by the Wellcome Trust (Nov 2024 – Oct 2028) as part of its support for research on climate change and health.</p>
-    </div>
-    <a class="funder__logo" href="https://wellcome.org" target="_blank" rel="noopener">
-      <img src="assets/wellcome_logo.png" alt="Wellcome Trust">
-    </a>
-  </div>
-</section>
 ```
