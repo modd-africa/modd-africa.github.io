@@ -73,7 +73,4 @@ In that case, update `site-url` in `_quarto.yml` to match. Internal links use re
 
 **Custom domain** (optional): set it under Settings → Pages, add a `CNAME` file with the domain, and update `site-url` in `_quarto.yml`.
 
-## Notes
 
-- Hub leads for DRC and Nigeria, partner organisations, and a project email address are marked as placeholders in the relevant pages — fill them in as they're confirmed.
-- The `moddafricaes` usage on the Evidence Synthesis page mirrors the package README; keep it in sync if the package's API changes.
