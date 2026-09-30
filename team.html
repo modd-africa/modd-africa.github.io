@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-c290ef4a59108b95bc75a535d63a529b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5a20d01441026db318cd00a604114232.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d1c2cfb43b3cecfd6d9440872954ad81.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -207,7 +207,7 @@ background-size: cover;
 <div class="team team--lead">
   <div class="person person--lead">
     <img class="avatar" src="assets/team-rumisha.jpg" alt="Susan Rumisha">
-    <h3 class="anchored">Dr. Susan Rumisha</h3>
+    <h3 class="anchored"><a href="https://ihi.or.tz/our-staff/238/Dr.%20Susan/Rumisha/details/" target="_blank" rel="noopener">Dr. Susan Rumisha</a></h3>
     <p class="role">Team Lead</p>
     <p class="org">Ifakara Health Institute</p>
   </div>
@@ -228,11 +228,11 @@ background-size: cover;
 
   <div class="person" data-group="regional">
     <img class="avatar" src="assets/team-amratia.jpg" alt="Punam Amratia">
-    <h3 class="anchored">Dr. Punam Amratia</h3><p class="role">Technical Lead</p>
+    <h3 class="anchored"><a href="https://www.ihi.or.tz/our-staff/380/Dr%20Punam/Amratia/details/" target="_blank" rel="noopener">Dr. Punam Amratia</a></h3><p class="role">Technical Lead</p>
   </div>
   <div class="person" data-group="regional">
     <img class="avatar" src="assets/team-ketende.jpg" alt="Sosthenes Ketende">
-    <h3 class="anchored">Sosthenes Ketende</h3><p class="role">Program Manager</p>
+    <h3 class="anchored"><a href="https://ihi.or.tz/our-staff/239/Sosthenes/Charles%20Ketende/details/" target="_blank" rel="noopener">Sosthenes Ketende</a></h3><p class="role">Program Manager</p>
   </div>
   <div class="person" data-group="regional">
     <img class="avatar" src="assets/team-diana.jpg" alt="Diana Mwanamboka">
@@ -240,12 +240,12 @@ background-size: cover;
   </div>
   <div class="person" data-group="regional">
     <img class="avatar" src="assets/team-kiware.jpg" alt="Samson Kiware">
-    <h3 class="anchored">Dr. Samson Kiware</h3><p class="role">Mathematical Modelling Lead</p>
+    <h3 class="anchored"><a href="https://ihi.or.tz/our-staff/301/Dr%20Samson/Kiware/details/" target="_blank" rel="noopener">Dr. Samson Kiware</a></h3><p class="role">Mathematical Modelling Lead</p>
   </div>
 
   <div class="person" data-group="tanzania">
     <img class="avatar" src="assets/team-mlacha.jpg" alt="Yeromin Mlacha">
-    <h3 class="anchored">Dr. Yeromin Mlacha</h3><p class="role">Hub Lead</p><p class="org">Tanzania</p>
+    <h3 class="anchored"><a href="https://ihi.or.tz/our-staff/244/Dr.%20Yeromin/Mlacha/details/" target="_blank" rel="noopener">Dr. Yeromin Mlacha</a></h3><p class="role">Hub Lead</p><p class="org">Tanzania</p>
   </div>
   <div class="person" data-group="tanzania">
     <img class="avatar" src="assets/team-lembris.jpeg" alt="Lembris Njoto">
@@ -307,7 +307,17 @@ background-size: cover;
   <div>
     <p>Each hub builds local modelling capacity while sharing methods, data and lessons across the network. Tanzania coordinates; the DRC and Nigeria anchor the work in different ecological and epidemiological settings.</p>
   </div>
-  <img class="hubs-map" src="assets/africa-hubs-map-green.png" alt="MoDD Africa hubs: Nigeria, DR Congo and Tanzania highlighted on the map of Africa.">
+  <div class="hubs-map-wrap">
+    <img class="hubs-map" src="assets/africa-hubs-map-green.png" alt="MoDD Africa hubs: Nigeria, DR Congo and Tanzania highlighted on the map of Africa.">
+    <button class="hub-pin" type="button" data-group="nigeria" style="left:40%; top:35%" aria-expanded="false"><span class="hub-pin__dot"></span><span class="hub-pin__label">Nigeria</span></button>
+    <button class="hub-pin" type="button" data-group="drc" style="left:57%; top:59%" aria-expanded="false"><span class="hub-pin__dot"></span><span class="hub-pin__label">DR Congo</span></button>
+    <button class="hub-pin" type="button" data-group="tanzania" style="left:72%; top:61%" aria-expanded="false"><span class="hub-pin__dot"></span><span class="hub-pin__label">Tanzania</span></button>
+    <div class="hub-popover" hidden="">
+      <button class="hub-popover__close" type="button" aria-label="Close">×</button>
+      <div class="hub-popover__head"></div>
+      <div class="hub-popover__people"></div>
+    </div>
+  </div>
 </div>
 <div class="hubcards">
   <div class="hubcard">
@@ -333,6 +343,74 @@ background-size: cover;
     </div>
   </div>
 </div>
+
+<script>
+(function () {
+  const wrap = document.querySelector('.hubs-map-wrap');
+  if (!wrap) return;
+  const pins = wrap.querySelectorAll('.hub-pin');
+  const pop = wrap.querySelector('.hub-popover');
+  const head = pop.querySelector('.hub-popover__head');
+  const list = pop.querySelector('.hub-popover__people');
+  const closeBtn = pop.querySelector('.hub-popover__close');
+  const HUB_LABEL = { nigeria: 'Nigeria hub', drc: 'DR Congo hub', tanzania: 'Tanzania hub' };
+  let activePin = null;
+
+  function closePopover() {
+    pop.hidden = true;
+    if (activePin) { activePin.classList.remove('is-active'); activePin.setAttribute('aria-expanded', 'false'); }
+    activePin = null;
+  }
+
+  function openPopover(pin) {
+    const group = pin.dataset.group;
+    const people = document.querySelectorAll('.team-grid .person[data-group="' + group + '"]');
+    list.innerHTML = '';
+    people.forEach(function (p) {
+      const img = p.querySelector('img.avatar');
+      const initials = p.querySelector('div.avatar');
+      const name = p.querySelector('h3') ? p.querySelector('h3').textContent : '';
+      const role = p.querySelector('.role') ? p.querySelector('.role').textContent : '';
+      const row = document.createElement('div');
+      row.className = 'hub-popover__person';
+      const avatarHtml = img ? '<img src="' + img.getAttribute('src') + '" alt="">' : '<div class="avatar-sm">' + (initials ? initials.textContent : '') + '</div>';
+      row.innerHTML = avatarHtml + '<div><h4>' + name + '</h4><p>' + role + '</p></div>';
+      list.appendChild(row);
+    });
+    head.textContent = HUB_LABEL[group] || group;
+
+    pins.forEach(function (p) { p.classList.remove('is-active'); p.setAttribute('aria-expanded', 'false'); });
+    pin.classList.add('is-active');
+    pin.setAttribute('aria-expanded', 'true');
+    activePin = pin;
+    pop.hidden = false;
+
+    pop.style.left = '0px';
+    pop.style.top = '0px';
+    const wrapRect = wrap.getBoundingClientRect();
+    const pinRect = pin.getBoundingClientRect();
+    const popRect = pop.getBoundingClientRect();
+    let left = (pinRect.left - wrapRect.left) - popRect.width / 2 + pinRect.width / 2;
+    const top = (pinRect.bottom - wrapRect.top) + 14;
+    const minLeft = -(wrapRect.left) + 8;
+    const maxLeft = (window.innerWidth - wrapRect.left) - popRect.width - 8;
+    left = Math.max(minLeft, Math.min(left, maxLeft));
+    pop.style.left = left + 'px';
+    pop.style.top = top + 'px';
+  }
+
+  pins.forEach(function (pin) {
+    pin.addEventListener('click', function (e) {
+      e.stopPropagation();
+      if (activePin === pin) { closePopover(); return; }
+      openPopover(pin);
+    });
+  });
+  closeBtn.addEventListener('click', closePopover);
+  document.addEventListener('click', function (e) { if (!pop.hidden && !wrap.contains(e.target)) closePopover(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closePopover(); });
+})();
+</script>
 
 
 </section>
