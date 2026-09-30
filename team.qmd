@@ -24,7 +24,7 @@ title-block-banner: assets/feature-evidence.jpg
 <div class="team team--lead">
   <div class="person person--lead">
     <img class="avatar" src="assets/team-rumisha.jpg" alt="Susan Rumisha">
-    <h3>Dr. Susan Rumisha</h3>
+    <h3><a href="https://ihi.or.tz/our-staff/238/Dr.%20Susan/Rumisha/details/" target="_blank" rel="noopener">Dr. Susan Rumisha</a></h3>
     <p class="role">Team Lead</p>
     <p class="org">Ifakara Health Institute</p>
   </div>
@@ -48,11 +48,11 @@ title-block-banner: assets/feature-evidence.jpg
 
   <div class="person" data-group="regional">
     <img class="avatar" src="assets/team-amratia.jpg" alt="Punam Amratia">
-    <h3>Dr. Punam Amratia</h3><p class="role">Technical Lead</p>
+    <h3><a href="https://www.ihi.or.tz/our-staff/380/Dr%20Punam/Amratia/details/" target="_blank" rel="noopener">Dr. Punam Amratia</a></h3><p class="role">Technical Lead</p>
   </div>
   <div class="person" data-group="regional">
     <img class="avatar" src="assets/team-ketende.jpg" alt="Sosthenes Ketende">
-    <h3>Sosthenes Ketende</h3><p class="role">Program Manager</p>
+    <h3><a href="https://ihi.or.tz/our-staff/239/Sosthenes/Charles%20Ketende/details/" target="_blank" rel="noopener">Sosthenes Ketende</a></h3><p class="role">Program Manager</p>
   </div>
   <div class="person" data-group="regional">
     <img class="avatar" src="assets/team-diana.jpg" alt="Diana Mwanamboka">
@@ -60,12 +60,12 @@ title-block-banner: assets/feature-evidence.jpg
   </div>
   <div class="person" data-group="regional">
     <img class="avatar" src="assets/team-kiware.jpg" alt="Samson Kiware">
-    <h3>Dr. Samson Kiware</h3><p class="role">Mathematical Modelling Lead</p>
+    <h3><a href="https://ihi.or.tz/our-staff/301/Dr%20Samson/Kiware/details/" target="_blank" rel="noopener">Dr. Samson Kiware</a></h3><p class="role">Mathematical Modelling Lead</p>
   </div>
 
   <div class="person" data-group="tanzania">
     <img class="avatar" src="assets/team-mlacha.jpg" alt="Yeromin Mlacha">
-    <h3>Dr. Yeromin Mlacha</h3><p class="role">Hub Lead</p><p class="org">Tanzania</p>
+    <h3><a href="https://ihi.or.tz/our-staff/244/Dr.%20Yeromin/Mlacha/details/" target="_blank" rel="noopener">Dr. Yeromin Mlacha</a></h3><p class="role">Hub Lead</p><p class="org">Tanzania</p>
   </div>
   <div class="person" data-group="tanzania">
     <img class="avatar" src="assets/team-lembris.jpeg" alt="Lembris Njoto">

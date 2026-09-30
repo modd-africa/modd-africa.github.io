@@ -250,6 +250,8 @@ div.sourceCode { border-radius: 10px; border: 1px solid var(--line); }
 .person:hover { transform: translateY(-4px); box-shadow: var(--shadow-2); }
 .person .avatar { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; background: var(--haze); color: var(--field-d); font-family: $headings-font-family; font-weight: 600; font-size: 1.6rem; display: flex; align-items: center; justify-content: center; margin: 0 auto .9rem; }
 .person h3 { font-size: 1.05rem; margin: 0 0 .25rem; color: var(--ink); }
+.person h3 a { color: inherit; text-decoration: none; }
+.person h3 a:hover { color: var(--field-d); text-decoration: underline; }
 .person .role { font-size: .9rem; color: var(--field-d); font-weight: 500; margin: 0 0 .15rem; }
 .person .org { font-family: "IBM Plex Mono", monospace; font-size: .76rem; color: var(--muted); margin: 0; line-height: 1.4; }
 
