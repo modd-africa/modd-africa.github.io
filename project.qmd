@@ -31,7 +31,7 @@ The way of working is **collaborative, transparent, sustainable and adaptive**: 
 ## Work packages
 
 ```{=html}
-<div class="wpcards">
+<div class="wpcards column-page">
   <div class="wpcard">
     <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="16" cy="17.5" rx="2.3" ry="4"/><circle cx="16" cy="11.4" r="1.5"/><line x1="16" y1="9.9" x2="16" y2="5"/><line x1="15.1" y1="10.4" x2="12.4" y2="7.8"/><line x1="16.9" y1="10.4" x2="19.6" y2="7.8"/><path d="M14.8 15 C 8 12.5, 6.5 18, 13 18.4"/><path d="M17.2 15 C 24 12.5, 25.5 18, 19 18.4"/><path d="M14.6 17 C 10.5 18, 8.5 22, 7 26.5"/><path d="M14.6 18.5 C 11.5 20.5, 10.5 24, 10 27"/><path d="M17.4 17 C 21.5 18, 23.5 22, 25 26.5"/><path d="M17.4 18.5 C 20.5 20.5, 21.5 24, 22 27"/></svg>
     <span class="wpcard__tag">WP1</span>
