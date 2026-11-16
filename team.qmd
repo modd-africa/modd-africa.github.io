@@ -83,6 +83,11 @@ title-block-banner: assets/feature-evidence.jpg
     <h3>Kaiza Ilomo</h3><p class="role">Evidence Synthesis Lead</p><p class="org">Tanzania</p>
     <a class="person__social" href="https://www.linkedin.com/in/kaizakunonu/" target="_blank" rel="noopener" aria-label="Kaiza Ilomo on LinkedIn"><i class="bi bi-linkedin"></i></a>
   </div>
+  <div class="person" data-group="tanzania">
+    <div class="avatar">ES</div>
+    <h3>Eban Saria</h3><p class="role">Research Officer Intern</p><p class="org">Tanzania</p>
+    <a class="person__social" href="https://www.linkedin.com/in/eban-saria-003698314/" target="_blank" rel="noopener" aria-label="Eban Saria on LinkedIn"><i class="bi bi-linkedin"></i></a>
+  </div>
 
   <div class="person" data-group="drc">
     <img class="avatar" src="assets/team-metelo.jpg" alt="Emery Metelo">
