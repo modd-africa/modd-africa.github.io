@@ -256,6 +256,12 @@ div.sourceCode { border-radius: 10px; border: 1px solid var(--line); }
 .person h3 a:hover { color: var(--field-d); text-decoration: underline; }
 .person .role { font-size: .9rem; color: var(--field-d); font-weight: 500; margin: 0 0 .15rem; }
 .person .org { font-family: "IBM Plex Mono", monospace; font-size: .76rem; color: var(--muted); margin: 0; line-height: 1.4; }
+.person:has(.person__social) { display: flex; flex-direction: column; align-items: center; }
+.person:has(.person__social) p:last-of-type { margin-bottom: .85rem; }
+.person__social { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; margin-top: auto; border-radius: 50%; border: 1px solid var(--line); color: var(--field-d); font-size: .9rem; text-decoration: none; transition: background .15s ease, border-color .15s ease, color .15s ease; }
+.person__social[href]:hover { background: var(--field); border-color: var(--field); color: #fff; }
+// Placeholder: no href yet, so show it dimmed and not clickable. Adding an href activates it.
+.person__social:not([href]) { opacity: .4; cursor: default; }
 
 // ── Footer ───────────────────────────────────────────────────────────
 .nav-footer { background: var(--forest-d) !important; color: #A9C4B4; border-top: 0; }
