@@ -82,9 +82,15 @@ h2.big { font-size: clamp(1.7rem, 1.1rem + 1.8vw, 2.5rem); margin-top: 0; }
 .navbar .navbar-brand { align-self: stretch; display: flex; align-items: center; padding-inline: 1.4rem; margin-right: 1.2rem; pointer-events: none; }
 .navbar .navbar-brand img { height: 84px !important; max-height: none !important; width: auto !important; }
 .navbar .navbar-title { display: none; }
-.navbar-nav .nav-link { color: var(--field) !important; text-transform: uppercase; letter-spacing: .09em; font-family: $headings-font-family; font-weight: 600; font-size: .95rem; }
+.navbar-nav .nav-link { color: var(--field) !important; text-transform: uppercase; letter-spacing: .09em; font-family: $headings-font-family; font-weight: 600; font-size: .95rem; white-space: nowrap; }
 .navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus,
 .navbar-nav .nav-link.active { color: var(--field-d) !important; }
+// 1200–1399px: tighten the bar so the longer French labels fit on one line beside the logo
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .navbar .navbar-brand { padding-inline: 1rem; margin-right: .8rem; }
+  .navbar .navbar-brand img { height: 76px !important; }
+  .navbar .navbar-nav .nav-link { font-size: .85rem; letter-spacing: .05em; padding-inline: .5rem; }
+}
 .navbar .quarto-navbar-tools a, .navbar .navbar-toggler { color: var(--field) !important; border-color: var(--line); }
 
 // ── SPLIT-PANEL BANNER (green by default; shows a photo when a page sets one) ──
