@@ -68,6 +68,16 @@ title-block-banner: ../assets/feature-evidence.jpg
     <h3><a href="https://ihi.or.tz/our-staff/301/Dr%20Samson/Kiware/details/" target="_blank" rel="noopener">Dr Samson Kiware</a></h3><p class="role">Responsable de la modélisation mathématique</p>
     <a class="person__social" href="https://www.linkedin.com/in/samson-kiware-49233a55/" target="_blank" rel="noopener" aria-label="Dr Samson Kiware sur LinkedIn"><i class="bi bi-linkedin"></i></a>
   </div>
+  <div class="person" data-group="regional">
+    <div class="avatar">SM</div>
+    <h3>Sylviane Miharisoa</h3><p class="role">Collaborateur(trice) de recherche</p>
+    <a class="person__social" href="https://www.linkedin.com/in/sylviane-miharisoa-1a6264207/" target="_blank" rel="noopener" aria-label="Sylviane Miharisoa sur LinkedIn"><i class="bi bi-linkedin"></i></a>
+  </div>
+  <div class="person" data-group="regional">
+    <div class="avatar">VN</div>
+    <h3>Victoire Nsabatien</h3><p class="role">Collaborateur(trice) de recherche</p>
+    <a class="person__social" href="https://www.linkedin.com/in/victoire-nsabatien-443968185/" target="_blank" rel="noopener" aria-label="Victoire Nsabatien sur LinkedIn"><i class="bi bi-linkedin"></i></a>
+  </div>
 
   <div class="person" data-group="tanzania">
     <img class="avatar" src="../assets/team-mlacha.jpg" alt="Yeromin Mlacha">
