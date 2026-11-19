@@ -28,6 +28,13 @@
     "text": "The hubs\n\n  \n    Each hub builds local modelling capacity while sharing methods, data and lessons across the network. Tanzania coordinates; the DRC and Nigeria anchor the work in different ecological and epidemiological settings.\n  \n  \n    \n    Nigeria\n    DR Congo\n    Tanzania\n    \n      ×\n      \n      \n    \n  \n\n\n  \n    \n    \n      Coordinating hub\n      Tanzania — Ifakara Health Institute\n      Hosts the project as regional coordinator and main recipient of funds, leading efforts to establish the hubs and build regional capacity.\n    \n  \n  \n    \n    \n      DR Congo — INRB\n      Runs the DRC hub from the National Institute for Biomedical Research (INRB), in one of the highest-burden malaria settings on the continent.\n    \n  \n  \n    \n    \n      Nigeria — NIMR\n      Runs the Nigeria hub from the Nigerian Institute of Medical Research (NIMR), bringing the network into West Africa's distinct transmission and health-system context."
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Modelling for decisions in a dynamic Africa",
+    "section": "",
+    "text": "Turning environmental, entomological and health data into model-based evidence and forecasts so malaria programs can act ahead of a shifting climate.\n      \n        Explore our work →\n        Latest news\n      \n    \n  \n\n\n\n\n  \n    3Country hubs\n    41.8%of global malaria cases\n    46.5%of global malaria deaths\n    2024–28Funded programme\n    Malaria burden across the three hub countries · Source: WHO World Malaria Report 2024\n  \n\n\n\n\n  \n    Explore\n    Dive deeper into the network\n    \n      \n        \n        \n          The Project\n          The ERA modelling approach\n          Four work packages turning climate, entomological and health-system data into decisions malaria programmes can act on.\n          →\n        \n      \n      \n        \n        \n          Team & Hubs\n          Three hubs, one network\n          Meet the people building modelling capacity across Tanzania, the DRC and Nigeria.\n          →\n        \n      \n      \n        \n        \n          News\n          Latest from the network\n          Hackathons, annual meetings and milestones from across the hubs.\n          →\n        \n      \n    \n  \n\n\n\n\n  \n    \n      \n      \n      \n      \n      \n      \n      \n      \n      \n    \n    \"Models only matter if they change decisions.\" That's why every hub builds them hand in hand with the National Malaria Programmes who will use them."
+  },
+  {
     "objectID": "engage.html",
     "href": "engage.html",
     "title": "Get Involved",
@@ -70,39 +77,25 @@
     "text": "Opportunities\nResearch and PhD positions open periodically through the Ifakara Health Institute. See current openings on the IHI jobs board, or get in touch via IHI’s contact page."
   },
   {
-    "objectID": "partners.html",
-    "href": "partners.html",
-    "title": "Partners",
+    "objectID": "fr/partners.html",
+    "href": "fr/partners.html",
+    "title": "Partenaires",
     "section": "",
-    "text": "Collaborators"
+    "text": "Collaborateurs"
   },
   {
-    "objectID": "partners.html#working-with-the-people-who-decide",
-    "href": "partners.html#working-with-the-people-who-decide",
-    "title": "Partners",
-    "section": "Working with the people who decide",
-    "text": "Working with the people who decide\nModels only matter if they change decisions. That is why MoDD Africa is built around close, working relationships with the institutions responsible for malaria control the national research institutes that host the hubs, and the National Malaria Programmes that set policy and run interventions on the ground.\nIn Tanzania, the project is coordinated by the Ifakara Health Institute (IHI), which hosts the regional office and the Tanzania hub, and works directly with the country’s National Malaria Programme (NMP). This partnership keeps the modelling grounded in real programme priorities from where and when to target vector control, to how interventions hold up under a changing climate and ensures results are usable where decisions are made.\nAcross the network, the hubs maintain similar ties with national programmes and research partners in the DRC and Nigeria, reinforced by a regional Community of Practice in vector epidemiology and modelling that connects modellers, researchers and decision-makers as the project grows."
+    "objectID": "fr/partners.html#travailler-avec-celles-et-ceux-qui-décident",
+    "href": "fr/partners.html#travailler-avec-celles-et-ceux-qui-décident",
+    "title": "Partenaires",
+    "section": "Travailler avec celles et ceux qui décident",
+    "text": "Travailler avec celles et ceux qui décident\nLes modèles n’ont d’utilité que s’ils font évoluer les décisions. C’est pourquoi MoDD Africa repose sur des relations de travail étroites avec les institutions responsables de la lutte antipaludique les instituts nationaux de recherche qui accueillent les pôles, et les programmes nationaux de lutte contre le paludisme qui définissent les politiques et mettent en œuvre les interventions sur le terrain.\nEn Tanzanie, le projet est coordonné par l’Ifakara Health Institute (IHI), qui héberge le bureau régional et le pôle tanzanien, et travaille directement avec le Programme national du paludisme (NMP) du pays. Ce partenariat ancre la modélisation dans les priorités réelles des programmes d’où et quand cibler la lutte antivectorielle, à la façon dont les interventions résistent à un climat en évolution et garantit que les résultats soient exploitables là où les décisions se prennent.\nÀ l’échelle du réseau, les pôles entretiennent des liens comparables avec les programmes nationaux et les partenaires de recherche en RDC et au Nigéria, renforcés par une communauté de pratique régionale en épidémiologie vectorielle et en modélisation, qui relie modélisateurs, chercheurs et décideurs à mesure que le projet grandit."
   },
   {
-    "objectID": "partners.html#institutions",
-    "href": "partners.html#institutions",
-    "title": "Partners",
+    "objectID": "fr/partners.html#institutions",
+    "href": "fr/partners.html#institutions",
+    "title": "Partenaires",
     "section": "Institutions",
-    "text": "Institutions\nResearch institutions\n\n  \n  \n  \n  \n  \n  \n\n\nNational Malaria Programmes"
-  },
-  {
-    "objectID": "fr/news.html",
-    "href": "fr/news.html",
-    "title": "Actualités",
-    "section": "",
-    "text": "Avril 2026 · Zanzibar, Tanzanie\n        Un hackathon de modélisation réunit les pôles\n        Des groupes de travail réunissant plusieurs pôles ont passé la semaine à relever ensemble des défis techniques communs de la construction d'un pipeline climatique ERA5-et-altitude pour Kinshasa à la modélisation du comportement de piqûre des vecteurs, du microclimat et de la capacité vectorielle transformant les objectifs de collaboration et de renforcement des compétences du réseau en code opérationnel.\n      \n    \n\n    \n      \n        \n        \n      \n      \n        26–29 janvier 2026 · Dar es Salaam, Tanzanie\n        Réunion annuelle : faire le point et préparer l'année à venir\n        Un an après son lancement, le réseau s'est de nouveau réuni à Dar es Salaam pour faire le bilan des progrès de la première année et fixer les priorités de la suivante — rassemblant responsables pays, chercheurs et partenaires programmatiques de l'ensemble des pôles.\n        Lire le compte rendu complet sur le site de l'IHI →\n      \n    \n\n    \n      \n        \n        \n      \n      \n        14 juillet 2025 · Dar es Salaam, Tanzanie\n        Coordonner la modélisation climat-santé en Tanzanie\n        MoDD Africa a rejoint des projets partenaires — le Malaria Atlas Project, l'Université de Dar es Salaam et HISP (DHIS2) pour une journée de travail visant à harmoniser la modélisation climat-santé en Tanzanie : cartographier les activités de chaque projet, élaborer un plan de travail intégré et faire avancer la création d'un groupe de travail technique national sur le climat et la santé avec le NMCP et le ministère de la Santé.\n      \n    \n\n    \n      \n        \n        \n        \n      \n      \n        13–14 février 2025 · Morogoro, Tanzanie\n        Présenter la modélisation climatique aux acteurs de la lutte antipaludique en Tanzanie\n        MoDD Africa et le projet Modelling Climate on Malaria in Tanzania ont présenté leurs travaux au ministère de la Santé, au programme national de lutte contre le paludisme (NMCP) et à des partenaires dont l'Agence météorologique de Tanzanie, l'UDSM et le NM-AIST. En deux jours, le groupe a dressé un tableau commun des enjeux du paludisme et du climat en Tanzanie, exploré de nouveaux outils de données climat-santé et défini les prochaines étapes en matière de partage de données et de comité de pilotage conjoint.\n      \n    \n\n    \n      \n        \n      \n      \n        28–30 novembre 2024 · Nairobi, Kenya\n        Le réseau est lancé lors de sa réunion de lancement des responsables de projet\n        MoDD Africa a officiellement démarré par une réunion de lancement de trois jours à l'ICIPE, à Nairobi, permettant d'accorder l'équipe sur la feuille de route quadriennale et le programme scientifique, et de rendre les pôles opérationnels.\n        Lire le compte rendu complet sur le site de l'IHI →\n      \n    \n\n  \n  ‹\n  ›"
-  },
-  {
-    "objectID": "fr/index.html",
-    "href": "fr/index.html",
-    "title": "Modélisation pour la décision dans une Afrique dynamique",
-    "section": "",
-    "text": "Transformer les données environnementales, entomologiques et sanitaires en éléments probants fondés sur la modélisation et en prévisions — afin que les programmes de lutte contre le paludisme puissent anticiper un climat en évolution.\n      \n        Découvrir nos travaux →\n        Actualités\n      \n    \n  \n\n\n\n\n  \n    3Pôles nationaux\n    41,8 %des cas de paludisme dans le monde\n    46,5 %des décès dus au paludisme dans le monde\n    2024–28Programme financé\n    Charge du paludisme dans les trois pays hôtes · Source : Rapport mondial sur le paludisme de l'OMS, 2024\n  \n\n\n\n\n  \n    Explorer\n    Aller plus loin dans le réseau\n    \n      \n        \n        \n          Le projet\n          L'approche de modélisation ERA\n          Quatre volets qui transforment les données climatiques, entomologiques et de santé en décisions concrètes pour les programmes de lutte contre le paludisme.\n          →\n        \n      \n      \n        \n        \n          Équipe et pôles\n          Trois pôles, un seul réseau\n          Rencontrez les équipes qui renforcent les capacités de modélisation en Tanzanie, en RDC et au Nigéria.\n          →\n        \n      \n      \n        \n        \n          Actualités\n          Les dernières nouvelles du réseau\n          Hackathons, rencontres annuelles et étapes clés de l'ensemble des pôles.\n          →\n        \n      \n    \n  \n\n\n\n\n  \n    \n      \n      \n      \n      \n      \n      \n      \n      \n      \n    \n    « Les modèles n'ont d'utilité que s'ils font évoluer les décisions. » C'est pourquoi chaque pôle les construit main dans la main avec les Programmes nationaux de lutte contre le paludisme qui les utiliseront."
+    "text": "Institutions\nInstitutions de recherche\n\n  \n  \n  \n  \n  \n  \n\n\nProgrammes nationaux de lutte contre le paludisme"
   },
   {
     "objectID": "fr/project.html",
@@ -138,62 +131,6 @@
     "title": "Le projet",
     "section": "Ce que nous allons produire",
     "text": "Ce que nous allons produire\nSur les quatre années du projet, MoDD Africa vise à :\n\nÉtablir des pôles de modélisation en Tanzanie, en RDC et au Nigéria.\nDévelopper des systèmes de conseil pertinents, fondés sur la modélisation, pour la lutte antipaludique.\nPartager les connaissances par la formation inter-pôles, des hackathons et concours de modélisation, et une communauté de pratique en épidémiologie vectorielle et en modélisation.\nConstituer une solide unité de synthèse des données probantes.\n\nBien que l’accent initial porte sur le paludisme, l’approche est conçue pour s’étendre à d’autres maladies à transmission vectorielle, comme les arboviroses."
-  },
-  {
-    "objectID": "project.html",
-    "href": "project.html",
-    "title": "The Project",
-    "section": "",
-    "text": "Africa’s climate is changing rapidly, reshaping where disease vectors live, how abundant they are, and when they peak. That raises the stakes for vector-borne disease control and for the decisions public-health systems must make. The three hub countries alone the DRC, Nigeria and Tanzania account for 41.8% of global malaria cases and 46.5% of deaths (WHO World Malaria Report, 2024), which is why the network starts here. The project frames the problem around four priorities:\n\nHow is the environment changing for vectors, and how are populations affected?\nHow effective are health systems at controlling disease?\nHow adaptable are programmes and decision-makers to emerging threats?\nWhat optimised interventions, early-warning tools and evidence are needed to respond?\n\nMeeting those needs calls for models that are trustworthy, hold up in the real world, and keep pace with change.\nApproach"
-  },
-  {
-    "objectID": "project.html#climate-and-health-in-a-changing-africa",
-    "href": "project.html#climate-and-health-in-a-changing-africa",
-    "title": "The Project",
-    "section": "",
-    "text": "Africa’s climate is changing rapidly, reshaping where disease vectors live, how abundant they are, and when they peak. That raises the stakes for vector-borne disease control and for the decisions public-health systems must make. The three hub countries alone the DRC, Nigeria and Tanzania account for 41.8% of global malaria cases and 46.5% of deaths (WHO World Malaria Report, 2024), which is why the network starts here. The project frames the problem around four priorities:\n\nHow is the environment changing for vectors, and how are populations affected?\nHow effective are health systems at controlling disease?\nHow adaptable are programmes and decision-makers to emerging threats?\nWhat optimised interventions, early-warning tools and evidence are needed to respond?\n\nMeeting those needs calls for models that are trustworthy, hold up in the real world, and keep pace with change.\nApproach"
-  },
-  {
-    "objectID": "project.html#the-era-modelling-architecture",
-    "href": "project.html#the-era-modelling-architecture",
-    "title": "The Project",
-    "section": "The ERA modelling architecture",
-    "text": "The ERA modelling architecture\nMoDD Africa is built around an Effective, Robust and Adaptable (ERA) approach to modelling:\n\nEffective — methods that produce answers decision-makers can act on.\nRobust — results that hold up under real-world uncertainty and incomplete data.\nAdaptable — models that evolve as conditions, questions and diseases change.\n\nThe way of working is collaborative, transparent, sustainable and adaptive: co-designing with National Malaria Programmes and partners from the start, being open about model outputs and their limitations, and strengthening the existing ecosystem rather than working around it."
-  },
-  {
-    "objectID": "project.html#work-packages",
-    "href": "project.html#work-packages",
-    "title": "The Project",
-    "section": "Work packages",
-    "text": "Work packages\n\n  \n    \n    WP1\n    Vectors & environment\n    Quantifies how climate, urbanisation and land-use reshape where vectors live, their abundance and their seasonality mapping seasonal transmission at national, sub-national and local scales, with model-based adaptive sampling targeting where new field data will help most.\n  \n  \n    \n    WP2\n    Interventions in urban settings\n    Blends mathematical, statistical and health-system models to assess how climate change affects malaria control in urban settings including how rural-to-urban migration shifts transmission, and what it means for bednets, access to care, supplies and services.\n  \n  \n    \n    WP3\n    Early warning\n    Unifies entomological and epidemiological models into tailored early-warning systems forecasting district-level case trends and flagging threats such as the invasive An. stephensi or spreading resistance, with probabilistic outbreak detection built to plug into existing surveillance.\n  \n  \n    \n    WP4\n    Skills & networks\n    Turns the network's diverse skills into lasting impact building capabilities, embedding \"systems thinking\" into modelling, and growing collaborations beyond the hubs through in-country research, hackathons, modelling competitions and exchanges.\n  \n\nNov 2024 – Oct 2028"
-  },
-  {
-    "objectID": "project.html#what-we-will-deliver",
-    "href": "project.html#what-we-will-deliver",
-    "title": "The Project",
-    "section": "What we will deliver",
-    "text": "What we will deliver\nOver the four years of the project, MoDD Africa aims to:\n\nEstablish modelling hubs in Tanzania, the DRC and Nigeria.\nDevelop relevant, model-based advisory systems for malaria control.\nShare knowledge through inter-hub training, hackathons and modelling competitions, and a Community of Practice in vector epidemiology and modelling.\nForm a strong Evidence Synthesis Unit.\n\nWhile the initial focus is malaria, the approach is designed to extend to other mosquito-borne diseases, such as arboviruses."
-  },
-  {
-    "objectID": "fr/partners.html",
-    "href": "fr/partners.html",
-    "title": "Partenaires",
-    "section": "",
-    "text": "Collaborateurs"
-  },
-  {
-    "objectID": "fr/partners.html#travailler-avec-celles-et-ceux-qui-décident",
-    "href": "fr/partners.html#travailler-avec-celles-et-ceux-qui-décident",
-    "title": "Partenaires",
-    "section": "Travailler avec celles et ceux qui décident",
-    "text": "Travailler avec celles et ceux qui décident\nLes modèles n’ont d’utilité que s’ils font évoluer les décisions. C’est pourquoi MoDD Africa repose sur des relations de travail étroites avec les institutions responsables de la lutte antipaludique les instituts nationaux de recherche qui accueillent les pôles, et les programmes nationaux de lutte contre le paludisme qui définissent les politiques et mettent en œuvre les interventions sur le terrain.\nEn Tanzanie, le projet est coordonné par l’Ifakara Health Institute (IHI), qui héberge le bureau régional et le pôle tanzanien, et travaille directement avec le Programme national du paludisme (NMP) du pays. Ce partenariat ancre la modélisation dans les priorités réelles des programmes d’où et quand cibler la lutte antivectorielle, à la façon dont les interventions résistent à un climat en évolution et garantit que les résultats soient exploitables là où les décisions se prennent.\nÀ l’échelle du réseau, les pôles entretiennent des liens comparables avec les programmes nationaux et les partenaires de recherche en RDC et au Nigéria, renforcés par une communauté de pratique régionale en épidémiologie vectorielle et en modélisation, qui relie modélisateurs, chercheurs et décideurs à mesure que le projet grandit."
-  },
-  {
-    "objectID": "fr/partners.html#institutions",
-    "href": "fr/partners.html#institutions",
-    "title": "Partenaires",
-    "section": "Institutions",
-    "text": "Institutions\nInstitutions de recherche\n\n  \n  \n  \n  \n  \n  \n\n\nProgrammes nationaux de lutte contre le paludisme"
   },
   {
     "objectID": "fr/engage.html",
@@ -238,6 +175,20 @@
     "text": "Opportunités\nDes postes de recherche et de doctorat s’ouvrent régulièrement par l’intermédiaire de l’Ifakara Health Institute. Consultez les offres en cours sur le portail des offres d’emploi de l’IHI, ou contactez-nous via la page contact de l’IHI."
   },
   {
+    "objectID": "fr/news.html",
+    "href": "fr/news.html",
+    "title": "Actualités",
+    "section": "",
+    "text": "Avril 2026 · Zanzibar, Tanzanie\n        Un hackathon de modélisation réunit les pôles\n        Des groupes de travail réunissant plusieurs pôles ont passé la semaine à relever ensemble des défis techniques communs de la construction d'un pipeline climatique ERA5-et-altitude pour Kinshasa à la modélisation du comportement de piqûre des vecteurs, du microclimat et de la capacité vectorielle transformant les objectifs de collaboration et de renforcement des compétences du réseau en code opérationnel.\n      \n    \n\n    \n      \n        \n        \n      \n      \n        26–29 janvier 2026 · Dar es Salaam, Tanzanie\n        Réunion annuelle : faire le point et préparer l'année à venir\n        Un an après son lancement, le réseau s'est de nouveau réuni à Dar es Salaam pour faire le bilan des progrès de la première année et fixer les priorités de la suivante — rassemblant responsables pays, chercheurs et partenaires programmatiques de l'ensemble des pôles.\n        Lire le compte rendu complet sur le site de l'IHI →\n      \n    \n\n    \n      \n        \n        \n      \n      \n        14 juillet 2025 · Dar es Salaam, Tanzanie\n        Coordonner la modélisation climat-santé en Tanzanie\n        MoDD Africa a rejoint des projets partenaires — le Malaria Atlas Project, l'Université de Dar es Salaam et HISP (DHIS2) pour une journée de travail visant à harmoniser la modélisation climat-santé en Tanzanie : cartographier les activités de chaque projet, élaborer un plan de travail intégré et faire avancer la création d'un groupe de travail technique national sur le climat et la santé avec le NMCP et le ministère de la Santé.\n      \n    \n\n    \n      \n        \n        \n        \n      \n      \n        13–14 février 2025 · Morogoro, Tanzanie\n        Présenter la modélisation climatique aux acteurs de la lutte antipaludique en Tanzanie\n        MoDD Africa et le projet Modelling Climate on Malaria in Tanzania ont présenté leurs travaux au ministère de la Santé, au programme national de lutte contre le paludisme (NMCP) et à des partenaires dont l'Agence météorologique de Tanzanie, l'UDSM et le NM-AIST. En deux jours, le groupe a dressé un tableau commun des enjeux du paludisme et du climat en Tanzanie, exploré de nouveaux outils de données climat-santé et défini les prochaines étapes en matière de partage de données et de comité de pilotage conjoint.\n      \n    \n\n    \n      \n        \n      \n      \n        28–30 novembre 2024 · Nairobi, Kenya\n        Le réseau est lancé lors de sa réunion de lancement des responsables de projet\n        MoDD Africa a officiellement démarré par une réunion de lancement de trois jours à l'ICIPE, à Nairobi, permettant d'accorder l'équipe sur la feuille de route quadriennale et le programme scientifique, et de rendre les pôles opérationnels.\n        Lire le compte rendu complet sur le site de l'IHI →\n      \n    \n\n  \n  ‹\n  ›"
+  },
+  {
+    "objectID": "fr/index.html",
+    "href": "fr/index.html",
+    "title": "Modélisation pour la décision dans une Afrique dynamique",
+    "section": "",
+    "text": "Transformer les données environnementales, entomologiques et sanitaires en éléments probants fondés sur la modélisation et en prévisions — afin que les programmes de lutte contre le paludisme puissent anticiper un climat en évolution.\n      \n        Découvrir nos travaux →\n        Actualités\n      \n    \n  \n\n\n\n\n  \n    3Pôles nationaux\n    41,8 %des cas de paludisme dans le monde\n    46,5 %des décès dus au paludisme dans le monde\n    2024–28Programme financé\n    Charge du paludisme dans les trois pays hôtes · Source : Rapport mondial sur le paludisme de l'OMS, 2024\n  \n\n\n\n\n  \n    Explorer\n    Aller plus loin dans le réseau\n    \n      \n        \n        \n          Le projet\n          L'approche de modélisation ERA\n          Quatre volets qui transforment les données climatiques, entomologiques et de santé en décisions concrètes pour les programmes de lutte contre le paludisme.\n          →\n        \n      \n      \n        \n        \n          Équipe et pôles\n          Trois pôles, un seul réseau\n          Rencontrez les équipes qui renforcent les capacités de modélisation en Tanzanie, en RDC et au Nigéria.\n          →\n        \n      \n      \n        \n        \n          Actualités\n          Les dernières nouvelles du réseau\n          Hackathons, rencontres annuelles et étapes clés de l'ensemble des pôles.\n          →\n        \n      \n    \n  \n\n\n\n\n  \n    \n      \n      \n      \n      \n      \n      \n      \n      \n      \n    \n    « Les modèles n'ont d'utilité que s'ils font évoluer les décisions. » C'est pourquoi chaque pôle les construit main dans la main avec les Programmes nationaux de lutte contre le paludisme qui les utiliseront."
+  },
+  {
     "objectID": "fr/team.html",
     "href": "fr/team.html",
     "title": "Équipe et pôles",
@@ -266,17 +217,66 @@
     "text": "Les pôles\n\n  \n    Chaque pôle développe des capacités locales de modélisation tout en partageant méthodes, données et enseignements à l'échelle du réseau. La Tanzanie assure la coordination ; la RDC et le Nigéria ancrent les travaux dans des contextes écologiques et épidémiologiques différents.\n  \n  \n    \n    Nigéria\n    RD Congo\n    Tanzanie\n    \n      ×\n      \n      \n    \n  \n\n\n  \n    \n    \n      Pôle coordinateur\n      Tanzanie — Ifakara Health Institute\n      Accueille le projet en tant que coordinateur régional et principal bénéficiaire des fonds, et pilote les efforts pour établir les pôles et renforcer les capacités régionales.\n    \n  \n  \n    \n    \n      RD Congo — INRB\n      Anime le pôle de RDC depuis l'Institut national de recherche biomédicale (INRB), dans l'un des contextes de plus forte charge palustre du continent.\n    \n  \n  \n    \n    \n      Nigéria — NIMR\n      Anime le pôle du Nigéria depuis le Nigerian Institute of Medical Research (NIMR), et étend le réseau au contexte de transmission et de système de santé propre à l'Afrique de l'Ouest."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Modelling for decisions in a dynamic Africa",
-    "section": "",
-    "text": "Turning environmental, entomological and health data into model-based evidence and forecasts so malaria programs can act ahead of a shifting climate.\n      \n        Explore our work →\n        Latest news\n      \n    \n  \n\n\n\n\n  \n    3Country hubs\n    41.8%of global malaria cases\n    46.5%of global malaria deaths\n    2024–28Funded programme\n    Malaria burden across the three hub countries · Source: WHO World Malaria Report 2024\n  \n\n\n\n\n  \n    Explore\n    Dive deeper into the network\n    \n      \n        \n        \n          The Project\n          The ERA modelling approach\n          Four work packages turning climate, entomological and health-system data into decisions malaria programmes can act on.\n          →\n        \n      \n      \n        \n        \n          Team & Hubs\n          Three hubs, one network\n          Meet the people building modelling capacity across Tanzania, the DRC and Nigeria.\n          →\n        \n      \n      \n        \n        \n          News\n          Latest from the network\n          Hackathons, annual meetings and milestones from across the hubs.\n          →\n        \n      \n    \n  \n\n\n\n\n  \n    \n      \n      \n      \n      \n      \n      \n      \n      \n      \n    \n    \"Models only matter if they change decisions.\" That's why every hub builds them hand in hand with the National Malaria Programmes who will use them."
-  },
-  {
     "objectID": "news.html",
     "href": "news.html",
     "title": "News",
     "section": "",
     "text": "April 2026 · Zanzibar, Tanzania\n        Modelling hackathon brings the hubs together\n        Cross-hub working groups spent the week tackling shared technical challenges hands-on from building an ERA5-and-elevation climate pipeline for Kinshasa to modelling vector biting behaviour, microclimate and vectorial capacity turning the network's collaboration and skill-building aims into working code.\n      \n    \n\n    \n      \n        \n        \n      \n      \n        26–29 January 2026 · Dar es Salaam, Tanzania\n        Annual meeting: taking stock, planning the year ahead\n        A year on from launch, the network reconvened in Dar es Salaam to review the first year's progress and set priorities for the next drawing country leads, researchers and programme partners from across the hubs.\n        Read the full write-up at IHI →\n      \n    \n\n    \n      \n        \n        \n      \n      \n        14 July 2025 · Dar es Salaam, Tanzania\n        Coordinating climate and health modelling in Tanzania\n        MoDD Africa joined partner projects — the Malaria Atlas Project, the University of Dar es Salaam and HISP (DHIS2) for a one-day meeting to align Tanzania's climate-and-health modelling: mapping each project's activities, shaping an integrated workplan, and advancing plans for a national Climate and Health Technical Working Group with the NMCP and Ministry of Health.\n      \n    \n\n    \n      \n        \n        \n        \n      \n      \n        13–14 February 2025 · Morogoro, Tanzania\n        Bringing climate modelling to Tanzania's malaria stakeholders\n        MoDD Africa and the Modelling Climate on Malaria in Tanzania project introduced their work to the Ministry of Health, the National Malaria Control Programme and partners including the Tanzania Meteorological Agency, UDSM and NM-AIST. Over two days the group built a shared picture of Tanzania's malaria and climate challenges, explored new climate–health data tools, and agreed next steps on data sharing and a joint steering committee.\n      \n    \n\n    \n      \n        \n      \n      \n        28–30 November 2024 · Nairobi, Kenya\n        The network launches at its project leads kickoff\n        MoDD Africa formally got under way with a three-day kickoff at ICIPE in Nairobi, aligning the team on the four-year roadmap, the science agenda, and getting the hubs operational.\n        Read the full write-up at IHI →\n      \n    \n\n  \n  ‹\n  ›"
+  },
+  {
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "The Project",
+    "section": "",
+    "text": "Africa’s climate is changing rapidly, reshaping where disease vectors live, how abundant they are, and when they peak. That raises the stakes for vector-borne disease control and for the decisions public-health systems must make. The three hub countries alone the DRC, Nigeria and Tanzania account for 41.8% of global malaria cases and 46.5% of deaths (WHO World Malaria Report, 2024), which is why the network starts here. The project frames the problem around four priorities:\n\nHow is the environment changing for vectors, and how are populations affected?\nHow effective are health systems at controlling disease?\nHow adaptable are programmes and decision-makers to emerging threats?\nWhat optimised interventions, early-warning tools and evidence are needed to respond?\n\nMeeting those needs calls for models that are trustworthy, hold up in the real world, and keep pace with change.\nApproach"
+  },
+  {
+    "objectID": "project.html#climate-and-health-in-a-changing-africa",
+    "href": "project.html#climate-and-health-in-a-changing-africa",
+    "title": "The Project",
+    "section": "",
+    "text": "Africa’s climate is changing rapidly, reshaping where disease vectors live, how abundant they are, and when they peak. That raises the stakes for vector-borne disease control and for the decisions public-health systems must make. The three hub countries alone the DRC, Nigeria and Tanzania account for 41.8% of global malaria cases and 46.5% of deaths (WHO World Malaria Report, 2024), which is why the network starts here. The project frames the problem around four priorities:\n\nHow is the environment changing for vectors, and how are populations affected?\nHow effective are health systems at controlling disease?\nHow adaptable are programmes and decision-makers to emerging threats?\nWhat optimised interventions, early-warning tools and evidence are needed to respond?\n\nMeeting those needs calls for models that are trustworthy, hold up in the real world, and keep pace with change.\nApproach"
+  },
+  {
+    "objectID": "project.html#the-era-modelling-architecture",
+    "href": "project.html#the-era-modelling-architecture",
+    "title": "The Project",
+    "section": "The ERA modelling architecture",
+    "text": "The ERA modelling architecture\nMoDD Africa is built around an Effective, Robust and Adaptable (ERA) approach to modelling:\n\nEffective — methods that produce answers decision-makers can act on.\nRobust — results that hold up under real-world uncertainty and incomplete data.\nAdaptable — models that evolve as conditions, questions and diseases change.\n\nThe way of working is collaborative, transparent, sustainable and adaptive: co-designing with National Malaria Programmes and partners from the start, being open about model outputs and their limitations, and strengthening the existing ecosystem rather than working around it."
+  },
+  {
+    "objectID": "project.html#work-packages",
+    "href": "project.html#work-packages",
+    "title": "The Project",
+    "section": "Work packages",
+    "text": "Work packages\n\n  \n    \n    WP1\n    Vectors & environment\n    Quantifies how climate, urbanisation and land-use reshape where vectors live, their abundance and their seasonality mapping seasonal transmission at national, sub-national and local scales, with model-based adaptive sampling targeting where new field data will help most.\n  \n  \n    \n    WP2\n    Interventions in urban settings\n    Blends mathematical, statistical and health-system models to assess how climate change affects malaria control in urban settings including how rural-to-urban migration shifts transmission, and what it means for bednets, access to care, supplies and services.\n  \n  \n    \n    WP3\n    Early warning\n    Unifies entomological and epidemiological models into tailored early-warning systems forecasting district-level case trends and flagging threats such as the invasive An. stephensi or spreading resistance, with probabilistic outbreak detection built to plug into existing surveillance.\n  \n  \n    \n    WP4\n    Skills & networks\n    Turns the network's diverse skills into lasting impact building capabilities, embedding \"systems thinking\" into modelling, and growing collaborations beyond the hubs through in-country research, hackathons, modelling competitions and exchanges.\n  \n\nNov 2024 – Oct 2028"
+  },
+  {
+    "objectID": "project.html#what-we-will-deliver",
+    "href": "project.html#what-we-will-deliver",
+    "title": "The Project",
+    "section": "What we will deliver",
+    "text": "What we will deliver\nOver the four years of the project, MoDD Africa aims to:\n\nEstablish modelling hubs in Tanzania, the DRC and Nigeria.\nDevelop relevant, model-based advisory systems for malaria control.\nShare knowledge through inter-hub training, hackathons and modelling competitions, and a Community of Practice in vector epidemiology and modelling.\nForm a strong Evidence Synthesis Unit.\n\nWhile the initial focus is malaria, the approach is designed to extend to other mosquito-borne diseases, such as arboviruses."
+  },
+  {
+    "objectID": "partners.html",
+    "href": "partners.html",
+    "title": "Partners",
+    "section": "",
+    "text": "Collaborators"
+  },
+  {
+    "objectID": "partners.html#working-with-the-people-who-decide",
+    "href": "partners.html#working-with-the-people-who-decide",
+    "title": "Partners",
+    "section": "Working with the people who decide",
+    "text": "Working with the people who decide\nModels only matter if they change decisions. That is why MoDD Africa is built around close, working relationships with the institutions responsible for malaria control the national research institutes that host the hubs, and the National Malaria Programmes that set policy and run interventions on the ground.\nIn Tanzania, the project is coordinated by the Ifakara Health Institute (IHI), which hosts the regional office and the Tanzania hub, and works directly with the country’s National Malaria Programme (NMP). This partnership keeps the modelling grounded in real programme priorities from where and when to target vector control, to how interventions hold up under a changing climate and ensures results are usable where decisions are made.\nAcross the network, the hubs maintain similar ties with national programmes and research partners in the DRC and Nigeria, reinforced by a regional Community of Practice in vector epidemiology and modelling that connects modellers, researchers and decision-makers as the project grows."
+  },
+  {
+    "objectID": "partners.html#institutions",
+    "href": "partners.html#institutions",
+    "title": "Partners",
+    "section": "Institutions",
+    "text": "Institutions\nResearch institutions\n\n  \n  \n  \n  \n  \n  \n\n\nNational Malaria Programmes"
   }
 ]
