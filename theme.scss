@@ -220,7 +220,8 @@ h2.big { font-size: clamp(1.7rem, 1.1rem + 1.8vw, 2.5rem); margin-top: 0; }
 @media (max-width: 760px) { .hubs-intro { grid-template-columns: 1fr; } }
 
 // ── Interactive hub-map pins + popover ───────────────────────────────
-.hub-pin { position: absolute; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; gap: .3rem; background: none; border: 0; padding: 0; cursor: pointer; z-index: 3; }
+// Anchor on the dot's centre (dot is 15px, first in the column), not the whole button incl. label.
+.hub-pin { position: absolute; transform: translate(-50%, -7.5px); display: flex; flex-direction: column; align-items: center; gap: .3rem; background: none; border: 0; padding: 0; cursor: pointer; z-index: 3; }
 .hub-pin__dot { width: 15px; height: 15px; border-radius: 50%; background: var(--signal); border: 2px solid #fff; box-shadow: 0 0 0 3px rgba(53,168,94,.35), var(--shadow-1); transition: transform .15s ease, box-shadow .15s ease; }
 .hub-pin:hover .hub-pin__dot, .hub-pin.is-active .hub-pin__dot { transform: scale(1.25); box-shadow: 0 0 0 5px rgba(53,168,94,.4), var(--shadow-1); }
 .hub-pin__label { font-family: "IBM Plex Mono", monospace; font-size: .62rem; font-weight: 600; letter-spacing: .04em; color: var(--ink); background: rgba(255,255,255,.92); padding: .05rem .45rem; border-radius: 999px; white-space: nowrap; opacity: 0; transform: translateY(-2px); transition: opacity .15s ease, transform .15s ease; pointer-events: none; box-shadow: var(--shadow-1); }

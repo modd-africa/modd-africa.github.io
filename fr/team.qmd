@@ -162,9 +162,9 @@ title-block-banner: ../assets/feature-evidence.jpg
   </div>
   <div class="hubs-map-wrap">
     <img class="hubs-map" src="../assets/africa-hubs-map-green.png" alt="Les pôles de MoDD Africa : le Nigéria, la RDC et la Tanzanie mis en évidence sur la carte de l'Afrique.">
-    <button class="hub-pin" type="button" data-group="nigeria" style="left:40%; top:35%" aria-expanded="false"><span class="hub-pin__dot"></span><span class="hub-pin__label">Nigéria</span></button>
-    <button class="hub-pin" type="button" data-group="drc" style="left:57%; top:59%" aria-expanded="false"><span class="hub-pin__dot"></span><span class="hub-pin__label">RD Congo</span></button>
-    <button class="hub-pin" type="button" data-group="tanzania" style="left:72%; top:61%" aria-expanded="false"><span class="hub-pin__dot"></span><span class="hub-pin__label">Tanzanie</span></button>
+    <button class="hub-pin" type="button" data-group="nigeria" style="left:37%; top:38.5%" aria-expanded="false"><span class="hub-pin__dot"></span><span class="hub-pin__label">Nigéria</span></button>
+    <button class="hub-pin" type="button" data-group="drc" style="left:59.5%; top:56%" aria-expanded="false"><span class="hub-pin__dot"></span><span class="hub-pin__label">RD Congo</span></button>
+    <button class="hub-pin" type="button" data-group="tanzania" style="left:76%; top:60%" aria-expanded="false"><span class="hub-pin__dot"></span><span class="hub-pin__label">Tanzanie</span></button>
     <div class="hub-popover" hidden>
       <button class="hub-popover__close" type="button" aria-label="Fermer">&times;</button>
       <div class="hub-popover__head"></div>
