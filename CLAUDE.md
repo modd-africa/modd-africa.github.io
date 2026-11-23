@@ -15,4 +15,4 @@ Quarto site for the MoDD Africa malaria-modelling network. Deploys to GitHub Pag
 
 ## Conventions
 - Home-page and card sections are written as raw HTML inside ```{=html}``` blocks — always close the fence.
-- Keep content accurate: Nigeria hub is NIMR; malaria vector is Anopheles.
+- Keep content accurate: Nigeria hub is hosted by Osun State University (UNIOSUN), not NIMR; malaria vector is Anopheles.
