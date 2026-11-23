@@ -106,8 +106,8 @@ title-block-banner: assets/feature-evidence.jpg
   </div>
   <div class="person" data-group="drc">
     <img class="avatar" src="assets/team-yombo.jpeg" alt="Rodriguez Yombo">
-    <h3>Rodriguez Yombo</h3><p class="role">Senior Modeller</p><p class="org">DR Congo</p>
-    <a class="person__social" href="https://www.linkedin.com/in/rodriguez-yombo-phaka-46649b16a/" target="_blank" rel="noopener" aria-label="Rodriguez Yombo on LinkedIn"><i class="bi bi-linkedin"></i></a>
+    <h3>Prof. Rodriguez Yombo</h3><p class="role">Senior Modeller</p><p class="org">DR Congo</p>
+    <a class="person__social" href="https://www.linkedin.com/in/rodriguez-yombo-phaka-46649b16a/" target="_blank" rel="noopener" aria-label="Prof. Rodriguez Yombo on LinkedIn"><i class="bi bi-linkedin"></i></a>
   </div>
   <div class="person" data-group="drc">
     <img class="avatar" src="assets/team-bokulu.png" alt="Arsene Bokulu">
