@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-10acb61c3cf43133cd246a099505ed0e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-2dcfed224258e1a3f82cd2b05bb730d0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-79a743351e2f786536af922b41d541cb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -202,6 +202,7 @@ background-size: cover;
   .team-filter button { font-family: "IBM Plex Mono", monospace; font-size: .76rem; letter-spacing: .04em; padding: .5rem 1.05rem; border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--muted); cursor: pointer; transition: all .15s ease; }
   .team-filter button:hover { border-color: var(--field); color: var(--field-d); }
   .team-filter button.is-active { background: var(--field); border-color: var(--field); color: #fff; }
+  .team-empty { margin-top: 1.5rem; color: var(--muted); font-style: italic; }
   .team-grid .person[hidden] { display: none; }
 </style>
 <p><span class="eyebrow">Coordination</span></p>
@@ -226,6 +227,7 @@ background-size: cover;
   <button data-group="tanzania">Tanzania</button>
   <button data-group="drc">DR Congo</button>
   <button data-group="nigeria">Nigeria</button>
+  <button data-group="collaborators">Collaborators</button>
 </div>
 
 <div class="team team-grid">
@@ -249,16 +251,6 @@ background-size: cover;
     <img class="avatar" src="assets/team-kiware.jpg" alt="Samson Kiware">
     <h3 class="anchored"><a href="https://ihi.or.tz/our-staff/301/Dr%20Samson/Kiware/details/" target="_blank" rel="noopener">Dr. Samson Kiware</a></h3><p class="role">Mathematical Modelling Lead</p>
     <a class="person__social" href="https://www.linkedin.com/in/samson-kiware-49233a55/" target="_blank" rel="noopener" aria-label="Dr. Samson Kiware on LinkedIn"><i class="bi bi-linkedin"></i></a>
-  </div>
-  <div class="person" data-group="regional">
-    <img class="avatar" src="assets/team-miharisoa.jpeg" alt="Sylviane Miharisoa">
-    <h3 class="anchored">Sylviane Miharisoa</h3><p class="role">Research Collaborator</p>
-    <a class="person__social" href="https://www.linkedin.com/in/sylviane-miharisoa-1a6264207/" target="_blank" rel="noopener" aria-label="Sylviane Miharisoa on LinkedIn"><i class="bi bi-linkedin"></i></a>
-  </div>
-  <div class="person" data-group="regional">
-    <img class="avatar" src="assets/team-nsabatien.jpeg" alt="Victoire Nsabatien">
-    <h3 class="anchored">Victoire Nsabatien</h3><p class="role">Research Collaborator</p>
-    <a class="person__social" href="https://www.linkedin.com/in/victoire-nsabatien-443968185/" target="_blank" rel="noopener" aria-label="Victoire Nsabatien on LinkedIn"><i class="bi bi-linkedin"></i></a>
   </div>
 
   <div class="person" data-group="tanzania">
@@ -314,7 +306,19 @@ background-size: cover;
     <a class="person__social" href="https://www.linkedin.com/in/ayodele-babalola-3a136579/" target="_blank" rel="noopener" aria-label="Dr. Ayodele Babalola on LinkedIn"><i class="bi bi-linkedin"></i></a>
   </div>
 
+  <div class="person" data-group="collaborators">
+    <img class="avatar" src="assets/team-miharisoa.jpeg" alt="Sylviane Miharisoa">
+    <h3 class="anchored">Sylviane Miharisoa</h3><p class="role">Research Collaborator</p>
+    <a class="person__social" href="https://www.linkedin.com/in/sylviane-miharisoa-1a6264207/" target="_blank" rel="noopener" aria-label="Sylviane Miharisoa on LinkedIn"><i class="bi bi-linkedin"></i></a>
+  </div>
+  <div class="person" data-group="collaborators">
+    <img class="avatar" src="assets/team-nsabatien.jpeg" alt="Victoire Nsabatien">
+    <h3 class="anchored">Victoire Nsabatien</h3><p class="role">Research Collaborator</p>
+    <a class="person__social" href="https://www.linkedin.com/in/victoire-nsabatien-443968185/" target="_blank" rel="noopener" aria-label="Victoire Nsabatien on LinkedIn"><i class="bi bi-linkedin"></i></a>
+  </div>
+
 </div>
+<p class="team-empty" hidden="">Collaborators will be listed here soon.</p>
 
 <script>
 (function () {
@@ -328,6 +332,8 @@ background-size: cover;
     btn.classList.add('is-active');
     const g = btn.dataset.group;
     cards.forEach(function (c) { c.hidden = (g !== 'all' && c.dataset.group !== g); });
+    const empty = document.querySelector('.team-empty');
+    if (empty) empty.hidden = Array.prototype.some.call(cards, function (c) { return !c.hidden; });
   });
 })();
 </script>
