@@ -82,9 +82,15 @@ h2.big { font-size: clamp(1.7rem, 1.1rem + 1.8vw, 2.5rem); margin-top: 0; }
 .navbar .navbar-brand { align-self: stretch; display: flex; align-items: center; padding-inline: 1.4rem; margin-right: 1.2rem; pointer-events: none; }
 .navbar .navbar-brand img { height: 84px !important; max-height: none !important; width: auto !important; }
 .navbar .navbar-title { display: none; }
-.navbar-nav .nav-link { color: var(--field) !important; text-transform: uppercase; letter-spacing: .09em; font-family: $headings-font-family; font-weight: 600; font-size: .95rem; }
+.navbar-nav .nav-link { color: var(--field) !important; text-transform: uppercase; letter-spacing: .09em; font-family: $headings-font-family; font-weight: 600; font-size: .95rem; white-space: nowrap; }
 .navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus,
 .navbar-nav .nav-link.active { color: var(--field-d) !important; }
+// 1200–1399px: tighten the bar so the longer French labels fit on one line beside the logo
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .navbar .navbar-brand { padding-inline: 1rem; margin-right: .8rem; }
+  .navbar .navbar-brand img { height: 76px !important; }
+  .navbar .navbar-nav .nav-link { font-size: .85rem; letter-spacing: .05em; padding-inline: .5rem; }
+}
 .navbar .quarto-navbar-tools a, .navbar .navbar-toggler { color: var(--field) !important; border-color: var(--line); }
 
 // ── SPLIT-PANEL BANNER (green by default; shows a photo when a page sets one) ──
@@ -214,7 +220,8 @@ h2.big { font-size: clamp(1.7rem, 1.1rem + 1.8vw, 2.5rem); margin-top: 0; }
 @media (max-width: 760px) { .hubs-intro { grid-template-columns: 1fr; } }
 
 // ── Interactive hub-map pins + popover ───────────────────────────────
-.hub-pin { position: absolute; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; gap: .3rem; background: none; border: 0; padding: 0; cursor: pointer; z-index: 3; }
+// Anchor on the dot's centre (dot is 15px, first in the column), not the whole button incl. label.
+.hub-pin { position: absolute; transform: translate(-50%, -7.5px); display: flex; flex-direction: column; align-items: center; gap: .3rem; background: none; border: 0; padding: 0; cursor: pointer; z-index: 3; }
 .hub-pin__dot { width: 15px; height: 15px; border-radius: 50%; background: var(--signal); border: 2px solid #fff; box-shadow: 0 0 0 3px rgba(53,168,94,.35), var(--shadow-1); transition: transform .15s ease, box-shadow .15s ease; }
 .hub-pin:hover .hub-pin__dot, .hub-pin.is-active .hub-pin__dot { transform: scale(1.25); box-shadow: 0 0 0 5px rgba(53,168,94,.4), var(--shadow-1); }
 .hub-pin__label { font-family: "IBM Plex Mono", monospace; font-size: .62rem; font-weight: 600; letter-spacing: .04em; color: var(--ink); background: rgba(255,255,255,.92); padding: .05rem .45rem; border-radius: 999px; white-space: nowrap; opacity: 0; transform: translateY(-2px); transition: opacity .15s ease, transform .15s ease; pointer-events: none; box-shadow: var(--shadow-1); }
@@ -256,6 +263,12 @@ div.sourceCode { border-radius: 10px; border: 1px solid var(--line); }
 .person h3 a:hover { color: var(--field-d); text-decoration: underline; }
 .person .role { font-size: .9rem; color: var(--field-d); font-weight: 500; margin: 0 0 .15rem; }
 .person .org { font-family: "IBM Plex Mono", monospace; font-size: .76rem; color: var(--muted); margin: 0; line-height: 1.4; }
+.person:has(.person__social) { display: flex; flex-direction: column; align-items: center; }
+.person:has(.person__social) p:last-of-type { margin-bottom: .85rem; }
+.person__social { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; margin-top: auto; border-radius: 50%; border: 1px solid var(--line); color: var(--field-d); font-size: .9rem; text-decoration: none; transition: background .15s ease, border-color .15s ease, color .15s ease; }
+.person__social[href]:hover { background: var(--field); border-color: var(--field); color: #fff; }
+// Placeholder: no href yet, so show it dimmed and not clickable. Adding an href activates it.
+.person__social:not([href]) { opacity: .4; cursor: default; }
 
 // ── Footer ───────────────────────────────────────────────────────────
 .nav-footer { background: var(--forest-d) !important; color: #A9C4B4; border-top: 0; }

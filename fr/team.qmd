@@ -29,6 +29,7 @@ title-block-banner: ../assets/feature-evidence.jpg
     <h3><a href="https://ihi.or.tz/our-staff/238/Dr.%20Susan/Rumisha/details/" target="_blank" rel="noopener">Dre Susan Rumisha</a></h3>
     <p class="role">Responsable d'équipe</p>
     <p class="org">Ifakara Health Institute</p>
+    <a class="person__social" href="https://www.linkedin.com/in/susan-rumisha-88a44b125/" target="_blank" rel="noopener" aria-label="Dre Susan Rumisha sur LinkedIn"><i class="bi bi-linkedin"></i></a>
   </div>
 </div>
 ```
@@ -52,57 +53,85 @@ title-block-banner: ../assets/feature-evidence.jpg
   <div class="person" data-group="regional">
     <img class="avatar" src="../assets/team-amratia.jpg" alt="Punam Amratia">
     <h3><a href="https://www.ihi.or.tz/our-staff/380/Dr%20Punam/Amratia/details/" target="_blank" rel="noopener">Dre Punam Amratia</a></h3><p class="role">Responsable technique</p>
+    <a class="person__social" href="https://www.linkedin.com/in/punam-amratia-a8534b34/" target="_blank" rel="noopener" aria-label="Dre Punam Amratia sur LinkedIn"><i class="bi bi-linkedin"></i></a>
   </div>
   <div class="person" data-group="regional">
     <img class="avatar" src="../assets/team-ketende.jpg" alt="Sosthenes Ketende">
     <h3><a href="https://ihi.or.tz/our-staff/239/Sosthenes/Charles%20Ketende/details/" target="_blank" rel="noopener">Sosthenes Ketende</a></h3><p class="role">Responsable de programme</p>
+    <a class="person__social" href="https://www.linkedin.com/in/sosthenesketende/" target="_blank" rel="noopener" aria-label="Sosthenes Ketende sur LinkedIn"><i class="bi bi-linkedin"></i></a>
   </div>
   <div class="person" data-group="regional">
     <img class="avatar" src="../assets/team-diana.jpg" alt="Diana Mwanamboka">
     <h3>Diana Mwanamboka</h3><p class="role">Administratrice du projet</p>
+    <a class="person__social" href="https://www.linkedin.com/in/diana-mwanamboka-6bb6031b5/" target="_blank" rel="noopener" aria-label="Diana Mwanamboka sur LinkedIn"><i class="bi bi-linkedin"></i></a>
   </div>
   <div class="person" data-group="regional">
     <img class="avatar" src="../assets/team-kiware.jpg" alt="Samson Kiware">
     <h3><a href="https://ihi.or.tz/our-staff/301/Dr%20Samson/Kiware/details/" target="_blank" rel="noopener">Dr Samson Kiware</a></h3><p class="role">Responsable de la modélisation mathématique</p>
+    <a class="person__social" href="https://www.linkedin.com/in/samson-kiware-49233a55/" target="_blank" rel="noopener" aria-label="Dr Samson Kiware sur LinkedIn"><i class="bi bi-linkedin"></i></a>
+  </div>
+  <div class="person" data-group="regional">
+    <img class="avatar" src="../assets/team-miharisoa.jpeg" alt="Sylviane Miharisoa">
+    <h3>Sylviane Miharisoa</h3><p class="role">Collaborateur(trice) de recherche</p>
+    <a class="person__social" href="https://www.linkedin.com/in/sylviane-miharisoa-1a6264207/" target="_blank" rel="noopener" aria-label="Sylviane Miharisoa sur LinkedIn"><i class="bi bi-linkedin"></i></a>
+  </div>
+  <div class="person" data-group="regional">
+    <img class="avatar" src="../assets/team-nsabatien.jpeg" alt="Victoire Nsabatien">
+    <h3>Victoire Nsabatien</h3><p class="role">Collaborateur(trice) de recherche</p>
+    <a class="person__social" href="https://www.linkedin.com/in/victoire-nsabatien-443968185/" target="_blank" rel="noopener" aria-label="Victoire Nsabatien sur LinkedIn"><i class="bi bi-linkedin"></i></a>
   </div>
 
   <div class="person" data-group="tanzania">
     <img class="avatar" src="../assets/team-mlacha.jpg" alt="Yeromin Mlacha">
     <h3><a href="https://ihi.or.tz/our-staff/244/Dr.%20Yeromin/Mlacha/details/" target="_blank" rel="noopener">Dr Yeromin Mlacha</a></h3><p class="role">Responsable de pôle</p><p class="org">Tanzanie</p>
+    <a class="person__social" href="https://www.linkedin.com/in/yeromin-mlacha-2a389933/" target="_blank" rel="noopener" aria-label="Dr Yeromin Mlacha sur LinkedIn"><i class="bi bi-linkedin"></i></a>
   </div>
   <div class="person" data-group="tanzania">
-    <img class="avatar" src="../assets/team-lembris.jpeg" alt="Lembris Njoto">
-    <h3>Dr Lembris Njoto</h3><p class="role">Modélisateur principal</p><p class="org">Tanzanie</p>
+    <img class="avatar" src="../assets/team-lembris.jpeg" alt="Lembris Njotto">
+    <h3>Dr Lembris Njotto</h3><p class="role">Modélisateur principal</p><p class="org">Tanzanie</p>
+    <a class="person__social" href="https://www.linkedin.com/in/lembris-njotto-6238b482/" target="_blank" rel="noopener" aria-label="Dr Lembris Njotto sur LinkedIn"><i class="bi bi-linkedin"></i></a>
   </div>
   <div class="person" data-group="tanzania">
-    <img class="avatar" src="../assets/team-ilomo.jpg" alt="Kaiza Ilomo">
+    <img class="avatar" src="../assets/team-ilomo.png" alt="Kaiza Ilomo">
     <h3>Kaiza Ilomo</h3><p class="role">Responsable de la synthèse des données probantes</p><p class="org">Tanzanie</p>
+    <a class="person__social" href="https://www.linkedin.com/in/kaizakunonu/" target="_blank" rel="noopener" aria-label="Kaiza Ilomo sur LinkedIn"><i class="bi bi-linkedin"></i></a>
+  </div>
+  <div class="person" data-group="tanzania">
+    <img class="avatar" src="../assets/team-eban.jpg" alt="Eban Saria">
+    <h3>Eban Saria</h3><p class="role">Chargé(e) de recherche stagiaire</p><p class="org">Tanzanie</p>
+    <a class="person__social" href="https://www.linkedin.com/in/eban-saria-003698314/" target="_blank" rel="noopener" aria-label="Eban Saria sur LinkedIn"><i class="bi bi-linkedin"></i></a>
   </div>
 
   <div class="person" data-group="drc">
     <img class="avatar" src="../assets/team-metelo.jpg" alt="Emery Metelo">
     <h3>Pr Emery Metelo</h3><p class="role">Responsable de pôle</p><p class="org">RD Congo</p>
+    <a class="person__social" target="_blank" rel="noopener" aria-label="Pr Emery Metelo sur LinkedIn"><i class="bi bi-linkedin"></i></a>
   </div>
   <div class="person" data-group="drc">
-    <div class="avatar">RY</div>
-    <h3>Rodriguez Yombo</h3><p class="role">Modélisateur principal</p><p class="org">RD Congo</p>
+    <img class="avatar" src="../assets/team-yombo.jpeg" alt="Rodriguez Yombo">
+    <h3>Pr Rodriguez Yombo</h3><p class="role">Modélisateur principal</p><p class="org">RD Congo</p>
+    <a class="person__social" href="https://www.linkedin.com/in/rodriguez-yombo-phaka-46649b16a/" target="_blank" rel="noopener" aria-label="Pr Rodriguez Yombo sur LinkedIn"><i class="bi bi-linkedin"></i></a>
   </div>
   <div class="person" data-group="drc">
     <img class="avatar" src="../assets/team-bokulu.png" alt="Arsene Bokulu">
     <h3>Arsene Bokulu</h3><p class="role">Responsable de la synthèse des données probantes</p><p class="org">RD Congo</p>
+    <a class="person__social" href="https://www.linkedin.com/in/arsene-bokulu-42aa282a6/" target="_blank" rel="noopener" aria-label="Arsene Bokulu sur LinkedIn"><i class="bi bi-linkedin"></i></a>
   </div>
 
   <div class="person" data-group="nigeria">
     <img class="avatar" src="../assets/team-adeogun.jpg" alt="Adedapo Adeogun">
     <h3>Dr Adedapo Adeogun</h3><p class="role">Responsable de pôle</p><p class="org">Nigéria</p>
+    <a class="person__social" href="https://www.linkedin.com/in/adedapo-o-adeogun-89bba228/" target="_blank" rel="noopener" aria-label="Dr Adedapo Adeogun sur LinkedIn"><i class="bi bi-linkedin"></i></a>
   </div>
   <div class="person" data-group="nigeria">
     <img class="avatar" src="../assets/team-adekunle.jpeg" alt="Taiwo Adekunle">
-    <h3>Taiwo Adekunle</h3><p class="role">Modélisateur principal</p><p class="org">Nigéria</p>
+    <h3>Dr Taiwo Adekunle</h3><p class="role">Modélisateur principal</p><p class="org">Nigéria</p>
+    <a class="person__social" href="https://www.linkedin.com/in/taiwo-adekunle-953a63b9/" target="_blank" rel="noopener" aria-label="Dr Taiwo Adekunle sur LinkedIn"><i class="bi bi-linkedin"></i></a>
   </div>
   <div class="person" data-group="nigeria">
     <img class="avatar" src="../assets/team-babalola.jpeg" alt="Ayodele Babalola">
-    <h3>Ayodele Babalola</h3><p class="role">Modélisateur principal</p><p class="org">Nigéria</p>
+    <h3>Dr Ayodele Babalola</h3><p class="role">Modélisateur principal</p><p class="org">Nigéria</p>
+    <a class="person__social" href="https://www.linkedin.com/in/ayodele-babalola-3a136579/" target="_blank" rel="noopener" aria-label="Dr Ayodele Babalola sur LinkedIn"><i class="bi bi-linkedin"></i></a>
   </div>
 
   <!-- Collaborators: copy this block per person, then delete this comment
@@ -145,9 +174,9 @@ title-block-banner: ../assets/feature-evidence.jpg
   </div>
   <div class="hubs-map-wrap">
     <img class="hubs-map" src="../assets/africa-hubs-map-green.png" alt="Les pôles de MoDD Africa : le Nigéria, la RDC et la Tanzanie mis en évidence sur la carte de l'Afrique.">
-    <button class="hub-pin" type="button" data-group="nigeria" style="left:40%; top:35%" aria-expanded="false"><span class="hub-pin__dot"></span><span class="hub-pin__label">Nigéria</span></button>
-    <button class="hub-pin" type="button" data-group="drc" style="left:57%; top:59%" aria-expanded="false"><span class="hub-pin__dot"></span><span class="hub-pin__label">RD Congo</span></button>
-    <button class="hub-pin" type="button" data-group="tanzania" style="left:72%; top:61%" aria-expanded="false"><span class="hub-pin__dot"></span><span class="hub-pin__label">Tanzanie</span></button>
+    <button class="hub-pin" type="button" data-group="nigeria" style="left:37%; top:38.5%" aria-expanded="false"><span class="hub-pin__dot"></span><span class="hub-pin__label">Nigéria</span></button>
+    <button class="hub-pin" type="button" data-group="drc" style="left:59.5%; top:56%" aria-expanded="false"><span class="hub-pin__dot"></span><span class="hub-pin__label">RD Congo</span></button>
+    <button class="hub-pin" type="button" data-group="tanzania" style="left:76%; top:60%" aria-expanded="false"><span class="hub-pin__dot"></span><span class="hub-pin__label">Tanzanie</span></button>
     <div class="hub-popover" hidden>
       <button class="hub-popover__close" type="button" aria-label="Fermer">&times;</button>
       <div class="hub-popover__head"></div>
@@ -172,10 +201,10 @@ title-block-banner: ../assets/feature-evidence.jpg
     </div>
   </div>
   <div class="hubcard">
-    <img src="../assets/nimr-adedapo.jpeg" alt="Dr Adedapo Adeogun à l'Institut nigérian de recherche médicale (NIMR).">
+    <img src="../assets/osun-adedapo.jpeg" alt="Dr Adedapo Adeogun, responsable du pôle du Nigéria, avec des collègues.">
     <div class="hubcard__body">
-      <h3>Nigéria — NIMR</h3>
-      <p>Anime le pôle du Nigéria depuis le Nigerian Institute of Medical Research (NIMR), et étend le réseau au contexte de transmission et de système de santé propre à l'Afrique de l'Ouest.</p>
+      <h3>Nigéria — Université d'État d'Osun</h3>
+      <p>Anime le pôle du Nigéria depuis l'Université d'État d'Osun (UNIOSUN), et étend le réseau au contexte de transmission et de système de santé propre à l'Afrique de l'Ouest.</p>
     </div>
   </div>
 </div>

@@ -21,7 +21,7 @@ website:
     logo: assets/MoDD_logo.png
     logo-alt: "MoDD Africa"
     title: "MoDD Africa"
-    collapse-below: lg
+    collapse-below: xl
     left:
       - text: "Home"
         href: index.qmd
