@@ -69,16 +69,6 @@ title-block-banner: assets/feature-evidence.jpg
     <h3><a href="https://ihi.or.tz/our-staff/301/Dr%20Samson/Kiware/details/" target="_blank" rel="noopener">Dr. Samson Kiware</a></h3><p class="role">Mathematical Modelling Lead</p>
     <a class="person__social" href="https://www.linkedin.com/in/samson-kiware-49233a55/" target="_blank" rel="noopener" aria-label="Dr. Samson Kiware on LinkedIn"><i class="bi bi-linkedin"></i></a>
   </div>
-  <div class="person" data-group="regional">
-    <img class="avatar" src="assets/team-miharisoa.jpeg" alt="Sylviane Miharisoa">
-    <h3>Sylviane Miharisoa</h3><p class="role">Research Collaborator</p>
-    <a class="person__social" href="https://www.linkedin.com/in/sylviane-miharisoa-1a6264207/" target="_blank" rel="noopener" aria-label="Sylviane Miharisoa on LinkedIn"><i class="bi bi-linkedin"></i></a>
-  </div>
-  <div class="person" data-group="regional">
-    <img class="avatar" src="assets/team-nsabatien.jpeg" alt="Victoire Nsabatien">
-    <h3>Victoire Nsabatien</h3><p class="role">Research Collaborator</p>
-    <a class="person__social" href="https://www.linkedin.com/in/victoire-nsabatien-443968185/" target="_blank" rel="noopener" aria-label="Victoire Nsabatien on LinkedIn"><i class="bi bi-linkedin"></i></a>
-  </div>
 
   <div class="person" data-group="tanzania">
     <img class="avatar" src="assets/team-mlacha.jpg" alt="Yeromin Mlacha">
@@ -133,12 +123,16 @@ title-block-banner: assets/feature-evidence.jpg
     <a class="person__social" href="https://www.linkedin.com/in/ayodele-babalola-3a136579/" target="_blank" rel="noopener" aria-label="Dr. Ayodele Babalola on LinkedIn"><i class="bi bi-linkedin"></i></a>
   </div>
 
-  <!-- Collaborators: copy this block per person, then delete this comment
   <div class="person" data-group="collaborators">
-    <img class="avatar" src="assets/team-NAME.jpg" alt="Full name">
-    <h3>Full name</h3><p class="role">Role</p><p class="org">Institution</p>
+    <img class="avatar" src="assets/team-miharisoa.jpeg" alt="Sylviane Miharisoa">
+    <h3>Sylviane Miharisoa</h3><p class="role">Research Collaborator</p>
+    <a class="person__social" href="https://www.linkedin.com/in/sylviane-miharisoa-1a6264207/" target="_blank" rel="noopener" aria-label="Sylviane Miharisoa on LinkedIn"><i class="bi bi-linkedin"></i></a>
   </div>
-  -->
+  <div class="person" data-group="collaborators">
+    <img class="avatar" src="assets/team-nsabatien.jpeg" alt="Victoire Nsabatien">
+    <h3>Victoire Nsabatien</h3><p class="role">Research Collaborator</p>
+    <a class="person__social" href="https://www.linkedin.com/in/victoire-nsabatien-443968185/" target="_blank" rel="noopener" aria-label="Victoire Nsabatien on LinkedIn"><i class="bi bi-linkedin"></i></a>
+  </div>
 
 </div>
 <p class="team-empty" hidden>Collaborators will be listed here soon.</p>
