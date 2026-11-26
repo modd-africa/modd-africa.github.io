@@ -12,6 +12,7 @@ title-block-banner: assets/feature-evidence.jpg
   .team-filter button { font-family: "IBM Plex Mono", monospace; font-size: .76rem; letter-spacing: .04em; padding: .5rem 1.05rem; border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--muted); cursor: pointer; transition: all .15s ease; }
   .team-filter button:hover { border-color: var(--field); color: var(--field-d); }
   .team-filter button.is-active { background: var(--field); border-color: var(--field); color: #fff; }
+  .team-empty { margin-top: 1.5rem; color: var(--muted); font-style: italic; }
   .team-grid .person[hidden] { display: none; }
 </style>
 ```
@@ -42,6 +43,7 @@ title-block-banner: assets/feature-evidence.jpg
   <button data-group="tanzania">Tanzania</button>
   <button data-group="drc">DR Congo</button>
   <button data-group="nigeria">Nigeria</button>
+  <button data-group="collaborators">Collaborators</button>
 </div>
 
 <div class="team team-grid">
@@ -102,7 +104,15 @@ title-block-banner: assets/feature-evidence.jpg
     <h3>Ayodele Babalola</h3><p class="role">Senior Modeller</p><p class="org">Nigeria</p>
   </div>
 
+  <!-- Collaborators: copy this block per person, then delete this comment
+  <div class="person" data-group="collaborators">
+    <img class="avatar" src="assets/team-NAME.jpg" alt="Full name">
+    <h3>Full name</h3><p class="role">Role</p><p class="org">Institution</p>
+  </div>
+  -->
+
 </div>
+<p class="team-empty" hidden>Collaborators will be listed here soon.</p>
 
 <script>
 (function () {
@@ -116,6 +126,8 @@ title-block-banner: assets/feature-evidence.jpg
     btn.classList.add('is-active');
     const g = btn.dataset.group;
     cards.forEach(function (c) { c.hidden = (g !== 'all' && c.dataset.group !== g); });
+    const empty = document.querySelector('.team-empty');
+    if (empty) empty.hidden = Array.prototype.some.call(cards, function (c) { return !c.hidden; });
   });
 })();
 </script>
